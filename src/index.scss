@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./scss/variables.scss";
+
+html,
+body,
+#root,
+#app-root {
+  height: $app-min-height;
+  min-height: $app-min-height;
+  min-width: $app-min-width !important;
+}
