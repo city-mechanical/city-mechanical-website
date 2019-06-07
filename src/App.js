@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import ContactBar from './components/ContactBar'
+import ContactLink from './components/ContactLink';
+import './App.scss'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContactBar size='sm'>
+        <ContactLink data='1-800-698-6380' icon/>
+        <ContactLink data='service@citymechanical.com' icon/>
+      </ContactBar>
     </div>
   );
 }

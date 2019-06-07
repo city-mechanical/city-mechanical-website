@@ -1,0 +1,32 @@
+.contactBar {
+    color: $grey-1;
+    background-color: $blue-5;
+    @include font-size(11px);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &.contactBar-xs {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &.contactBar-sm {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+    }
+
+    &.contactBar-md {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &.contactBar-lg {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+    }
+
+    &.contactBar-xl {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

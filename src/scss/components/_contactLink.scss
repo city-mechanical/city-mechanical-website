@@ -1,0 +1,26 @@
+.contactLink {
+    display: inline-block;
+    
+    + .contactLink {
+        margin-left: 15px;
+    }
+
+    * {
+        display: inline-block;
+        line-height: 1.5;
+    }
+
+    a {
+        color: $grey-1;
+
+        &:hover {
+            text-decoration: none;
+            color: $contact-red;
+        }
+    }
+
+    .icon {
+        margin-right: 3px;
+        margin-bottom: 1px; // temp fix (change this to align vertically with contactLink)
+    }
+}
