@@ -3,26 +3,25 @@ import ContactBar from '../components/ContactBar'
 import ContactLink from '../components/ContactLink';
 import SocialIcon from '../components/SocialIcon/SocialIcon';
 
-function Header() {
+function Footer() {
   return (
     <ContactBar 
-      size='sm'
+      size='lg'
       info={
         <React.Fragment>
-          <ContactLink data='1-800-698-6380' icon/>
-          <ContactLink data='service@citymechanical.com' icon/>
+          <div>© Copyright - City Mechanical, Inc.</div>
         </React.Fragment>
       }
       social={
         <React.Fragment>
-          <SocialIcon type='twitter'/>
-          <SocialIcon type='facebook'/>
-          <SocialIcon type='instagram'/>
-          <SocialIcon type='yelp'/>
+          <SocialIcon type='twitter' circle/>
+          <SocialIcon type='facebook' circle/>
+          <SocialIcon type='instagram' circle/>
+          <SocialIcon type='yelp' circle/>
         </React.Fragment>
       }
     />
   );
 }
 
-export default Header;
+export default Footer;

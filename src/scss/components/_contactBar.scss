@@ -1,11 +1,12 @@
 .contactBar {
+    @include appad;
     color: $grey-1;
     background-color: $blue-5;
     @include font-size(13px);
     display: flex;
     justify-content: space-between;
 
-    .icons {
+    .social {
         display: inline-flex;
         line-height: 1;
     }

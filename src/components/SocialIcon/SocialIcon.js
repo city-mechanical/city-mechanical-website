@@ -58,10 +58,17 @@ class SocialIcon extends Component {
   }
 
   render() {
+    const { circle } = this.props;
+    
     const socialIcon = this.build();
+    let classes = `socialIcon ${socialIcon.name}`;
+
+    if (circle) { 
+      classes += ' circle'
+    }
 
     return (
-      <a className={`socialIcon ${socialIcon.name}`} href={socialIcon.link}>
+      <a className={classes} href={socialIcon.link}>
         {socialIcon.icon}
       </a>
     );

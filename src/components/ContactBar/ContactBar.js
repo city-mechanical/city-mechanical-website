@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   // color: PropTypes.,
-  icons: PropTypes.element,
-  links: PropTypes.element,
+  info: PropTypes.element,
+  social: PropTypes.element,
   size: PropTypes.oneOf([
       'xs',
       'sm',
@@ -16,26 +16,31 @@ const propTypes = {
   
 const defaultProps = {
   icons: null,
-  links: null,
+  info: null,
   size: 'md',
 };
 
 class ContactBar extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   render() {
-    const { links, icons, size } = this.props;
+    const { social, info, size } = this.props;
     
     return (
-      <div className={`contactBar contactBar-${size} appad`} >
-        <div className='links'>
-          {links}
-        </div>
-        <div className='icons'>
-          {icons}
-        </div>
+      <div className={`contactBar contactBar-${size}`} >
+        {info ? (
+          <div className='info'>
+            {info}
+          </div>
+        ) : (
+          null
+        )}
+
+        {social ? (
+          <div className='social'>
+            {social}
+          </div>
+        ) : (
+          null
+        )}
       </div>
     );
   }

@@ -1,8 +1,12 @@
 a.socialIcon {
   color: inherit;
-  height: 100%;
-  align-items: center;
+  min-height: 100%;
   line-height: 1;
+
+  &.circle {
+    border-radius: 300px;
+    min-height: 50%;
+  }
 
   &:hover {
     color: inherit;

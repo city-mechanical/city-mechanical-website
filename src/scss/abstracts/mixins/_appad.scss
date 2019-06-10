@@ -4,7 +4,7 @@
  * Used to apply global app padding to top level container components.
  */
 
-.appad {
+ @mixin appad {
   @include media-breakpoint-up(xs) {
     padding-left: 10px;
     padding-right: 10px;
