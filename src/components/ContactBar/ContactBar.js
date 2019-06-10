@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   // color: PropTypes.,
+  icons: PropTypes.element,
+  links: PropTypes.element,
   size: PropTypes.oneOf([
       'xs',
       'sm',
@@ -13,6 +15,8 @@ const propTypes = {
 };
   
 const defaultProps = {
+  icons: null,
+  links: null,
   size: 'md',
 };
 
@@ -22,11 +26,16 @@ class ContactBar extends Component {
   // }
 
   render() {
-    const { children, size } = this.props;
+    const { links, icons, size } = this.props;
     
     return (
-      <div className={'contactBar contactBar-' + size} >
-          {children}
+      <div className={`contactBar contactBar-${size} appad`} >
+        <div className='links'>
+          {links}
+        </div>
+        <div className='icons'>
+          {icons}
+        </div>
       </div>
     );
   }

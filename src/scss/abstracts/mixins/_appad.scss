@@ -1,0 +1,32 @@
+/*
+ * appad - App padding
+ * 
+ * Used to apply global app padding to top level container components.
+ */
+
+.appad {
+  @include media-breakpoint-up(xs) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  @include media-breakpoint-up(md) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  @include media-breakpoint-up(xl) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}

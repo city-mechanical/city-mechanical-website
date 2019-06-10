@@ -1,32 +1,33 @@
 .contactBar {
     color: $grey-1;
     background-color: $blue-5;
-    @include font-size(11px);
-    padding-left: 10px;
-    padding-right: 10px;
+    @include font-size(13px);
+    display: flex;
+    justify-content: space-between;
+
+    .icons {
+        display: inline-flex;
+        line-height: 1;
+    }
 
     &.contactBar-xs {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        @include cbp(5px);
     }
 
     &.contactBar-sm {
-        padding-top: 7.5px;
-        padding-bottom: 7.5px;
+        @include cbp(7.5px);
     }
 
+    
     &.contactBar-md {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        @include cbp(10px);
     }
 
     &.contactBar-lg {
-        padding-top: 12.5px;
-        padding-bottom: 12.5px;
+        @include cbp(12.5px);
     }
 
     &.contactBar-xl {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        @include cbp(15px);
     }
 }

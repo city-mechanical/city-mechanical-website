@@ -1,0 +1,20 @@
+/*
+ * cbp - ContactBar Padding
+ * 
+ * Used to apply correct padding to ContactBar based on size.
+ */
+
+
+@mixin cbp($padding) {
+  .links {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
+  .socialIcon {
+      padding-top: $padding;
+      padding-right: $padding;
+      padding-bottom: $padding;
+      padding-left: $padding;
+  }
+}

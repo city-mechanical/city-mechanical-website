@@ -1,0 +1,34 @@
+a.socialIcon {
+  color: inherit;
+  height: 100%;
+  align-items: center;
+  line-height: 1;
+
+  &:hover {
+    color: inherit;
+    
+    &.facebook {
+      background-color: #3C5A99
+    }
+
+    &.instagram {
+      background:
+        radial-gradient(circle farthest-corner at 35% 100%, #FFDC80, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 150%, #FD1D1D, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -15%, #405DE6, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -40%, #5851DB, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 10%, #833AB4, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -10%, #C13584, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 110%, #E1306C, transparent),
+        linear-gradient(#5851DB, #833AB4 30%, #E1306C 50%, #F77737 70%, #FFDC80 100%);
+    }
+
+    &.twitter {
+      background-color: #1DA1F2
+    }
+
+    &.yelp {
+      background-color: #D32323;
+    }
+  }
+}
