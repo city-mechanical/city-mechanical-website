@@ -8,10 +8,11 @@
 @import "vendors/bootstrap";
 
 // Abstracts
+@import "abstracts/variables"; // import variable first
 @import "abstracts/mixins";
-@import "abstracts/variables";
 
 // Componenets
 @import "components/contactBar";
 @import "components/contactLink";
+@import "components/navbar";
 @import "components/socialIcon";

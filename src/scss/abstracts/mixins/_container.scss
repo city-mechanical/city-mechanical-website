@@ -1,0 +1,6 @@
+.container {
+  @include appad;
+  @include media-breakpoint-up(xs) {
+    max-width: $app-max-width;
+  }
+}

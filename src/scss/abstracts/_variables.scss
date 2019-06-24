@@ -6,6 +6,8 @@
 $app-min-height: 100%;
 $app-min-width: 337px;
 
+$app-max-width: 1350px; // implemented as container max-width (preserves bg)
+
 /**
 * Brand
 *
@@ -17,10 +19,11 @@ $blue-3: #2e3952;
 $blue-4: #445270;
 $blue-5: #293856;
 
+$grey-0: #000000;
 $grey-1: #ffffff;
 $grey-2: #aaaaaa;
 $grey-3: #40403f;
-$grey-4: #797978;
+$grey-4: #6c6c6b;
 $grey-5: #dfdfdf;
 $grey-6: #c6c6c6;
 

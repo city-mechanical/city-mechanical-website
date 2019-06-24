@@ -26,21 +26,23 @@ class ContactBar extends Component {
     
     return (
       <div className={`contactBar contactBar-${size}`} >
-        {info ? (
-          <div className='info'>
-            {info}
-          </div>
-        ) : (
-          null
-        )}
+        <div className="container">
+          {info ? (
+            <div className='info'>
+              {info}
+            </div>
+          ) : (
+            null
+          )}
 
-        {social ? (
-          <div className='social'>
-            {social}
-          </div>
-        ) : (
-          null
-        )}
+          {social ? (
+            <div className='social'>
+              {social}
+            </div>
+          ) : (
+            null
+          )}
+        </div>
       </div>
     );
   }

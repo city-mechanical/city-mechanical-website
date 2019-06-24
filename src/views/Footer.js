@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactBar from '../components/ContactBar'
-import ContactLink from '../components/ContactLink';
 import SocialIcon from '../components/SocialIcon/SocialIcon';
 
 function Footer() {
