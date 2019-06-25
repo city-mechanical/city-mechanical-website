@@ -1,35 +1,45 @@
 .contactBar {
-    color: $grey-1;
-    background-color: $blue-5;
-    @include font-size(13px);
+  color: $grey-1;
+  background-color: $blue-5;
+  @include font-size(14px);
 
-    .container {
-        display: flex;
-        justify-content: space-between;
+  &.contactBar-xs {
+    @include cbp(5px);
+  }
+
+  &.contactBar-sm {
+    @include cbp(7.5px);
+  }
+  
+  &.contactBar-md {
+    @include cbp(10px);
+  }
+
+  &.contactBar-lg {
+    @include cbp(12.5px);
+  }
+
+  &.contactBar-xl {
+    @include cbp(15px);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
     }
 
     .social {
+      display: none;
+      line-height: 1;
+
+      @include media-breakpoint-up(sm) {
         display: inline-flex;
-        line-height: 1;
+      }
     }
-
-    &.contactBar-xs {
-        @include cbp(5px);
-    }
-
-    &.contactBar-sm {
-        @include cbp(7.5px);
-    }
-    
-    &.contactBar-md {
-        @include cbp(10px);
-    }
-
-    &.contactBar-lg {
-        @include cbp(12.5px);
-    }
-
-    &.contactBar-xl {
-        @include cbp(15px);
-    }
+  }
 }

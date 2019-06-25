@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  // color: PropTypes.,
   info: PropTypes.element,
   social: PropTypes.element,
   size: PropTypes.oneOf([

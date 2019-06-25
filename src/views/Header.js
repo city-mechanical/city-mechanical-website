@@ -6,7 +6,7 @@ import SocialIcon from '../components/SocialIcon/SocialIcon';
 
 function Header() {
   return (
-    <React.Fragment>
+    <div id="header">
       <ContactBar 
         size='sm'
         info={
@@ -25,7 +25,7 @@ function Header() {
         }
       />
       <Navbar />
-    </React.Fragment>
+    </div>
   );
 }
 

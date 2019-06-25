@@ -1,18 +1,21 @@
-/**
-* App
-*
-* Global App settings.
-*/
+// App
+//
+// Global App settings.
+
 $app-min-height: 100%;
-$app-min-width: 337px;
+$app-min-width: 370px;
 
-$app-max-width: 1350px; // implemented as container max-width (preserves bg)
+$app-max-width: 1350px; // implemented in container max-width (preserves bg)
 
-/**
-* Brand
-*
-* Global Brand colors.
-*/
+// Typography
+$font-size-base: 12px;
+$font-size-base: 0.75rem;
+
+
+// Brand
+//
+// Define the gloabal brand colors (needs to be renamed)
+
 $blue-1: #424d67;
 $blue-2: #242e42;
 $blue-3: #2e3952;
@@ -31,3 +34,17 @@ $alert-yellow: #feaa01;
 $contact-red: #fd411c;
 
 $yelp: #c41200;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  tn: 0,
+  xs: 475px,
+  sm: 576px, // default
+  md: 768px, // default
+  lg: 992px, // default
+  xl: 1200px // default
+) !default;

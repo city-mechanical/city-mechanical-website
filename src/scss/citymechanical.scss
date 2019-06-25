@@ -4,15 +4,21 @@
  * (https://www.citymechanical.com/)
  */
 
+// Variables
+@import "abstracts/variables";
+
 // Vendors
 @import "vendors/bootstrap";
 
 // Abstracts
-@import "abstracts/variables"; // import variable first
 @import "abstracts/mixins";
 
 // Componenets
 @import "components/contactBar";
 @import "components/contactLink";
 @import "components/navbar";
+@import "components/navbarLogo";
 @import "components/socialIcon";
+
+// Views
+@import "views/footer";

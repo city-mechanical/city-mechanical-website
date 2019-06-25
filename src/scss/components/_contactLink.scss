@@ -1,26 +1,26 @@
 .contactLink {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
     
-    + .contactLink {
-        margin-left: 15px;
-    }
+  + .contactLink {
+    margin-left: 15px;
+  }
 
-    * {
-        display: inline-flex;
-        line-height: 0;
-    }
+  * {
+    display: inline-flex;
+    line-height: 0;
+  }
 
-    a {
-        color: $grey-1;
+  a {
+    color: $grey-1;
 
-        &:hover {
-            text-decoration: none;
-            color: $contact-red;
-        }
+    &:hover {
+      text-decoration: none;
+      color: $contact-red;
     }
+  }
 
-    .icon {
-        margin-right: 3px;
-    }
+  .icon {
+    margin-right: 3px;
+  }
 }
