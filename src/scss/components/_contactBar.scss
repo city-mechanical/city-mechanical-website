@@ -1,6 +1,6 @@
 .contactBar {
-  color: $grey-1;
-  background-color: $blue-5;
+  color: $fontPrimary;
+  background-color: $primary;
   @include font-size(14px);
 
   &.contactBar-xs {

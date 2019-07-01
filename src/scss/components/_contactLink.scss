@@ -12,11 +12,11 @@
   }
 
   a {
-    color: $grey-1;
+    color: $fontPrimary;
 
     &:hover {
       text-decoration: none;
-      color: $contact-red;
+      color: $fontContact;
     }
   }
 

@@ -14,7 +14,12 @@ $font-size-base: 0.75rem;
 
 // Brand
 //
-// Define the gloabal brand colors (needs to be renamed)
+// Define the global brand colors (needs to be renamed)
+$primary: #1a3765;
+$secondary: #03d2fa;
+
+$fontPrimary: #ffffff;
+$fontContact: #ff1d00;
 
 $blue-1: #424d67;
 $blue-2: #242e42;
@@ -33,7 +38,25 @@ $grey-6: #c6c6c6;
 $alert-yellow: #feaa01;
 $contact-red: #fd411c;
 
-$yelp: #c41200;
+// Social Media
+//
+// Define the global social media colors
+
+$twitter: #1da1f2;
+$facebook: #3c5a99;
+$instagram: (
+  0: #405de6,
+  1: #5851db,
+  2: #833ab4,
+  3: #c13584,
+  4: #e1306c,
+  5: #fd1d1d,
+  6: #f56040,
+  7: #f77737,
+  8: #fcaf45,
+  9: #ffdc80
+);
+$yelp: #d32323;
 
 // Grid breakpoints
 //
