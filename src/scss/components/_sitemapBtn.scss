@@ -1,0 +1,15 @@
+.sitemapBtn {
+  background-color: $primary;
+  color: $fontPrimary;
+  padding: $smapBtn-space $smapBtn-space*3;
+
+  &:hover {
+    background-color: $highlighted;
+    color: $fontPrimary;
+    text-decoration: none;
+  }
+
+  + .sitemapBtn {
+    margin-left: $smapBtn-space*4;
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "footer":{
+        "cols":[
+            {
+                "sections":[
+                    {
+                        "type": "misc",
+                        "title":"Additional Info",
+                        "content":"License Number: 622065\nClasses: C4, C20, C36, & C38\nEmail: service@citymechanical.com"
+                    }
+
+                ]
+            },
+            {
+                "sections":[
+                    {
+                        "type": "location",
+                        "title":"Hercules Location - Corporate Headquarters",
+                        "content":"724 Alfred Nobel Drive\nHercules, CA 94547\nTel: (510) 724-9088\nFax: (510) 724-8240\nService: 1-800-698-6380"
+                    }
+
+                ]
+            },
+            {
+                "sections":[
+                    {
+                        "type": "location",
+                        "title":"San Francisco Location",
+                        "content":"1925 Ingalls Street\nSan Francisco, CA 94124\nTel: (510) 724-9088\nFax: (415) 647-6249\nService: 1-800-698-6380"
+                    },
+                    {
+                        "type": "location",
+                        "title":"Petaluma Location",
+                        "content":"1130 Industrial Street, Suite #11\nPetaluma, CA 94952\nTel: (510) 724-9088\nFax: (707) 763-3014\nService: 1-800-698-6380"
+                    }
+                ]
+            },
+            {
+                "sections":[
+                    {
+                        "type": "sitemap",
+                        "title":"Navigation",
+                        "content":"About\nAir Maid\nBackflow Prevention & Device Certification\nBoilers & Boiler Certification\nBooster Systems\nBuilding Controls & Energy Management\nContact\nDuct Cleaning\nGiving Back\nHeating, Ventilation & Air Conditioning\nHome\nJetting Services\nPeriodic Maintenance\nPlumbing\nRefrigeration\nRequest Service/Estimate\nSaunas\nServices\nSheet Metal\nStaff Directory\nSteam Baths & Showers\nSteam Generators\nSump Pump Systems\nTestimonials\nWater Heaters\nWater Softeners\nWater Treatment"
+                    }
+
+                ]
+            }
+        ]
+    }
+}

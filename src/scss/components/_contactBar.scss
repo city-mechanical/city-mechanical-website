@@ -4,23 +4,23 @@
   @include font-size(14px);
 
   &.contactBar-xs {
-    @include cbp(5px);
+    @include cbp($basespace*2);
   }
 
   &.contactBar-sm {
-    @include cbp(7.5px);
+    @include cbp($basespace*3);
   }
   
   &.contactBar-md {
-    @include cbp(10px);
+    @include cbp($basespace*4);
   }
 
   &.contactBar-lg {
-    @include cbp(12.5px);
+    @include cbp($basespace*5);
   }
 
   &.contactBar-xl {
-    @include cbp(15px);
+    @include cbp($basespace*6);
   }
 
   .container {

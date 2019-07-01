@@ -11,12 +11,19 @@ $app-max-width: 1350px; // implemented in container max-width (preserves bg)
 $font-size-base: 12px;
 $font-size-base: 0.75rem;
 
+// Spacing
+$basespace: 2.5px;
+
+// Component Padding & Margins
+$footerBar-space: $basespace*15;
+$smapBtn-space: $basespace;
 
 // Brand
 //
 // Define the global brand colors (needs to be renamed)
 $primary: #1a3765;
-$secondary: #03d2fa;
+$secondary: #00113a;
+$highlighted: #4b6193;
 
 $fontPrimary: #ffffff;
 $fontContact: #ff1d00;

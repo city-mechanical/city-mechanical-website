@@ -1,27 +1,79 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Header from './views/Header'
-import Footer from './views/Footer'
+import Header from './containers/Header'
+import Footer from './containers/Footer'
 import './App.scss'
 
-const propTypes = {
-  
-};
-
-const defaultProps = {
-  
-};
-
 function App() {
+  var divStyle = {
+    background: 'black'
+  };
+
+  var h1Style = {
+    margin: 0
+  };
+
   return (
     <div className='App'>
       <Header/>
+        <div style={divStyle}>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1>FILLER CONTENT</h1>
+          <h1 style={h1Style}>FILLER CONTENT</h1>
+        </div>
       <Footer/>
     </div>
   );
 }
-
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
 
 export default App;

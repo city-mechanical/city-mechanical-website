@@ -3,4 +3,5 @@
   @include media-breakpoint-up(xs) {
     max-width: $app-max-width;
   }
+  display: flex;
 }
