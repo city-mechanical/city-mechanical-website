@@ -1,10 +1,12 @@
 import React from 'react';
-import ContactBar from '../components/ContactBar'
+import ContactBar from '../components/ContactBar';
+import FooterBar from '../components/FooterBar';
 import SocialIcon from '../components/SocialIcon/SocialIcon';
 
 function Footer() {
   return (
     <div id="footer">
+      <FooterBar />
       <ContactBar
         size='lg'
         info={
