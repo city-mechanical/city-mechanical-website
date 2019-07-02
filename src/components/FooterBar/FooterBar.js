@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import FooterCol from '../FooterCol';
-import SitemapBtn from '../SitemapBtn';
 
 class FooterBar extends Component {
   render() {
-    let data = require('./data.json'); // sample data
+    let data = require('../../data/footer.json'); // sample data (GET footer)
 
     const render = [];
 
     for (var i = 0; i < data.footer.cols.length; i++) {
       render.push(
-        <FooterCol 
-          key={i} 
-          data={data.footer.cols[i]} 
-          count={data.footer.cols.length} 
+        <FooterCol
+          key={i}
+          data={data.footer.cols[i]}
+          count={data.footer.cols.length}
         />
       );
     }
@@ -21,7 +20,9 @@ class FooterBar extends Component {
     return (
       <div className="footerBar">
         <div className="container">
-          {render}
+          <div className="row">
+            {render}
+          </div>
         </div>
       </div>
     );

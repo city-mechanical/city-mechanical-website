@@ -16,7 +16,8 @@ $basespace: 2.5px;
 
 // Component Padding & Margins
 $footerBar-space: $basespace*15;
-$smapBtn-space: $basespace;
+$footerCol-space: $basespace*12;
+$smapBtn-space: $basespace*3;
 
 // Brand
 //
@@ -27,6 +28,8 @@ $highlighted: #4b6193;
 
 $fontPrimary: #ffffff;
 $fontContact: #ff1d00;
+
+$alert: #ffb300;
 
 $blue-1: #424d67;
 $blue-2: #242e42;

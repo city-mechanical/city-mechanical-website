@@ -2,9 +2,21 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
+/**
+ * REWRITE THIS COMPONENT WITHOUT UNNECESSARY STATE!! 
+ * USE JAVASCRIPT VARIABLES INSTEAD!
+ */
+
 const propTypes = {
   data: PropTypes.string.isRequired,
   icon: PropTypes.bool,
+  spacing: PropTypes.oneOf([
+    'xs',
+    'sm',
+    'md',
+    'lg',
+    'xl',
+  ]),
   customType: PropTypes.oneOf([
     'phone',
     'email',
@@ -13,6 +25,7 @@ const propTypes = {
 
 const defaultProps = {
   icon: false,
+  spacing: 'xs',
 };
 
 class ContactLink extends Component {
@@ -128,10 +141,11 @@ class ContactLink extends Component {
   }
 
   render() {
+    const { spacing } = this.props;
     const { iconRender, linkRender } = this.state;
 
     return (
-      <div className={'contactLink'} >
+      <div className={`contactLink contactLink-${spacing}`} >
           {iconRender}{linkRender}
       </div>
     );

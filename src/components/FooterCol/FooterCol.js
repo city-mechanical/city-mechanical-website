@@ -28,7 +28,7 @@ class FooterCol extends Component {
     }
 
     return (
-      <div className={`footerCol col-12 col-md-${12/(count/2)} col-lg-${12/count}`}>
+      <div className={`footerCol col-12 col-md-${12/(count/2)} col-xl-${12/count}`}>
         {render}
       </div>
     );

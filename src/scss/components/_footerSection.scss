@@ -1,6 +1,12 @@
 .footerSection {
   + .footerSection {
-    margin-top: $footerBar-space/1.25;
+    margin-top: $footerCol-space;
+  }
+
+  &.navigati-section {
+    .title {
+      margin-bottom: (($footerBar-space/6)*1.5);
+    }
   }
 
   .title {
@@ -12,5 +18,10 @@
   .content {
     white-space: pre;
     margin-bottom: $footerBar-space/8;
+
+    &.sitemap {
+      white-space: unset;
+      margin-top: -$smapBtn-space;
+    }
   }
 }

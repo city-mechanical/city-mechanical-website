@@ -1,8 +1,10 @@
 .contactBar {
   color: $fontPrimary;
   background-color: $primary;
+  line-height: 1;
   @include font-size(14px);
 
+  // Use a map
   &.contactBar-xs {
     @include cbp($basespace*2);
   }
@@ -30,6 +32,10 @@
     .info {
       @include media-breakpoint-down(sm) {
         width: 100%;
+      }
+
+      .contactLink  + .contactLink {
+        margin-left: 15px;
       }
     }
 

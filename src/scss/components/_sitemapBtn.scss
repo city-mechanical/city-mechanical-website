@@ -1,15 +1,16 @@
 .sitemapBtn {
   background-color: $primary;
-  color: $fontPrimary;
-  padding: $smapBtn-space $smapBtn-space*3;
+  color: $alert;
+  padding: $smapBtn-space/3 $smapBtn-space*1.5;
+  margin-top: $smapBtn-space;
+  margin-right: $smapBtn-space/1.75;
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 12px;
 
   &:hover {
     background-color: $highlighted;
     color: $fontPrimary;
     text-decoration: none;
-  }
-
-  + .sitemapBtn {
-    margin-left: $smapBtn-space*4;
   }
 }
