@@ -65,3 +65,4 @@ These components represent content more than they represent reusable components 
 ## References
 
 <http://www.atomicdesign.bradfrost.com/chapter-2/>
+<http://github.com/bradfrost/atomic-design/>
