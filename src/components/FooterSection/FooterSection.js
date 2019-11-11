@@ -31,7 +31,7 @@ class FooterSection extends Component {
     for (var i = 0; i < content.split("\n").length; i++) {
       var name = content.split("\n")[i];
       var slug = this.convertToSlug(name);
-      var homepage = 'https://www.citymechanical.com/';
+      var homepage = 'https://www.citymechanical.com/staging/';
       // var homepage = 'https://crutchtheclutch.github.io/CityMechanical-Website/';
       var link;
 
@@ -87,8 +87,8 @@ class FooterSection extends Component {
           <div className="content">{
             <React.Fragment>
               <div>{content}</div>
-              {/* <ContactLink data='1-800-698-6380' icon spacing='md'/>
-              <ContactLink data='service@citymechanical.com' icon spacing='md'/> */}
+              <ContactLink data='1-800-698-6380' icon spacing='md'/>
+              <ContactLink data='service@citymechanical.com' icon spacing='md'/>
             </React.Fragment>}
           </div>
         )}
