@@ -1,11 +1,16 @@
-import React from 'react';
-import Header from './containers/Header'
-import Footer from './containers/Footer'
-import './App.scss'
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Header from "./containers/Header";
+import Footer from "./containers/Footer";
+
+import Home from "./pages/Home";
+
+import "./App.scss";
 
 function App() {
   var divStyle = {
-    background: 'black'
+    background: "black"
   };
 
   var h1Style = {
@@ -13,65 +18,16 @@ function App() {
   };
 
   return (
-    <div className='App'>
-      <Header/>
-        <div style={divStyle}>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1>FILLER CONTENT</h1>
-          <h1 style={h1Style}>FILLER CONTENT</h1>
-        </div>
-      <Footer/>
+    <div className="App">
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

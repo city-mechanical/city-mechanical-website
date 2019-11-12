@@ -1,28 +1,17 @@
-import React from 'react';
-import ContactBar from '../components/ContactBar';
-import FooterBar from '../components/FooterBar';
-import SocialIcon from '../components/SocialIcon/SocialIcon';
+import React from "react";
+import UtilityNav from "../components/UtilityNav";
 
 function Footer() {
   return (
     <div id="footer">
-      <FooterBar />
-      <ContactBar
-        size='lg'
+      <UtilityNav
+        size="lg"
         info={
           <React.Fragment>
             <div>Copyright © City Mechanical, Inc. All rights reserved.</div>
-            {/* <a href="https://github.com/CrutchTheClutch">Designed by William Crutchfield</a> */}
           </React.Fragment>
         }
-        social={
-          <React.Fragment>
-            <SocialIcon type='twitter' circle/>
-            <SocialIcon type='facebook' circle/>
-            <SocialIcon type='instagram' circle/>
-            <SocialIcon type='yelp' circle/>
-          </React.Fragment>
-        }
+        social="circle"
       />
     </div>
   );

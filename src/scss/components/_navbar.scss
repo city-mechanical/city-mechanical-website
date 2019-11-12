@@ -1,4 +1,43 @@
 .navbar {
-  @include font-size(18px);
-  padding: 0;
+  @include font-size(16px);
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.017);
+
+  .navbar-nav {
+    @include media-breakpoint-down(xxl) {
+      padding-bottom: 30px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      padding-bottom: 0px;
+    }
+
+    .nav-link {
+      padding-right: 0.85em;
+      padding-left: 0.85em;
+      color: #747472;
+      border-radius: 5px;
+      //transition: box-shadow ease-in-out 0.15s, color ease-in-out 0.15s;
+
+      &#service {
+        color: $primary;
+
+        &:hover {
+          color: $danger;
+        }
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: $alert;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+      }
+      &.active {
+        color: $alert;
+      }
+    }
+  }
 }

@@ -15,9 +15,9 @@ $font-size-base: 0.75rem;
 $basespace: 2.5px;
 
 // Component Padding & Margins
-$footerBar-space: $basespace*15;
-$footerCol-space: $basespace*12;
-$smapBtn-space: $basespace*3;
+$footerBar-space: $basespace * 15;
+$footerCol-space: $basespace * 12;
+$smapBtn-space: $basespace * 3;
 
 // Brand
 //
@@ -27,8 +27,8 @@ $secondary: #00113a;
 $highlighted: #4b6193;
 
 $fontPrimary: #ffffff;
-$fontContact: #ff1d00;
 
+$danger: #ff1d00;
 $alert: #ffb300;
 
 $blue-1: #424d67;
@@ -76,8 +76,13 @@ $yelp: #d32323;
 $grid-breakpoints: (
   tn: 0,
   xs: 475px,
-  sm: 576px, // default
-  md: 768px, // default
-  lg: 992px, // default
-  xl: 1200px // default
+  sm: 576px,
+  // default
+    md: 768px,
+  // default
+    lg: 992px,
+  // default
+    xl: 1200px,
+  //default
+    xxl: 1300px
 ) !default;
