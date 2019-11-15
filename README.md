@@ -1,6 +1,6 @@
 # CityMechanical-Website
 
-React rewrite of City Mechanical's website (<https://www.citymechanical.com/>).  To view the progress of this project, visit https://crutchtheclutch.github.io/CityMechanical-Website/.
+React rewrite of City Mechanical's website (<https://www.citymechanical.com/>).  To view the progress of this project, visit https://city-mechanical.github.io/city-mechanical-website/.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
