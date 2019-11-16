@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaTools } from "react-icons/fa";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FaTools } from 'react-icons/fa';
 
-import ContactLink from "../components/ContactLink";
-import UtilityNav from "../components/UtilityNav";
+import ContactLink from '../components/ContactLink';
+import UtilityNav from '../components/UtilityNav';
 
 function Header() {
   return (
@@ -26,8 +26,8 @@ function Header() {
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
         <Navbar.Brand href="/">
           <img
-            src="https://www.citymechanical.com/wp-content/uploads/2016/12/logo-web-header.png"
-            alt="City Mechanical"
+            src={process.env.PUBLIC_URL + `/cmi-banner.png`}
+            alt="City Mechanical Banner Logo"
             className="navLogo"
           />
         </Navbar.Brand>
@@ -53,7 +53,7 @@ function Header() {
               Contact
             </Link>
             <Link to="/" id="service" className="nav-link">
-              <FaTools style={{ marginBottom: "3px" }} /> Request
+              <FaTools style={{ marginBottom: '3px' }} /> Request
               Service/Estimate
             </Link>
             {/* <NavDropdown title="Dropdown">

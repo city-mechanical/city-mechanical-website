@@ -5,6 +5,20 @@
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.017);
 
+  .navbar-brand {
+    margin-top: 0.85rem;
+    margin-bottom: 0.85rem;
+    margin-right: 0;
+    padding: 0.5rem;
+    color: #747472;
+    border-radius: 5px;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
   .navbar-nav {
     @include media-breakpoint-down(xxl) {
       padding-bottom: 30px;
@@ -19,7 +33,6 @@
       padding-left: 0.85em;
       color: #747472;
       border-radius: 5px;
-      //transition: box-shadow ease-in-out 0.15s, color ease-in-out 0.15s;
 
       &#service {
         color: $primary;
