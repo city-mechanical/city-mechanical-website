@@ -1,0 +1,48 @@
+{
+  "pages": {
+    "home": {
+      "title": "Home",
+      "link": "/"
+    },
+    "services": {
+      "title": "Services",
+      "link": "/services"
+    },
+    "airmaid": {
+      "title": "Air Maid",
+      "link": "/airmaid"
+    },
+    "backflowPreventionDeviceCertification": {
+      "title": "Backflow Prevention Device Certification",
+      "link": "/backflow-prevention-device-certification"
+    },
+    "periodicMaintenance": {
+      "title": "Periodic Maintenance",
+      "link": "/periodic-maintenance"
+    },
+    "about": {
+      "title": "About",
+      "link": "/about"
+    },
+    "givingBack": {
+      "title": "Giving Back",
+      "link": "/giving-back"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "link": "/testimonials"
+    },
+    "contact": {
+      "title": "Contact",
+      "link": "/contact"
+    },
+    "staffDirectory": {
+      "title": "Staff Directory",
+      "link": "/staff-directory"
+    },
+    "requestService": {
+      "title": "Request Service/Estimate",
+      "link": "/request-service"
+    }
+  }
+}

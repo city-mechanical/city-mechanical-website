@@ -1,0 +1,65 @@
+.navbar-nav {
+  .navdropdown {
+    .ndd {
+      border-radius: 5px 5px 0 0;
+      &:hover {
+        color: $alert;
+      }
+    }
+
+    &:hover {
+      .ndd {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+      }
+      .ndd-shadowfix {
+        background-color: #fff;
+      }
+      .ndd-icon {
+        transform: rotate(90deg);
+      }
+      .ndd-menu {
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+      }
+    }
+
+    .ndd-menu {
+      display: none;
+      z-index: 1000;
+      position: absolute;
+      border-radius: 0 0 5px 5px;
+      background-color: #fafafa;
+      min-width: 10rem;
+      padding: 0;
+    }
+
+    .ndd-icon {
+      margin-bottom: 3px;
+      margin-left: -5px;
+      margin-right: 1px;
+      transition: transform linear 0.1s;
+    }
+
+    .ndd-item {
+      width: 100%;
+      list-style: none;
+      .nav-link:hover {
+        box-shadow: none;
+        color: $alert;
+        background-color: #fff;
+      }
+    }
+
+    .ndd-shadowfix {
+      position: relative;
+      width: 100%;
+      margin-top: -10px;
+      height: 10px;
+      z-index: 1001;
+      box-shadow: none;
+    }
+  }
+}
