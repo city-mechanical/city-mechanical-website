@@ -10,6 +10,7 @@ import UtilityNav from '../components/UtilityNav';
 import NavDropdown from '../components/NavDropdown';
 import NavDropdownItem from '../components/NavDropdownItem';
 
+const cmi = require('../data/data.json').data.cmi;
 const pages = require('../data/data.json').data.pages;
 
 function Header() {
@@ -19,8 +20,8 @@ function Header() {
         size="sm"
         info={
           <React.Fragment>
-            <ContactLink data="1-800-698-6380" icon />
-            <ContactLink data="service@citymechanical.com" icon />
+            <ContactLink data={cmi.phone} icon />
+            <ContactLink data={cmi.email} icon />
           </React.Fragment>
         }
         social

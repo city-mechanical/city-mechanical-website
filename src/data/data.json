@@ -173,6 +173,20 @@
         "link": "/request-service",
         "children": []
       }
-    ]
+    ],
+    "cmi": {
+      "license": {
+        "number": 622065,
+        "classes": ["C4", "C20", "C36", "C38"]
+      },
+      "email": "service@citymechanical.com",
+      "phone": "1-800-698-6380",
+      "social": {
+        "facebook": "https://www.facebook.com/CityMechanicalInc/",
+        "instagram": "https://www.instagram.com/citymechanical_inc/",
+        "twitter": "https://twitter.com/City_Mechanical",
+        "yelp": "https://www.yelp.com/biz/city-mechanical-hercules"
+      }
+    }
   }
 }
