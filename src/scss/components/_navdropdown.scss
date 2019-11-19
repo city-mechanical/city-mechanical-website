@@ -9,12 +9,12 @@
 
     &:hover {
       .ndd {
-        background-color: #fff;
+        background-color: $bghighlighted;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
           rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
       }
       .ndd-shadowfix {
-        background-color: #fff;
+        background-color: $bghighlighted;
       }
       .ndd-icon {
         transform: rotate(90deg);
@@ -31,9 +31,13 @@
       z-index: 1000;
       position: absolute;
       border-radius: 0 0 5px 5px;
-      background-color: #fafafa;
+      background-color: $bgprimary;
       min-width: 10rem;
       padding: 0;
+      &.services {
+        columns: 2;
+        column-gap: 0;
+      }
     }
 
     .ndd-icon {
@@ -49,7 +53,7 @@
       .nav-link:hover {
         box-shadow: none;
         color: $alert;
-        background-color: #fff;
+        background-color: $bghighlighted;
       }
     }
 
@@ -60,6 +64,7 @@
       height: 10px;
       z-index: 1001;
       box-shadow: none;
+      pointer-events: none;
     }
   }
 }

@@ -10,7 +10,7 @@ import UtilityNav from "../components/UtilityNav";
 import NavDropdown from "../components/NavDropdown";
 import NavDropdownItem from "../components/NavDropdownItem";
 
-const pages = require("../data/pages.json").pages;
+const pages = require("../data/pages.json").data.pages;
 
 function Header() {
   return (
@@ -26,7 +26,7 @@ function Header() {
         social
       />
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
-        <Link to={pages.home.link} className="nav-link">
+        <Link to={pages[0].link} className="nav-link">
           <Navbar.Brand>
             <img
               src={process.env.PUBLIC_URL + `/cmi-banner.png`}
@@ -38,54 +38,44 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            {/* Home Page */}
-            <Link to={pages.home.link} className="nav-link">
-              Home
-            </Link>
-            {/* Service Pages */}
-            <NavDropdown
-              title={pages.services.title}
-              link={pages.services.link}
-            >
-              <NavDropdownItem
-                title={pages.airmaid.title}
-                link={pages.airmaid.link}
-              />
-              <NavDropdownItem
-                title={pages.backflowPreventionDeviceCertification.title}
-                link={pages.backflowPreventionDeviceCertification.link}
-              />
-            </NavDropdown>
-            {/* Periodic Maintenance Page */}
-            <Link to={pages.periodicMaintenance.link} className="nav-link">
-              {pages.periodicMaintenance.title}
-            </Link>
-            {/* About Pages */}
-            <NavDropdown title={pages.about.title} link={pages.about.link}>
-              <NavDropdownItem
-                title={pages.givingBack.title}
-                link={pages.givingBack.link}
-              />
-            </NavDropdown>
-            {/* Testimonial Page */}
-            <Link to={pages.testimonials.link} className="nav-link">
-              {pages.testimonials.title}
-            </Link>
-            {/* Contact Pages */}
-            <NavDropdown title={pages.contact.title} link={pages.contact.link}>
-              <NavDropdownItem
-                title={pages.staffDirectory.title}
-                link={pages.staffDirectory.link}
-              />
-            </NavDropdown>
-            <Link
+            {pages.map((page, index) => {
+              if (page.children === undefined || page.children.length === 0) {
+                return (
+                  <Link
+                    to={page.link}
+                    className="nav-link"
+                    children={page.title}
+                    key={index}
+                  />
+                );
+              } else {
+                return (
+                  <NavDropdown
+                    title={page.title}
+                    link={page.link}
+                    classes={page.classes}
+                    key={index}
+                    children={page.children.map((child, index) => {
+                      return (
+                        <NavDropdownItem
+                          title={child.title}
+                          link={child.link}
+                          key={index}
+                        />
+                      );
+                    })}
+                  />
+                );
+              }
+            })}
+            {/* <Link
               to={pages.requestService.link}
               id="service"
               className="nav-link"
             >
               <FaTools style={{ marginBottom: "3px" }} />{" "}
               {pages.requestService.title}
-            </Link>
+            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -16,15 +16,37 @@ import RequestService from "./pages/RequestService";
 
 import "./App.scss";
 
-const pages = require("./data/pages.json").pages;
+const pages = require("./data/pages.json").data.pages;
 
 function App() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
+  const myPages = {
+    Home,
+    Services,
+    Airmaid,
+    BackflowPreventionDeviceCertification,
+    // Boilers,
+    // BoosterSystems,
+    // BuildingControlsEnergyManagement,
+    // DuctCleaning,
+    // HVAC,
+    // JettingServices,
+    // Plumbing,
+    // Refrigeration,
+    // Saunas,
+    // SheetMetal,
+    // SteamBathsShowers,
+    // SteamGenerators,
+    // SumpPumpSystems,
+    // WaterHeaters,
+    // WaterSofteners,
+    // WaterTreatment,
+    PeriodicMaintenance,
+    About,
+    // GivingBack,
+    Testimonials,
+    Contact,
+    // StaffDirectory,
+    RequestService
   };
 
   return (
@@ -32,40 +54,39 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          {/* Services Pages */}
-          <Route path={pages.services.link}>
-            <Services />
-          </Route>
-          <Route path={pages.airmaid.link}>
-            <Airmaid />
-          </Route>
-          <Route path={pages.backflowPreventionDeviceCertification.link}>
-            <BackflowPreventionDeviceCertification />
-          </Route>
-          {/* Periodic Maintenance Page */}
-          <Route path={pages.periodicMaintenance.link}>
-            <PeriodicMaintenance />
-          </Route>
-          {/* About Pages */}
-          <Route path={pages.about.link}>
-            <About />
-          </Route>
-          {/* Testimonials Page */}
-          <Route path={pages.testimonials.link}>
-            <Testimonials />
-          </Route>
-          {/* Contact Pages */}
-          <Route path={pages.contact.link}>
-            <Contact />
-          </Route>
-          {/* Request Service Page */}
-          <Route path={pages.requestService.link}>
-            <RequestService />
-          </Route>
-          {/* Home Page */}
-          <Route path={pages.home.link}>
-            <Home />
-          </Route>
+          {pages.map((page, index) => {
+            if (page.children === undefined || page.children.length === 0) {
+              return (
+                <Route
+                  path={page.link}
+                  component={myPages[page.name]}
+                  key={index}
+                  exact
+                />
+              );
+            }
+
+            return (
+              <React.Fragment>
+                <Route
+                  path={page.link}
+                  component={myPages[page.name]}
+                  key={index}
+                  exact
+                />
+                {page.children.map((child, index) => {
+                  return (
+                    <Route
+                      path={child.link}
+                      component={myPages[child.name]}
+                      key={index}
+                      exact
+                    />
+                  );
+                })}
+              </React.Fragment>
+            );
+          })}
         </Switch>
         <Footer />
       </Router>

@@ -7,19 +7,18 @@ const propTypes = {};
 const defaultProps = {};
 
 function NavDropdown(props) {
-  const { title, link, children } = props;
+  const { title, link, classes, children } = props;
 
   return (
     <div className="navdropdown">
       <Link to={link} className="nav-link ndd">
         <div>
-          {/* {children ? <IoMdArrowDropright className="ndd-icon" /> : null} */}
           <IoMdArrowDropright className="ndd-icon" />
           {title}
         </div>
       </Link>
       <div className="ndd-shadowfix"></div>
-      <ul className="ndd-menu">{children}</ul>
+      <ul className={"ndd-menu " + classes}>{children}</ul>
     </div>
   );
 }
