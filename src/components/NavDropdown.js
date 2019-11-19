@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { IoMdArrowDropright } from "react-icons/io";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { IoMdArrowDropright } from 'react-icons/io';
 
 const propTypes = {};
 
 const defaultProps = {};
 
 function NavDropdown(props) {
-  const { title, link, classes, children } = props;
+  const { title, link, css, children } = props;
 
   return (
     <div className="navdropdown">
@@ -18,7 +18,7 @@ function NavDropdown(props) {
         </div>
       </Link>
       <div className="ndd-shadowfix"></div>
-      <ul className={"ndd-menu " + classes}>{children}</ul>
+      <ul className={'ndd-menu ' + css}>{children}</ul>
     </div>
   );
 }

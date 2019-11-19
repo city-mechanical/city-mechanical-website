@@ -10,8 +10,15 @@
     &:hover {
       .ndd {
         background-color: $bghighlighted;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
-          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+
+        @include media-breakpoint-down(xxl) {
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+            rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          box-shadow: none;
+        }
       }
       .ndd-shadowfix {
         background-color: $bghighlighted;
@@ -21,22 +28,33 @@
       }
       .ndd-menu {
         display: block;
+
         box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
           rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
       }
     }
 
     .ndd-menu {
-      display: none;
       z-index: 1000;
-      position: absolute;
+      columns: 1;
       border-radius: 0 0 5px 5px;
       background-color: $bgprimary;
       min-width: 10rem;
-      padding: 0;
-      &.services {
-        columns: 2;
-        column-gap: 0;
+      column-gap: 0;
+
+      @include media-breakpoint-down(xxl) {
+        position: relative;
+        display: block;
+        padding: 0.5em 0.5em 0.5em 2.5em;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        position: absolute;
+        display: none;
+        padding: 0.5em;
+        &.col2 {
+          columns: 2;
+        }
       }
     }
 
@@ -50,10 +68,16 @@
     .ndd-item {
       width: 100%;
       list-style: none;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+
       .nav-link:hover {
-        box-shadow: none;
         color: $alert;
         background-color: $bghighlighted;
+        transform: translateZ(0);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
       }
     }
 

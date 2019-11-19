@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { FaTools } from "react-icons/fa";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { FaTools } from 'react-icons/fa';
 
-import ContactLink from "../components/ContactLink";
-import UtilityNav from "../components/UtilityNav";
-import NavDropdown from "../components/NavDropdown";
-import NavDropdownItem from "../components/NavDropdownItem";
+import ContactLink from '../components/ContactLink';
+import UtilityNav from '../components/UtilityNav';
+import NavDropdown from '../components/NavDropdown';
+import NavDropdownItem from '../components/NavDropdownItem';
 
-const pages = require("../data/pages.json").data.pages;
+const pages = require('../data/data.json').data.pages;
 
 function Header() {
   return (
@@ -43,8 +43,18 @@ function Header() {
                 return (
                   <Link
                     to={page.link}
+                    id={page.name === 'RequestService' ? 'service' : ''}
                     className="nav-link"
-                    children={page.title}
+                    children={
+                      page.name === 'RequestService' ? (
+                        <React.Fragment>
+                          <FaTools style={{ marginBottom: '3px' }} />{' '}
+                          {page.title}
+                        </React.Fragment>
+                      ) : (
+                        page.title
+                      )
+                    }
                     key={index}
                   />
                 );
@@ -53,8 +63,8 @@ function Header() {
                   <NavDropdown
                     title={page.title}
                     link={page.link}
-                    classes={page.classes}
                     key={index}
+                    css={page.name === 'Services' ? 'col2' : ''}
                     children={page.children.map((child, index) => {
                       return (
                         <NavDropdownItem
@@ -68,14 +78,6 @@ function Header() {
                 );
               }
             })}
-            {/* <Link
-              to={pages.requestService.link}
-              id="service"
-              className="nav-link"
-            >
-              <FaTools style={{ marginBottom: "3px" }} />{" "}
-              {pages.requestService.title}
-            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

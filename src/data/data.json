@@ -4,117 +4,135 @@
       {
         "name": "Home",
         "title": "Home",
-        "link": "/"
+        "link": "/",
+        "children": []
       },
       {
         "name": "Services",
         "title": "Services",
         "link": "/services",
-        "type": "parent",
-        "classes": "services",
         "children": [
           {
             "name": "Airmaid",
             "title": "Air Maid",
             "link": "/airmaid",
-            "type": "child"
+            "children": []
           },
           {
             "name": "BackflowPreventionDeviceCertification",
             "title": "Backflow Prevention & Device Certification",
-            "link": "/backflow-prevention-device-certification"
+            "link": "/backflow-prevention-device-certification",
+            "children": []
           },
           {
             "name": "Boilers",
             "title": "Boilers & Boiler Certification",
-            "link": "/boilers"
+            "link": "/boilers",
+            "children": []
           },
           {
             "name": "Boilers",
             "title": "Boilers & Boiler Certification",
-            "link": "/boilers"
+            "link": "/boilers",
+            "children": []
           },
           {
             "name": "BoosterSystems",
             "title": "Booster Systems",
-            "link": "/booster-systems"
+            "link": "/booster-systems",
+            "children": []
           },
           {
             "name": "BuildingControlsEnergyManagement",
             "title": "Building Controls & Energy Management",
-            "link": "/building-controls-energy-management"
+            "link": "/building-controls-energy-management",
+            "children": []
           },
           {
             "name": "DuctCleaning",
             "title": "Duct Cleaning",
-            "link": "/duct-cleaning"
+            "link": "/duct-cleaning",
+            "children": []
           },
           {
             "name": "HVAC",
             "title": "Heating, Ventilation & Air Conditioning",
-            "link": "/hvac"
+            "link": "/hvac",
+            "children": []
           },
           {
             "name": "JettingServices",
             "title": "Jetting Services",
-            "link": "/jetting-services"
+            "link": "/jetting-services",
+            "children": []
           },
           {
             "name": "Plumbing",
             "title": "Plumbing",
-            "link": "/plumbing"
+            "link": "/plumbing",
+            "children": []
           },
           {
             "name": "Refrigeration",
             "title": "Refrigeration",
-            "link": "/refrigeration"
+            "link": "/refrigeration",
+            "children": []
           },
           {
             "name": "Saunas",
             "title": "Saunas",
-            "link": "/saunas"
+            "link": "/saunas",
+            "children": []
           },
           {
             "name": "SheetMetal",
             "title": "Sheet Metal",
-            "link": "/sheet-metal"
+            "link": "/sheet-metal",
+            "children": []
           },
           {
             "name": "SteamBathsShowers",
             "title": "Steam Baths & Showers",
-            "link": "/steam-baths-showers"
+            "link": "/steam-baths-showers",
+            "children": []
           },
           {
             "name": "SteamGenerators",
             "title": "Steam Generators",
-            "link": "/steam-generators"
+            "link": "/steam-generators",
+            "children": []
           },
           {
             "name": "SumpPumpSystems",
             "title": "Sump Pump Systems",
-            "link": "/sump-pump-systems"
+            "link": "/sump-pump-systems",
+            "children": []
           },
           {
             "name": "WaterHeaters",
             "title": "Water Heaters",
-            "link": "/water-heaters"
+            "link": "/water-heaters",
+            "children": []
           },
           {
             "name": "WaterSofteners",
             "title": "Water Softeners",
-            "link": "/water-softeners"
+            "link": "/water-softeners",
+            "children": []
           },
           {
             "name": "WaterTreatment",
             "title": "Water Treatment",
-            "link": "/water-treatment"
+            "link": "/water-treatment",
+            "children": []
           }
         ]
       },
       {
         "name": "PeriodicMaintenance",
         "title": "Periodic Maintenance",
-        "link": "/periodic-maintenance"
+        "link": "/periodic-maintenance",
+        "children": []
       },
       {
         "name": "About",
@@ -124,7 +142,8 @@
           {
             "name": "GivingBack",
             "title": "Giving Back",
-            "link": "/giving-back"
+            "link": "/giving-back",
+            "children": []
           }
         ]
       },
@@ -132,7 +151,8 @@
       {
         "name": "Testimonials",
         "title": "Testimonials",
-        "link": "/testimonials"
+        "link": "/testimonials",
+        "children": []
       },
       {
         "name": "Contact",
@@ -142,14 +162,16 @@
           {
             "name": "StaffDirectory",
             "title": "Staff Directory",
-            "link": "/staff-directory"
+            "link": "/staff-directory",
+            "children": []
           }
         ]
       },
       {
         "name": "RequestService",
         "title": "Request Service/Estimate",
-        "link": "/request-service"
+        "link": "/request-service",
+        "children": []
       }
     ]
   }
