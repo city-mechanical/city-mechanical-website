@@ -1,5 +1,42 @@
 {
   "data": {
+    "cmi": {
+      "license": {
+        "number": 622065,
+        "classes": ["C4", "C20", "C36", "C38"]
+      },
+      "email": "service@citymechanical.com",
+      "phone": "1-800-698-6380",
+      "social": {
+        "facebook": "https://www.facebook.com/CityMechanicalInc/",
+        "instagram": "https://www.instagram.com/citymechanical_inc/",
+        "twitter": "https://twitter.com/City_Mechanical",
+        "yelp": "https://www.yelp.com/biz/city-mechanical-hercules"
+      }
+    },
+    "locations": [
+      {
+        "name": "Hercules",
+        "title": "Hercules Office - Corporate Headquarters",
+        "address": "724 Alfred Nobel Drive\nHercules, CA 94547",
+        "tel": "1-510-724-9088",
+        "fax": "1-510-724-8240"
+      },
+      {
+        "name": "SF",
+        "title": "San Francisco Office",
+        "address": "1925 Ingalls Street\nSan Francisco, CA 94124",
+        "tel": "1-510-724-9088",
+        "fax": "1-415-647-6249"
+      },
+      {
+        "name": "Petaluma",
+        "title": "Petaluma Office",
+        "address": "1130 Industrial Street, Suite #11\nPetaluma, CA 94952",
+        "tel": "1-510-724-9088",
+        "fax": "1-707-763-3014"
+      }
+    ],
     "pages": [
       {
         "name": "Home",
@@ -173,20 +210,6 @@
         "link": "/request-service",
         "children": []
       }
-    ],
-    "cmi": {
-      "license": {
-        "number": 622065,
-        "classes": ["C4", "C20", "C36", "C38"]
-      },
-      "email": "service@citymechanical.com",
-      "phone": "1-800-698-6380",
-      "social": {
-        "facebook": "https://www.facebook.com/CityMechanicalInc/",
-        "instagram": "https://www.instagram.com/citymechanical_inc/",
-        "twitter": "https://twitter.com/City_Mechanical",
-        "yelp": "https://www.yelp.com/biz/city-mechanical-hercules"
-      }
-    }
+    ]
   }
 }

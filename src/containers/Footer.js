@@ -1,6 +1,8 @@
 import React from "react";
 import UtilityNav from "../components/UtilityNav";
 
+const locations = require("../data/data.json").data.locations;
+
 function Footer() {
   return (
     <div id="footer">
