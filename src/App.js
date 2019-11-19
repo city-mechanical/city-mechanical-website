@@ -1,22 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Header from './containers/Header';
-import Footer from './containers/Footer';
+import Header from "./containers/Header";
+import Footer from "./containers/Footer";
 
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Airmaid from './pages/Airmaid';
-import BackflowPreventionDeviceCertification from './pages/BackflowPreventionDeviceCertification';
-import PeriodicMaintenance from './pages/PeriodicMaintenance';
-import About from './pages/About';
-import Testimonials from './pages/Testimonials';
-import Contact from './pages/Contact';
-import RequestService from './pages/RequestService';
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Airmaid from "./pages/Airmaid";
+import BackflowPreventionDeviceCertification from "./pages/BackflowPreventionDeviceCertification";
+import PeriodicMaintenance from "./pages/PeriodicMaintenance";
+import About from "./pages/About";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
+import RequestService from "./pages/RequestService";
 
-import './App.scss';
+import "./App.scss";
 
-const pages = require('./data/data.json').data.pages;
+const pages = require("./data/data.json").data.pages;
 
 function App() {
   const myPages = {

@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYelp } from 'react-icons/fa';
+import React from "react";
+import PropTypes from "prop-types";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYelp } from "react-icons/fa";
 
-const cmi = require('../data/data.json').data.cmi;
+const cmi = require("../data/data.json").data.cmi;
 
 const propTypes = {
   circle: PropTypes.bool,
-  type: PropTypes.oneOf(['facebook', 'instagram', 'twitter', 'yelp']).isRequired
+  type: PropTypes.oneOf(["facebook", "instagram", "twitter", "yelp"]).isRequired
 };
 
 const defaultProps = {
@@ -15,29 +15,29 @@ const defaultProps = {
 
 function build(type) {
   switch (type) {
-    case 'fb':
-    case 'facebook':
+    case "fb":
+    case "facebook":
       return {
-        name: 'facebook',
+        name: "facebook",
         icon: <FaFacebookF />,
         link: cmi.social.facebook
       };
-    case 'insta':
-    case 'instagram':
+    case "insta":
+    case "instagram":
       return {
-        name: 'instagram',
+        name: "instagram",
         icon: <FaInstagram />,
         link: cmi.social.instagram
       };
-    case 'twitter':
+    case "twitter":
       return {
-        name: 'twitter',
+        name: "twitter",
         icon: <FaTwitter />,
         link: cmi.social.twitter
       };
-    case 'yelp':
+    case "yelp":
       return {
-        name: 'yelp',
+        name: "yelp",
         icon: <FaYelp />,
         link: cmi.social.yelp
       };
@@ -53,7 +53,7 @@ function SocialIcon(props) {
   let classes = `socialIcon ${socialIcon.name}`;
 
   if (circle) {
-    classes += ' circle';
+    classes += " circle";
   }
 
   return (
