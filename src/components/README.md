@@ -1,6 +1,6 @@
 # City Mechanical's Components
 
-Regardless of the design approach that is adopted for future development, it is important to describe the various components that will be used in this project.  These components may be based off of a standard ui framework, such as antd, or a custom built one.  This file aims to cover the heirarchy of the various components within this project, along with a description of how they fit into the atomic design ideology.
+Regardless of the design approach that is adopted for future development, it is important to describe the various components that will be used in this project. These components may be based off of a standard ui framework, such as antd, or a custom built one. This file aims to cover the heirarchy of the various components within this project, along with a description of how they fit into the atomic design ideology.
 
 ## Component Structure
 
@@ -16,7 +16,7 @@ Using atomic design, this project's components can be categorized into 1 of 5 ca
 
 ### Atoms
 
-These components represent basic elements which cannot be broken down any further without ceasing to be functional. (ex. `Label`, `InputField`, `Button`, etc.)  The `Atom` components within this project include:
+These components represent basic elements which cannot be broken down any further without ceasing to be functional. (ex. `Label`, `InputField`, `Button`, etc.) The `Atom` components within this project include:
 
 - [Component1](#Component1)
 
@@ -26,7 +26,7 @@ These components represent basic elements which cannot be broken down any furthe
 
 ### Molecules
 
-These components represent realatively simple UI groups of `Atom` components working together. (ex. A `SearchBar` consisting of an `InputField` with a `Label` and `Button`)  The `Molecule` components within this project include:
+These components represent realatively simple UI groups of `Atom` components working together. (ex. A `SearchBar` consisting of an `InputField` with a `Label` and `Button`) The `Molecule` components within this project include:
 
 - [Component2](#Component2)
 
@@ -36,7 +36,7 @@ These components represent realatively simple UI groups of `Atom` components wor
 
 ### Organisms
 
-These components represent realatively complex UI groups of `Molecule` components and/or `Atom` components and/or other `Organism` components working together. (ex. A `Header` consisting of a `Logo` along with a `MenuNav` and `SearchBar`)  The `Molecule` components within this project include:
+These components represent realatively complex UI groups of `Molecule` components and/or `Atom` components and/or other `Organism` components working together. (ex. A `Header` consisting of a `Logo` along with a `MenuNav` and `SearchBar`) The `Organism` components within this project include:
 
 - [Component3](#Component3)
 
@@ -56,7 +56,7 @@ These components are page-level objects that are used to structure the project's
 
 ### Pages
 
-These components represent content more than they represent reusable components - specific intances of `Template` components. (ex. `Home`, `Boilers`, `Contact`, etc.)  The `Page` components within this project include:
+These components represent content more than they represent reusable components - specific intances of `Template` components. (ex. `Home`, `Boilers`, `Contact`, etc.) The `Page` components within this project include:
 
 - [Component5](#Component5)
 

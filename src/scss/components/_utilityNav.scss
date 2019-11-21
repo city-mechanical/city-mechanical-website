@@ -1,28 +1,28 @@
-.contactBar {
-  color: $fontPrimary;
+.utilityNav {
+  color: $fprimary;
   background-color: $primary;
   line-height: 1;
   @include font-size(14px);
 
   // Use a map
-  &.contactBar-xs {
-    @include cbp($basespace*2);
+  &.utilityNav-xs {
+    @include cbp($basespace * 2);
   }
 
-  &.contactBar-sm {
-    @include cbp($basespace*3);
-  }
-  
-  &.contactBar-md {
-    @include cbp($basespace*4);
+  &.utilityNav-sm {
+    @include cbp($basespace * 3);
   }
 
-  &.contactBar-lg {
-    @include cbp($basespace*5);
+  &.utilityNav-md {
+    @include cbp($basespace * 4);
   }
 
-  &.contactBar-xl {
-    @include cbp($basespace*6);
+  &.utilityNav-lg {
+    @include cbp($basespace * 5);
+  }
+
+  &.utilityNav-xl {
+    @include cbp($basespace * 6);
   }
 
   .container {
@@ -34,7 +34,7 @@
         width: 100%;
       }
 
-      .contactLink  + .contactLink {
+      .contactLink + .contactLink {
         margin-left: 15px;
       }
     }

@@ -8,11 +8,11 @@
   }
 
   a {
-    color: $fontPrimary;
+    color: $fprimary;
 
     &:hover {
       text-decoration: none;
-      color: $fontContact;
+      color: $danger;
     }
   }
 

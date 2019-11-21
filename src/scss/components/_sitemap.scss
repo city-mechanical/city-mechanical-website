@@ -1,0 +1,22 @@
+.sitemap {
+  .sitemap-link {
+    //display: inline-block;
+
+    margin-left: -0.5em;
+    a {
+      color: $fprimary;
+      @include font-size(14px);
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 0.125em 0.5em;
+
+      display: inline-block;
+
+      &:hover {
+        color: $alert;
+        box-shadow: $elevation;
+        background-color: $primary;
+      }
+    }
+  }
+}

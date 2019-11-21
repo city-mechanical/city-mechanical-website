@@ -12,25 +12,52 @@
 
   &:hover {
     color: inherit;
-    
+
     &.facebook {
       background-color: $facebook;
     }
 
     &.instagram {
-      background:
-        radial-gradient(circle farthest-corner at 35% 100%, map-get($instagram, 9), transparent 50%),
-        radial-gradient(circle farthest-corner at 0 150%, map-get($instagram, 5), transparent 50%),
-        radial-gradient(ellipse farthest-corner at 0 -15%, map-get($instagram, 0), transparent 50%),
-        radial-gradient(ellipse farthest-corner at 20% -40%, map-get($instagram, 1), transparent 50%),
-        radial-gradient(ellipse farthest-corner at 100% 10%, map-get($instagram, 2), transparent 50%),
-        radial-gradient(ellipse farthest-corner at 60% -10%, map-get($instagram, 3), transparent 50%),
-        radial-gradient(ellipse farthest-corner at 100% 110%, map-get($instagram, 4), transparent),
+      background: radial-gradient(
+          circle farthest-corner at 35% 100%,
+          map-get($instagram, 9),
+          transparent 50%
+        ),
+        radial-gradient(
+          circle farthest-corner at 0 150%,
+          map-get($instagram, 5),
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 0 -15%,
+          map-get($instagram, 0),
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 20% -40%,
+          map-get($instagram, 1),
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 100% 10%,
+          map-get($instagram, 2),
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 60% -10%,
+          map-get($instagram, 3),
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 100% 110%,
+          map-get($instagram, 4),
+          transparent
+        ),
         linear-gradient(
-          map-get($instagram, 1), 
-          map-get($instagram, 2) 30%, 
-          map-get($instagram, 4) 50%, 
-          map-get($instagram, 7) 70%, 
+          map-get($instagram, 1),
+          map-get($instagram, 2) 30%,
+          map-get($instagram, 4) 50%,
+          map-get($instagram, 7) 70%,
           map-get($instagram, 9) 100%
         );
     }

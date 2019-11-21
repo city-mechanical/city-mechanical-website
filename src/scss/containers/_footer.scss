@@ -1,5 +1,39 @@
 #footer {
-  .contactBar {
+  background-color: $secondary;
+  color: $fprimary;
+  .footer-main {
+    padding-top: $containerSpace;
+    padding-bottom: $containerSpace;
+  }
+  .footer-col {
+    .title {
+      margin-bottom: 0.5em;
+    }
+    .content {
+      line-height: 1.75em;
+      @include font-size(14px);
+    }
+  }
+  .utilityNav {
     @include font-size(12px);
+  }
+  @include media-breakpoint-down(md) {
+    .row > .adr-col + .adr-col {
+      margin-top: 3em;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .footer-main > .row > .footer-col:last-child {
+      margin-top: 3em;
+    }
+    .footer-main > .row > .footer-col:first-child {
+      margin-bottom: 3em;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .row > .adr-col:first-child {
+      margin-bottom: 3em;
+    }
   }
 }

@@ -1,0 +1,215 @@
+{
+  "data": {
+    "cmi": {
+      "license": {
+        "number": 622065,
+        "classes": ["C4", "C20", "C36", "C38"]
+      },
+      "email": "service@citymechanical.com",
+      "phone": "1-800-698-6380",
+      "social": {
+        "facebook": "https://www.facebook.com/CityMechanicalInc/",
+        "instagram": "https://www.instagram.com/citymechanical_inc/",
+        "twitter": "https://twitter.com/City_Mechanical",
+        "yelp": "https://www.yelp.com/biz/city-mechanical-hercules"
+      }
+    },
+    "locations": [
+      {
+        "name": "Hercules",
+        "title": "Hercules Office - Corporate Headquarters",
+        "address": "724 Alfred Nobel Drive\nHercules, CA 94547",
+        "tel": "1-510-724-9088",
+        "fax": "1-510-724-8240"
+      },
+      {
+        "name": "SF",
+        "title": "San Francisco Office",
+        "address": "1925 Ingalls Street\nSan Francisco, CA 94124",
+        "tel": "1-510-724-9088",
+        "fax": "1-415-647-6249"
+      },
+      {
+        "name": "Petaluma",
+        "title": "Petaluma Office",
+        "address": "1130 Industrial Street, Suite #11\nPetaluma, CA 94952",
+        "tel": "1-510-724-9088",
+        "fax": "1-707-763-3014"
+      }
+    ],
+    "pages": [
+      {
+        "name": "Home",
+        "title": "Home",
+        "link": "/",
+        "children": []
+      },
+      {
+        "name": "Services",
+        "title": "Services",
+        "link": "/services",
+        "children": [
+          {
+            "name": "Airmaid",
+            "title": "Air Maid",
+            "link": "/airmaid",
+            "children": []
+          },
+          {
+            "name": "BackflowPreventionDeviceCertification",
+            "title": "Backflow Prevention & Device Certification",
+            "link": "/backflow-prevention-device-certification",
+            "children": []
+          },
+          {
+            "name": "Boilers",
+            "title": "Boilers & Boiler Certification",
+            "link": "/boilers",
+            "children": []
+          },
+          {
+            "name": "Boilers",
+            "title": "Boilers & Boiler Certification",
+            "link": "/boilers",
+            "children": []
+          },
+          {
+            "name": "BoosterSystems",
+            "title": "Booster Systems",
+            "link": "/booster-systems",
+            "children": []
+          },
+          {
+            "name": "BuildingControlsEnergyManagement",
+            "title": "Building Controls & Energy Management",
+            "link": "/building-controls-energy-management",
+            "children": []
+          },
+          {
+            "name": "DuctCleaning",
+            "title": "Duct Cleaning",
+            "link": "/duct-cleaning",
+            "children": []
+          },
+          {
+            "name": "HVAC",
+            "title": "Heating, Ventilation & Air Conditioning",
+            "link": "/hvac",
+            "children": []
+          },
+          {
+            "name": "JettingServices",
+            "title": "Jetting Services",
+            "link": "/jetting-services",
+            "children": []
+          },
+          {
+            "name": "Plumbing",
+            "title": "Plumbing",
+            "link": "/plumbing",
+            "children": []
+          },
+          {
+            "name": "Refrigeration",
+            "title": "Refrigeration",
+            "link": "/refrigeration",
+            "children": []
+          },
+          {
+            "name": "Saunas",
+            "title": "Saunas",
+            "link": "/saunas",
+            "children": []
+          },
+          {
+            "name": "SheetMetal",
+            "title": "Sheet Metal",
+            "link": "/sheet-metal",
+            "children": []
+          },
+          {
+            "name": "SteamBathsShowers",
+            "title": "Steam Baths & Showers",
+            "link": "/steam-baths-showers",
+            "children": []
+          },
+          {
+            "name": "SteamGenerators",
+            "title": "Steam Generators",
+            "link": "/steam-generators",
+            "children": []
+          },
+          {
+            "name": "SumpPumpSystems",
+            "title": "Sump Pump Systems",
+            "link": "/sump-pump-systems",
+            "children": []
+          },
+          {
+            "name": "WaterHeaters",
+            "title": "Water Heaters",
+            "link": "/water-heaters",
+            "children": []
+          },
+          {
+            "name": "WaterSofteners",
+            "title": "Water Softeners",
+            "link": "/water-softeners",
+            "children": []
+          },
+          {
+            "name": "WaterTreatment",
+            "title": "Water Treatment",
+            "link": "/water-treatment",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "PeriodicMaintenance",
+        "title": "Periodic Maintenance",
+        "link": "/periodic-maintenance",
+        "children": []
+      },
+      {
+        "name": "About",
+        "title": "About",
+        "link": "/about",
+        "children": [
+          {
+            "name": "GivingBack",
+            "title": "Giving Back",
+            "link": "/giving-back",
+            "children": []
+          }
+        ]
+      },
+
+      {
+        "name": "Testimonials",
+        "title": "Testimonials",
+        "link": "/testimonials",
+        "children": []
+      },
+      {
+        "name": "Contact",
+        "title": "Contact",
+        "link": "/contact",
+        "children": [
+          {
+            "name": "StaffDirectory",
+            "title": "Staff Directory",
+            "link": "/staff-directory",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "RequestService",
+        "title": "Request Service/Estimate",
+        "link": "/request-service",
+        "children": []
+      }
+    ]
+  }
+}

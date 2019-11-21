@@ -1,9 +1,0 @@
-.footerBar {
-  color: $fontPrimary;
-  background-color: $secondary;
-  @include font-size(14px);
-
-  padding-top: $footerBar-space*1.25;
-  padding-bottom: $footerBar-space*1.25;
-  margin-bottom: -$footerCol-space;
-}

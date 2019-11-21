@@ -13,40 +13,44 @@ $font-size-base: 0.75rem;
 
 // Spacing
 $basespace: 2.5px;
+$containerSpace: 4em;
 
-// Component Padding & Margins
-$footerBar-space: $basespace*15;
-$footerCol-space: $basespace*12;
-$smapBtn-space: $basespace*3;
-
-// Brand
+// Palette
 //
-// Define the global brand colors (needs to be renamed)
-$primary: #1a3765;
-$secondary: #00113a;
-$highlighted: #4b6193;
+// Defines generic palette colors
 
-$fontPrimary: #ffffff;
-$fontContact: #ff1d00;
-
-$alert: #ffb300;
+$white: #fff;
+$black: #000;
 
 $blue-1: #424d67;
 $blue-2: #242e42;
 $blue-3: #2e3952;
 $blue-4: #445270;
-$blue-5: #293856;
 
-$grey-0: #000000;
-$grey-1: #ffffff;
 $grey-2: #aaaaaa;
 $grey-3: #40403f;
 $grey-4: #6c6c6b;
 $grey-5: #dfdfdf;
 $grey-6: #c6c6c6;
 
-$alert-yellow: #feaa01;
-$contact-red: #fd411c;
+$elevation: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+  rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+
+// Brand
+//
+// Define the global brand colors (needs to be renamed)
+$primary: #1a3765; // #293856
+$secondary: #142c50; // #00113a;
+$highlighted: #4b6193;
+
+$danger: #ff1d00; // #fd411c;
+$alert: #ffb300; // #feaa01;
+
+$fprimary: $white;
+$fsecondary: #727272; // #747472
+
+$bgprimary: #fafafa;
+$bghighlighted: $white;
 
 // Social Media
 //
@@ -76,8 +80,13 @@ $yelp: #d32323;
 $grid-breakpoints: (
   tn: 0,
   xs: 475px,
-  sm: 576px, // default
-  md: 768px, // default
-  lg: 992px, // default
-  xl: 1200px // default
+  sm: 576px,
+  // default
+    md: 768px,
+  // default
+    lg: 992px,
+  // default
+    xl: 1200px,
+  //default
+    xxl: 1300px
 ) !default;
