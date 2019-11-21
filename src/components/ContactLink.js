@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaFax } from "react-icons/fa";
 
 const propTypes = {
   data: PropTypes.string.isRequired,
   icon: PropTypes.bool,
   spacing: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl"]),
-  customType: PropTypes.oneOf(["phone", "email"])
+  customType: PropTypes.oneOf(["phone", "email", "fax"])
 };
 
 const defaultProps = {
@@ -69,6 +69,9 @@ class ContactLink extends Component {
         case "email":
           iconRender = <FaEnvelope className={iconClasses} />;
           break;
+        case "fax":
+          iconRender = <FaFax className={iconClasses} />;
+          break;
         default:
           iconRender = null;
       }
@@ -93,7 +96,7 @@ class ContactLink extends Component {
       linkRender = <a href={href}>{data}</a>;
     }
 
-    if (currentType === "phone") {
+    if (currentType === "phone" || currentType === "fax") {
       const phoneNumber = this.formatPhoneNumber(data);
       let href = "tel:";
 

@@ -67,7 +67,7 @@ function App() {
             }
 
             return (
-              <React.Fragment>
+              <React.Fragment key={index}>
                 <Route
                   path={page.link}
                   component={myPages[page.name]}

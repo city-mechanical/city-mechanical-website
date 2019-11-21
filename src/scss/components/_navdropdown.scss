@@ -10,9 +10,7 @@
     &:hover {
       .ndd {
         background-color: $bghighlighted;
-
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
-          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+        box-shadow: $elevation;
       }
       .ndd-shadowfix {
         background-color: $bghighlighted;
@@ -22,9 +20,7 @@
       }
       .ndd-menu {
         display: block;
-
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
-          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+        box-shadow: $elevation;
       }
     }
 
@@ -70,8 +66,7 @@
         color: $alert;
         background-color: $bghighlighted;
         transform: translateZ(0);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
-          rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+        box-shadow: $elevation;
       }
     }
 
