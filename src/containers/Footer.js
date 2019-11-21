@@ -17,7 +17,7 @@ function Footer() {
       <Container className="footer-main">
         <Row>
           <Col md={12} lg={3} className="footer-col">
-            <h4 className="title">Additional Info</h4>
+            <h3 className="title">Additional Info</h3>
             <div className="content">License Number: {cmi.license.number}</div>
             <div className="content">
               Classes: {cmi.license.classes.join(", ")}
@@ -49,7 +49,7 @@ function Footer() {
             </Row>
           </Col>
           <Col md={12} lg={3} className="footer-col">
-            <h4 className="title">Navigation</h4>
+            <h3 className="title">Navigation</h3>
             <div className="sitemap">
               {pages.map((page, index) => {
                 if (
@@ -69,7 +69,7 @@ function Footer() {
                       return (
                         <Sitemap
                           title={child.title}
-                          link={child.link}
+                          link={page.link + child.link}
                           key={index}
                           className="child"
                         />

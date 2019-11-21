@@ -5,8 +5,9 @@
   font-weight: 400;
 
   .navbar-brand {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-left: -0.5em;
     margin-right: 0;
     padding: 0.5rem;
     color: $fsecondary;
@@ -38,7 +39,7 @@
       color: $fsecondary;
       border-radius: 5px;
 
-      &#service {
+      &.service-nav-link {
         color: $primary;
 
         &:hover {
@@ -51,16 +52,20 @@
       }
     }
   }
-}
 
-.nav-link {
-  @media (min-width: 1350px) {
-    padding-right: 0.8em !important;
-    padding-left: 0.8em !important;
-  }
+  .nav-link {
+    &.brand {
+      padding: 0rem !important;
+    }
 
-  @media (max-width: 1350px) {
-    padding-right: 0.6em !important;
-    padding-left: 0.6em !important;
+    @include media-breakpoint-up(xxxl) {
+      padding-right: 0.75em !important;
+      padding-left: 0.75em !important;
+    }
+
+    @include media-breakpoint-down(xxxl) {
+      padding-right: 0.55em !important;
+      padding-left: 0.55em !important;
+    }
   }
 }

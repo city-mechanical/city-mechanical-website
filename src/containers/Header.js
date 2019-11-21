@@ -27,7 +27,7 @@ function Header() {
         social
       />
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
-        <Link to={pages[0].link} className="nav-link">
+        <Link to={pages[0].link} className="nav-link brand">
           <Navbar.Brand>
             <img
               src={process.env.PUBLIC_URL + `/cmi-banner.png`}
@@ -44,8 +44,11 @@ function Header() {
                 return (
                   <Link
                     to={page.link}
-                    id={page.name === "RequestService" ? "service" : ""}
-                    className="nav-link"
+                    className={
+                      page.name === "RequestService"
+                        ? "service-nav-link nav-link"
+                        : "nav-link"
+                    }
                     children={
                       page.name === "RequestService" ? (
                         <React.Fragment>
@@ -70,7 +73,7 @@ function Header() {
                       return (
                         <NavDropdownItem
                           title={child.title}
-                          link={child.link}
+                          link={page.link + child.link}
                           key={index}
                         />
                       );

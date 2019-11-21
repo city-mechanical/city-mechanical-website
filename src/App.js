@@ -77,7 +77,7 @@ function App() {
                 {page.children.map((child, index) => {
                   return (
                     <Route
-                      path={child.link}
+                      path={page.link + child.link}
                       component={myPages[child.name]}
                       key={index}
                       exact
