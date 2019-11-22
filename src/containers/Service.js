@@ -10,15 +10,14 @@ const propTypes = {};
 const defaultProps = {};
 
 function Service(props) {
-  const { title, banner, overview, path, children } = props;
+  const { title, banner, overview, breadcrumbs, children } = props;
 
   return (
     <div id="service">
       <Banner
         img={process.env.PUBLIC_URL + banner}
         title={title}
-        subtitle={true}
-        links={path.split("/")}
+        breadcrumbs={breadcrumbs}
       />
       <Container>
         <Row>

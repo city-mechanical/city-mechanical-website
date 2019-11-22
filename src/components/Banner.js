@@ -9,32 +9,32 @@ const propTypes = {};
 const defaultProps = {};
 
 function Banner(props) {
-  const { title, img, subtitle, links } = props;
-
-  console.log(links);
+  const { title, img, breadcrumbs } = props;
+  const breadcrumbLength = breadcrumbs.length;
 
   return (
     <Container id="banner" style={{ backgroundImage: "url(" + img + ")" }}>
       <div className="overlay" />
-      {title ? <h1 className="banner-title">{title}</h1> : null}
-      {subtitle ? (
-        <div className="banner-subtitle">
-          <Link to={"/"} className="breadcrumb">
-            Home
-          </Link>
-          {"/"}
-          <Link to={"/" + props.links[1]} className="breadcrumb">
-            Services
-          </Link>
-          {"/"}
-          <Link
-            to={"/" + props.links[1] + "/" + props.links[2]}
-            className="breadcrumb"
-          >
-            {title}
-          </Link>
-        </div>
-      ) : null}
+      <div className="content">
+        {title ? <h1 className="banner-title">{title}</h1> : null}
+        {breadcrumbs ? (
+          <div className="banner-subtitle">
+            {breadcrumbs.map((breadcrumb, index) => {
+              return (
+                <React.Fragment key={index}>
+                  <Link
+                    to={breadcrumb[1]}
+                    className="breadcrumb"
+                    children={breadcrumb[0]}
+                    key={index}
+                  />
+                  {breadcrumbLength === index + 1 ? null : "/"}
+                </React.Fragment>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
     </Container>
   );
 }
