@@ -69,7 +69,11 @@ function App() {
                                 banner={child.banner}
                                 overview={child.overview}
                                 children={myPages[child.name]}
-                                path={page.link + child.link}
+                                breadcrumbs={[
+                                  [pages[0].title, pages[0].link],
+                                  [page.title, page.link],
+                                  [child.title, page.link + child.link]
+                                ]}
                               />
                             )
                           : myPages[child.name]
