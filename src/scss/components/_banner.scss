@@ -1,0 +1,50 @@
+#banner {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 10em + ($containerSpace * 2);
+  overflow: hidden;
+  text-align: center;
+  color: $fprimary;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .banner-title {
+    margin-top: 0.875em;
+    margin-bottom: 0em;
+    position: relative;
+  }
+  .banner-subtitle {
+    @include font-size(14px);
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    position: relative;
+  }
+
+  .breadcrumb {
+    background-color: rgba(0, 0, 0, 0);
+    color: $fprimary;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    &:hover {
+      color: $alert;
+      box-shadow: $elevation;
+    }
+  }
+}

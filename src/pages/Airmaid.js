@@ -1,72 +1,7 @@
 import React from "react";
 
-function Airmaid() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
-  };
-
-  return (
-    <div style={divStyle}>
-      <h1>Airmaid CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1 style={h1Style}>FILLER CONTENT</h1>
-    </div>
-  );
+function Airmaid(props) {
+  return <div>Do this to add additional content to a service page</div>;
 }
 
 export default Airmaid;

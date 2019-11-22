@@ -6,8 +6,8 @@ import Footer from "./containers/Footer";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Service from "./containers/Service";
 import Airmaid from "./pages/Airmaid";
-import BackflowPreventionDeviceCertification from "./pages/BackflowPreventionDeviceCertification";
 import PeriodicMaintenance from "./pages/PeriodicMaintenance";
 import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
@@ -22,24 +22,7 @@ function App() {
   const myPages = {
     Home,
     Services,
-    Airmaid,
-    BackflowPreventionDeviceCertification,
-    // Boilers,
-    // BoosterSystems,
-    // BuildingControlsEnergyManagement,
-    // DuctCleaning,
-    // HVAC,
-    // JettingServices,
-    // Plumbing,
-    // Refrigeration,
-    // Saunas,
-    // SheetMetal,
-    // SteamBathsShowers,
-    // SteamGenerators,
-    // SumpPumpSystems,
-    // WaterHeaters,
-    // WaterSofteners,
-    // WaterTreatment,
+    Airmaid: <Airmaid />,
     PeriodicMaintenance,
     About,
     // GivingBack,
@@ -77,8 +60,20 @@ function App() {
                 {page.children.map((child, index) => {
                   return (
                     <Route
-                      path={child.link}
-                      component={myPages[child.name]}
+                      path={page.link + child.link}
+                      component={
+                        page.title === "Services"
+                          ? () => (
+                              <Service
+                                title={child.title}
+                                banner={child.banner}
+                                overview={child.overview}
+                                children={myPages[child.name]}
+                                path={page.link + child.link}
+                              />
+                            )
+                          : myPages[child.name]
+                      }
                       key={index}
                       exact
                     />

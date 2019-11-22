@@ -4,29 +4,14 @@
  * Used to apply global app padding to top level container components.
  */
 
- @mixin appad {
+@mixin appad {
   @include media-breakpoint-up(xs) {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   @include media-breakpoint-up(sm) {
     padding-left: 40px;
     padding-right: 40px;
-  }
-  
-  // @include media-breakpoint-up(md) {
-  //   padding-left: 50px;
-  //   padding-right: 50px;
-  // }
-  
-  // @include media-breakpoint-up(lg) {
-  //   padding-left: 100px;
-  //   padding-right: 100px;
-  // }
-  
-  @include media-breakpoint-up(xl) {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }

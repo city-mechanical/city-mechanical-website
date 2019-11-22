@@ -40,8 +40,8 @@ $elevation: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
 //
 // Define the global brand colors (needs to be renamed)
 $primary: #1a3765; // #293856
-$secondary: #142c50; // #00113a;
-$highlighted: #4b6193;
+$secondary: #122646; // #00113a;
+$highlighted: #224884; //#4b6193;
 
 $danger: #ff1d00; // #fd411c;
 $alert: #ffb300; // #feaa01;
@@ -88,5 +88,6 @@ $grid-breakpoints: (
   // default
     xl: 1200px,
   //default
-    xxl: 1300px
+    xxl: 1300px,
+  xxxl: 1350px
 ) !default;
