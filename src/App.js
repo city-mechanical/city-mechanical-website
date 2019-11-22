@@ -69,6 +69,7 @@ function App() {
                                 banner={child.banner}
                                 overview={child.overview}
                                 children={myPages[child.name]}
+                                path={page.link + child.link}
                               />
                             )
                           : myPages[child.name]

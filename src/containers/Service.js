@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Banner from "../components/Banner";
 
 const propTypes = {};
 
 const defaultProps = {};
 
 function Service(props) {
-  const { title, banner, overview, children } = props;
+  const { title, banner, overview, path, children } = props;
 
   return (
     <div id="service">
-      <Container id="banner">
-        <div>Home / Services / {title}</div>
-        <img
-          src={process.env.PUBLIC_URL + banner}
-          alt={title + "Banner Image"}
-          className="banner"
-        />
-      </Container>
+      <Banner
+        img={process.env.PUBLIC_URL + banner}
+        title={title}
+        subtitle={true}
+        links={path.split("/")}
+      />
       <Container>
         <Row>
           <Col md={12} lg={6} className="service-overview">
