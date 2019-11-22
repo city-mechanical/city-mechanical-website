@@ -3,11 +3,12 @@
   margin: 0;
   max-width: 100%;
   width: 100%;
-  height: 10em + ($containerSpace * 2);
+  height: 10rem + ($containerSpace * 2);
   overflow: hidden;
   text-align: center;
   color: $fprimary;
   position: relative;
+  background-color: $primary;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
