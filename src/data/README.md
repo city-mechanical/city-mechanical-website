@@ -8,37 +8,39 @@ Once frontend development is fully designed, and completed. Then, the WordPress 
 
 ```jsonc
 "data": {
-    "cmi": {                // cmi business info
-      "license": {          // cmi license info
-          "number": 0,      // cmi license number
-          "classes": [""]   // cmi license classes
+    "cmi": {                    // cmi business info
+      "license": {              // cmi license info
+          "number": 0,          // cmi license number
+          "classes": [""]       // cmi license classes
       },
-      "email": "",          // cmi service email
-      "phone": "",          // cmi service phone
+      "email": "",              // cmi service email
+      "phone": "",              // cmi service phone
       "social": {
-          "facebook": "",   // facebook page link
-          "instagram": "",  // instagram page link
-          "twitter": "",    // twitter page link
-          "yelp": ""        // yelp page link
+          "facebook": "",       // facebook page link
+          "instagram": "",      // instagram page link
+          "twitter": "",        // twitter page link
+          "yelp": ""            // yelp page link
         }
     },
 
-    "locations": [          // cmi shop information
+    "locations": [              // cmi shop information
         {
-            "name": "",     // location reference name
-            "title": "",    // rendered location name
-            "address": "",  // shop address
-            "tel": "",      // shop primary telephone
-            "fax": ""       // shop primary fax
+            "name": "",         // location reference name
+            "title": "",        // rendered location name
+            "address": "",      // shop address
+            "tel": "",          // shop primary telephone
+            "fax": ""           // shop primary fax
         }
     ],
 
-    "pages": [              // page metadata
+    "pages": [                  // page metadata
         {
-            "name": "",     // rendered page component (used as reference name)
-            "title": "",    // rendered page name (what renders on navbar, etc.)
-            "link": "",     // page link
-            "children": ""  // child pages (used to display relationship between pages such as 'Service' and 'Boilers')
+            "name": "",         // rendered page component (used as reference name)
+            "title": "",        // rendered page name (what renders on navbar, etc.)
+            "link": "",         // page link
+            "banner": "",       // banner image link, points to which image should render
+            "overview": [""],   // service overview for service pages (each string is a paragraph)
+            "children": ""      // child pages (used to display relationship between pages such as 'Service' and 'Boilers')
         }
     ]
 }

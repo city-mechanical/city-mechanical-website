@@ -30,7 +30,7 @@ function Header() {
         <Link to={pages[0].link} className="nav-link brand">
           <Navbar.Brand>
             <img
-              src={process.env.PUBLIC_URL + `/cmi-banner.png`}
+              src={process.env.PUBLIC_URL + `/images/cmi-logo.png`}
               alt="City Mechanical Banner Logo"
               className="navLogo"
             />

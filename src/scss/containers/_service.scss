@@ -1,0 +1,59 @@
+#service {
+  background-color: $bgprimary;
+
+  #banner {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 10em + ($containerSpace * 2);
+    overflow: hidden;
+    img {
+      height: fit-content;
+    }
+  }
+
+  .container {
+    padding-top: $containerSpace;
+    padding-bottom: $containerSpace;
+  }
+
+  .title {
+    margin-bottom: 1.25em;
+  }
+
+  p {
+    @include font-size(16px);
+  }
+
+  .service-overview {
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .request-service {
+      @include font-size(16px);
+      color: $fprimary;
+      background-color: $secondary;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      margin-top: 2.5em;
+
+      &:hover {
+        background-color: $primary;
+        color: $danger;
+        box-shadow: $elevation;
+      }
+    }
+  }
+
+  .service-content {
+    @include font-size(16px);
+
+    @include media-breakpoint-down(md) {
+      margin-top: 3em;
+    }
+  }
+}
