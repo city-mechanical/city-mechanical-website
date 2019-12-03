@@ -11,11 +11,11 @@
     }
     .content {
       line-height: 1.75em;
-      @include font-size(14px);
+      @include font-size($font-size-base);
     }
   }
   .utilityNav {
-    @include font-size(12px);
+    @include font-size(($font-size-base / 7) * 6);
   }
   @include media-breakpoint-down(md) {
     .row > .adr-col + .adr-col {

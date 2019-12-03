@@ -14,8 +14,6 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import RequestService from "./pages/RequestService";
 
-import "./App.scss";
-
 const pages = require("./data/data.json").data.pages;
 
 function App() {

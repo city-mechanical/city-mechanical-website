@@ -36,15 +36,15 @@
     margin-bottom: 0em;
     position: relative;
     @include media-breakpoint-down(xs) {
-      font-size: 2rem;
+      @include font-size($font-size-base * 2);
     }
   }
   .banner-subtitle {
-    @include font-size(14px);
+    @include font-size($font-size-base);
     margin-top: 1.25rem;
     position: relative;
     @include media-breakpoint-down(xs) {
-      @include font-size(12px);
+      @include font-size($font-size-base * 0.75);
     }
 
     a {
