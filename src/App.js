@@ -52,7 +52,14 @@ function generateRoutes(page, index) {
   let routes = [];
 
   routes.push(
-    <Route path={page.link} component={myPages[page.name]} key={index} exact />
+    <Route
+      path={
+        page.name === "Home" ? process.env.PUBLIC_URL + page.link : page.link
+      }
+      component={myPages[page.name]}
+      key={index}
+      exact
+    />
   );
 
   page.children.forEach((child, index) => {
