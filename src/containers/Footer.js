@@ -60,11 +60,7 @@ function Footer() {
                   return (
                     <Sitemap
                       title={page.title}
-                      link={
-                        page.name === "Home"
-                          ? process.env.PUBLIC_URL + page.link
-                          : page.link
-                      }
+                      link={process.env.PUBLIC_URL + page.link}
                       key={index}
                     />
                   );
@@ -72,12 +68,16 @@ function Footer() {
 
                 return (
                   <React.Fragment key={index}>
-                    <Sitemap title={page.title} link={page.link} key={index} />
+                    <Sitemap
+                      title={page.title}
+                      link={process.env.PUBLIC_URL + page.link}
+                      key={index}
+                    />
                     {page.children.map((child, index) => {
                       return (
                         <Sitemap
                           title={child.title}
-                          link={page.link + child.link}
+                          link={process.env.PUBLIC_URL + page.link + child.link}
                           key={index}
                           className="child"
                         />
