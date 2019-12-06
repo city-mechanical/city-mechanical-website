@@ -58,7 +58,15 @@ function Footer() {
                   page.name === "Services"
                 ) {
                   return (
-                    <Sitemap title={page.title} link={page.link} key={index} />
+                    <Sitemap
+                      title={page.title}
+                      link={
+                        page.name === "Home"
+                          ? process.env.PUBLIC_URL + page.link
+                          : page.link
+                      }
+                      key={index}
+                    />
                   );
                 }
 

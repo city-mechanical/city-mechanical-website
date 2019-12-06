@@ -27,7 +27,10 @@ function Header() {
         social
       />
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
-        <Link to={pages[0].link} className="nav-link brand">
+        <Link
+          to={process.env.PUBLIC_URL + pages[0].link}
+          className="nav-link brand"
+        >
           <Navbar.Brand>
             <img
               src={process.env.PUBLIC_URL + `/images/cmi-logo.png`}
@@ -43,7 +46,11 @@ function Header() {
               if (page.children === undefined || page.children.length === 0) {
                 return (
                   <Link
-                    to={page.link}
+                    to={
+                      page.name === "Home"
+                        ? process.env.PUBLIC_URL + page.link
+                        : page.link
+                    }
                     className={
                       page.name === "RequestService"
                         ? "service-nav-link nav-link"
@@ -66,7 +73,11 @@ function Header() {
                 return (
                   <NavDropdown
                     title={page.title}
-                    link={page.link}
+                    link={
+                      page.name === "Home"
+                        ? process.env.PUBLIC_URL + page.link
+                        : page.link
+                    }
                     key={index}
                     css={page.name === "Services" ? "col2" : ""}
                     children={page.children.map((child, index) => {
