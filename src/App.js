@@ -20,7 +20,7 @@ const pages = require("./data/data.json").data.pages;
 
 const SaunaPDF = (
   <PDF
-    title={"STEAM SAUNA BATH"}
+    title={"Steam Sauna Bath"}
     description="SteamSaunaBath is a company that we work with in order to deliver high-quality steam products.  We believe that SteamSaunaBath explains the importance, and possibilities, of steam products best.  To see how SteamSaunaBath describes their steam products, click the button below."
     path={"../pdfs/steamsaunabath-See-What-You-Are-Missing.pdf"}
   />
