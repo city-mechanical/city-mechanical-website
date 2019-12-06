@@ -53,9 +53,7 @@ function generateRoutes(page, index) {
 
   routes.push(
     <Route
-      path={
-        page.name === "Home" ? process.env.PUBLIC_URL + page.link : page.link
-      }
+      path={process.env.PUBLIC_URL + page.link}
       component={myPages[page.name]}
       key={index}
       exact
@@ -65,7 +63,7 @@ function generateRoutes(page, index) {
   page.children.forEach((child, index) => {
     routes.push(
       <Route
-        path={page.link + child.link}
+        path={process.env.PUBLIC_URL + page.link + child.link}
         component={
           page.title === "Services"
             ? () => (

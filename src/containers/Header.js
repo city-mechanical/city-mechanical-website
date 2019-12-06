@@ -46,11 +46,7 @@ function Header() {
               if (page.children === undefined || page.children.length === 0) {
                 return (
                   <Link
-                    to={
-                      page.name === "Home"
-                        ? process.env.PUBLIC_URL + page.link
-                        : page.link
-                    }
+                    to={process.env.PUBLIC_URL + page.link}
                     className={
                       page.name === "RequestService"
                         ? "service-nav-link nav-link"
@@ -73,18 +69,14 @@ function Header() {
                 return (
                   <NavDropdown
                     title={page.title}
-                    link={
-                      page.name === "Home"
-                        ? process.env.PUBLIC_URL + page.link
-                        : page.link
-                    }
+                    link={process.env.PUBLIC_URL + page.link}
                     key={index}
                     css={page.name === "Services" ? "col2" : ""}
                     children={page.children.map((child, index) => {
                       return (
                         <NavDropdownItem
                           title={child.title}
-                          link={page.link + child.link}
+                          link={process.env.PUBLIC_URL + page.link + child.link}
                           key={index}
                         />
                       );
