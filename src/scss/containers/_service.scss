@@ -11,7 +11,7 @@
   }
 
   p {
-    @include font-size(16px);
+    @include font-size(($font-size-base / 7) * 8);
   }
 
   .service-overview {
@@ -20,7 +20,7 @@
     }
 
     .request-service {
-      @include font-size(16px);
+      @include font-size(($font-size-base / 7) * 8);
       color: $fprimary;
       background-color: $secondary;
       text-decoration: none;
@@ -38,7 +38,7 @@
   }
 
   .service-content {
-    @include font-size(16px);
+    @include font-size(($font-size-base / 7) * 8);
 
     @include media-breakpoint-down(md) {
       margin-top: 3em;
