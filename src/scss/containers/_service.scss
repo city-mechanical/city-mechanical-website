@@ -11,7 +11,28 @@
   }
 
   p {
-    @include font-size(16px);
+    @include font-size(($font-size-base / 7) * 8);
+  }
+
+  .service-button {
+    @include font-size(($font-size-base / 7) * 8);
+    color: $fprimary;
+    background-color: $secondary;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 2.5em;
+
+    &:hover {
+      background-color: $primary;
+      box-shadow: $elevation;
+      color: $alert;
+
+      &.request-service {
+        color: $danger;
+      }
+    }
   }
 
   .service-overview {
@@ -19,29 +40,23 @@
       margin-bottom: 0;
     }
 
-    .request-service {
-      @include font-size(16px);
-      color: $fprimary;
-      background-color: $secondary;
-      text-decoration: none;
-      border-radius: 5px;
-      padding: 0.5rem 1rem;
-      display: inline-block;
-      margin-top: 2.5em;
-
-      &:hover {
-        background-color: $primary;
-        color: $danger;
-        box-shadow: $elevation;
-      }
+    @include media-breakpoint-up(md) {
+      padding-right: 2em !important;
+    }
+    @include media-breakpoint-up(md) {
+      padding-right: 15px;
     }
   }
 
   .service-content {
-    @include font-size(16px);
+    @include font-size(($font-size-base / 7) * 8);
 
+    @include media-breakpoint-up(md) {
+      padding-left: 2em;
+    }
     @include media-breakpoint-down(md) {
-      margin-top: 3em;
+      padding-left: 15px;
+      margin-top: 4em;
     }
   }
 }

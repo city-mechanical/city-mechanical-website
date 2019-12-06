@@ -1,9 +1,20 @@
 @function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+  $remSize: ($size / $font-size-default) * 1rem;
+  @return #{$remSize};
+}
+
+@function calculatePx($size) {
+  $pxSize: ($size * $font-size-default) / 1rem;
+  @return #{$pxSize};
 }
 
 @mixin font-size($size) {
-  font-size: $size; //Fallback in px
-  font-size: calculateRem($size);
+  @if unit($size) == "rem" {
+    font-size: calculatePx($size); // font-size in px
+    font-size: $size; // font-size in rem
+  }
+  @if unit($size) == "px" {
+    font-size: $size; // font-size in px
+    font-size: calculateRem($size); // font-size in rem
+  }
 }

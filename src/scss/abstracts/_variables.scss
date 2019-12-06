@@ -8,12 +8,12 @@ $app-min-width: 370px;
 $app-max-width: 1350px; // implemented in container max-width (preserves bg)
 
 // Typography
-$font-size-base: 12px;
-$font-size-base: 0.75rem;
+$font-size-default: 16px;
+$font-size-base: 0.875rem; // 14px (With default of 16px)
 
 // Spacing
 $basespace: 2.5px;
-$containerSpace: 4rem;
+$containerSpace: 4.5rem;
 
 // Palette
 //
