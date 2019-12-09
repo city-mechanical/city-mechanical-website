@@ -51,14 +51,16 @@ const myPages = {
 function generateRoutes(page, index) {
   let routes = [];
 
-  routes.push(
-    <Route
-      path={process.env.PUBLIC_URL + page.link}
-      component={myPages[page.name]}
-      key={index}
-      exact
-    />
-  );
+  if (page.name !== "Home") {
+    routes.push(
+      <Route
+        path={process.env.PUBLIC_URL + page.link}
+        component={myPages[page.name]}
+        key={index}
+        exact
+      />
+    );
+  }
 
   page.children.forEach((child, index) => {
     routes.push(
@@ -99,6 +101,10 @@ function App() {
           {pages.map((page, index) => {
             return generateRoutes(page, index);
           })}
+          <Route
+            path={process.env.PUBLIC_URL + pages[0].link}
+            component={Home}
+          />
         </Switch>
         <Footer />
       </Router>
