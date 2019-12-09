@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../../containers/Layout";
 
-function RequestService() {
+function Contact() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function RequestService() {
 
   return (
     <div style={divStyle}>
-      <h1>RequestService CONTENT</h1>
+      <h1>Contact CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function RequestService() {
   );
 }
 
-export default RequestService;
+export default withLayout(Contact);

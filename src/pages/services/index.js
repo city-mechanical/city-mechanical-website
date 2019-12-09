@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../../containers/Layout";
 
-function Contact() {
+function ServicesHub() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function Contact() {
 
   return (
     <div style={divStyle}>
-      <h1>Contact CONTENT</h1>
+      <h1>Services CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default withLayout(ServicesHub);

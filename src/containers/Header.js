@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -27,60 +27,64 @@ function Header() {
         social
       />
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
-        <Link
-          to={process.env.PUBLIC_URL + pages[0].link}
-          className="nav-link brand"
-        >
-          <Navbar.Brand>
-            <img
-              src={process.env.PUBLIC_URL + `/images/cmi-logo.png`}
-              alt="City Mechanical Banner Logo"
-              className="navLogo"
-            />
-          </Navbar.Brand>
+        <Link href="/">
+          <a className="nav-link brand">
+            <Navbar.Brand>
+              <img
+                src={"/images/cmi-logo.png"}
+                alt="City Mechanical Banner Logo"
+                className="navLogo"
+              />
+            </Navbar.Brand>
+          </a>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            {pages.map((page, index) => {
+            {Object.entries(pages).map(([index, page]) => {
               if (page.children === undefined || page.children.length === 0) {
                 return (
                   <Link
-                    to={process.env.PUBLIC_URL + page.link}
-                    className={
-                      page.name === "RequestService"
-                        ? "service-nav-link nav-link"
-                        : "nav-link"
-                    }
-                    children={
-                      page.name === "RequestService" ? (
-                        <React.Fragment>
-                          <FaTools style={{ marginBottom: "3px" }} />{" "}
-                          {page.title}
-                        </React.Fragment>
-                      ) : (
-                        page.title
-                      )
-                    }
+                    href={page.link}
                     key={index}
+                    children={
+                      <a
+                        className={
+                          page.name === "RequestService"
+                            ? "service-nav-link nav-link"
+                            : "nav-link"
+                        }
+                      >
+                        {page.name === "RequestService" ? (
+                          <React.Fragment>
+                            <FaTools style={{ marginBottom: "3px" }} />{" "}
+                            {page.title}
+                          </React.Fragment>
+                        ) : (
+                          page.title
+                        )}
+                      </a>
+                    }
                   />
                 );
               } else {
                 return (
                   <NavDropdown
                     title={page.title}
-                    link={process.env.PUBLIC_URL + page.link}
+                    link={page.link}
                     key={index}
-                    css={page.name === "Services" ? "col2" : ""}
-                    children={page.children.map((child, index) => {
-                      return (
-                        <NavDropdownItem
-                          title={child.title}
-                          link={process.env.PUBLIC_URL + page.link + child.link}
-                          key={index}
-                        />
-                      );
-                    })}
+                    css={page.title === "Services" ? "col2" : ""}
+                    children={Object.entries(page.children).map(
+                      ([index, child]) => {
+                        return (
+                          <NavDropdownItem
+                            title={child.title}
+                            link={page.link + child.link}
+                            key={index}
+                          />
+                        );
+                      }
+                    )}
                   />
                 );
               }

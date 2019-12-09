@@ -51,39 +51,9 @@ function Footer() {
           <Col md={12} lg={3} className="footer-col">
             <h3 className="title">Navigation</h3>
             <div className="sitemap">
-              {pages.map((page, index) => {
-                if (
-                  page.children === undefined ||
-                  page.children.length === 0 ||
-                  page.name === "Services"
-                ) {
-                  return (
-                    <Sitemap
-                      title={page.title}
-                      link={process.env.PUBLIC_URL + page.link}
-                      key={index}
-                    />
-                  );
-                }
-
+              {Object.entries(pages).map(([index, page]) => {
                 return (
-                  <React.Fragment key={index}>
-                    <Sitemap
-                      title={page.title}
-                      link={process.env.PUBLIC_URL + page.link}
-                      key={index}
-                    />
-                    {page.children.map((child, index) => {
-                      return (
-                        <Sitemap
-                          title={child.title}
-                          link={process.env.PUBLIC_URL + page.link + child.link}
-                          key={index}
-                          className="child"
-                        />
-                      );
-                    })}
-                  </React.Fragment>
+                  <Sitemap title={page.title} link={page.link} key={index} />
                 );
               })}
             </div>

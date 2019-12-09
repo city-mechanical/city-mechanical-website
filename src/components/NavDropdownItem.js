@@ -1,23 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const propTypes = {};
-
-const defaultProps = {};
+import Link from "next/link";
 
 function NavDropdownItem(props) {
   const { title, link } = props;
 
   return (
     <li className="ndd-item">
-      <Link to={link} className="nav-link">
-        <div className="navdropdown">{title}</div>
+      <Link href={link}>
+        <a className="nav-link">
+          <div className="navdropdown">{title}</div>
+        </a>
       </Link>
     </li>
   );
 }
-
-NavDropdownItem.propTypes = propTypes;
-NavDropdownItem.defaultProps = defaultProps;
 
 export default NavDropdownItem;

@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../containers/Layout";
 
-function About() {
+function PeriodicMaintenance() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function About() {
 
   return (
     <div style={divStyle}>
-      <h1>About CONTENT</h1>
+      <h1>PeriodicMaintenance CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function About() {
   );
 }
 
-export default About;
+export default withLayout(PeriodicMaintenance);

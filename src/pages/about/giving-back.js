@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../../containers/Layout";
 
-function Home() {
+function GivingBack() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function Home() {
 
   return (
     <div style={divStyle}>
-      <h1>HOME CONTENT</h1>
+      <h1>GivingBack CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default withLayout(GivingBack);

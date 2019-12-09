@@ -1,21 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const propTypes = {};
-
-const defaultProps = {};
+import Link from "next/link";
 
 function Sitemap(props) {
   const { title, link, className } = props;
 
   return (
-    <div className={className ? className + " sitemap-link" : "sitemap-link"}>
-      <Link to={link}>{title}</Link>
-    </div>
+    <Link href={link}>
+      <div className={className ? className + " sitemap-link" : "sitemap-link"}>
+        <a>{title}</a>
+      </div>
+    </Link>
   );
 }
-
-Sitemap.propTypes = propTypes;
-Sitemap.defaultProps = defaultProps;
 
 export default Sitemap;
