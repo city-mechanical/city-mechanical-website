@@ -79,7 +79,12 @@ function Header() {
                         return (
                           <NavDropdownItem
                             title={child.title}
-                            link={page.link + child.link}
+                            href={
+                              page.title === "Services"
+                                ? page.link + "/[name]"
+                                : page.link + child.link
+                            }
+                            as={page.link + child.link}
                             key={index}
                           />
                         );
