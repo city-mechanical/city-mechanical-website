@@ -20,7 +20,7 @@ function Banner(props) {
             {breadcrumbs.map((breadcrumb, index) => {
               return (
                 <React.Fragment key={index}>
-                  <Link href={breadcrumb.link} key={index}>
+                  <Link href={breadcrumb.link} as={breadcrumb.link} key={index}>
                     <a className="breadcrumb">{breadcrumb.title}</a>
                   </Link>
                   {breadcrumbLength === index + 1 ? null : "/"}

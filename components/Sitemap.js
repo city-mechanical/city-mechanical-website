@@ -5,7 +5,7 @@ function Sitemap(props) {
   const { title, link, className } = props;
 
   return (
-    <Link href={link}>
+    <Link href={link} as={link}>
       <div className={className ? className + " sitemap-link" : "sitemap-link"}>
         <a>{title}</a>
       </div>

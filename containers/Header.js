@@ -27,7 +27,7 @@ function Header() {
         social
       />
       <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
-        <Link href="/">
+        <Link href="/" as={"/"}>
           <a className="nav-link brand">
             <Navbar.Brand>
               <img

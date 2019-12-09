@@ -7,7 +7,7 @@ function NavDropdown(props) {
 
   return (
     <div className="navdropdown">
-      <Link href={link}>
+      <Link href={link} as={link}>
         <a className="nav-link ndd">
           <IoMdArrowDropright className="ndd-icon" />
           {title}

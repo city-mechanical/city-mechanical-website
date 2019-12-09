@@ -18,7 +18,7 @@ function Service(props) {
             {overview.map((p, index) => {
               return <p key={index}>{p}</p>;
             })}
-            <Link href={"/request-service"}>
+            <Link href={"/request-service"} as={"/request-service"}>
               <a className={"service-button request-service"}>
                 Request Service
               </a>
