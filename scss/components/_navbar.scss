@@ -5,6 +5,9 @@
   font-weight: 400;
 
   .navbar-brand {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     margin-left: -0.5em;
@@ -12,6 +15,12 @@
     padding: 0.5rem;
     color: $fsecondary;
     border-radius: 5px;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9;
+    }
 
     &:hover {
       opacity: 0.8;
@@ -56,6 +65,9 @@
   .nav-link {
     &.brand {
       padding: 0rem !important;
+      max-width: 80%;
+      height: auto;
+      width: auto\9;
     }
 
     @include media-breakpoint-up(xxxl) {

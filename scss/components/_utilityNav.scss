@@ -7,27 +7,46 @@
   // Use a map
   &.utilityNav-xs {
     @include cbp($basespace * 2);
+    @include media-breakpoint-down(sm) {
+      @include cbp($basespace * 1.5);
+    }
   }
 
   &.utilityNav-sm {
     @include cbp($basespace * 3);
+    @include media-breakpoint-down(sm) {
+      @include cbp($basespace * 2.25);
+    }
   }
 
   &.utilityNav-md {
     @include cbp($basespace * 4);
+    @include media-breakpoint-down(sm) {
+      @include cbp($basespace * 3);
+    }
   }
 
   &.utilityNav-lg {
     @include cbp($basespace * 5);
+    @include media-breakpoint-down(sm) {
+      @include cbp($basespace * 3.75);
+    }
   }
 
   &.utilityNav-xl {
     @include cbp($basespace * 6);
+    @include media-breakpoint-down(sm) {
+      @include cbp($basespace * 4.5);
+    }
   }
 
   .container {
     display: flex;
     justify-content: space-between;
+    @include media-breakpoint-down(xs) {
+      padding-left: $grid-gutter-width/3.75;
+      padding-right: $grid-gutter-width/3.75;
+    }
 
     .info {
       @include media-breakpoint-down(sm) {

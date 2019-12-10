@@ -13,7 +13,12 @@ $font-size-base: 0.875rem; // 14px (With default of 16px)
 
 // Spacing
 $basespace: 2.5px;
-$containerSpace: 4.5rem;
+$container-space: (
+  "sm": 3rem,
+  "md": 3.5rem,
+  "lg": 4.5rem
+);
+$grid-gutter-width: 3rem;
 
 // Palette
 //
@@ -81,13 +86,9 @@ $grid-breakpoints: (
   tn: 0,
   xs: 475px,
   sm: 576px,
-  // default
-    md: 768px,
-  // default
-    lg: 992px,
-  // default
-    xl: 1200px,
-  //default
-    xxl: 1300px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1300px,
   xxxl: 1350px
-) !default;
+);
