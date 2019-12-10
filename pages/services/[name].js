@@ -37,7 +37,6 @@ function ServicePage() {
 
   if (service) {
     const children = getChildren(service.title);
-    console.log(pages["services"].link + service.link);
     return (
       <Service
         title={service.title}
