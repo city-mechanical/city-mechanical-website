@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../containers/Layout";
 
 function Home() {
   return (
@@ -62,4 +61,4 @@ function Home() {
   );
 }
 
-export default withLayout(Home);
+export default Home;

@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../../containers/Layout";
 
 function Contact() {
   var divStyle = {
@@ -70,4 +69,4 @@ function Contact() {
   );
 }
 
-export default withLayout(Contact);
+export default Contact;

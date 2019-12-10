@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../containers/Layout";
 
 function Testimonials() {
   var divStyle = {
@@ -70,4 +69,4 @@ function Testimonials() {
   );
 }
 
-export default withLayout(Testimonials);
+export default Testimonials;

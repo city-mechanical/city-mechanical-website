@@ -1,73 +1,22 @@
 import React from "react";
-import withLayout from "../containers/Layout";
+import Service from "../containers/Service";
 
 function PeriodicMaintenance() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
-  };
+  const pages = require("../data/data.json").data.pages;
+  const pm = pages["PeriodicMaintenance"];
 
   return (
-    <div style={divStyle}>
-      <h1>PeriodicMaintenance CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1 style={h1Style}>FILLER CONTENT</h1>
-    </div>
+    <Service
+      title={pm.title}
+      banner={pm.banner}
+      breadcrumbs={[
+        { title: pages["home"].title, link: pages["home"].link },
+        { title: pm.title, link: pm.link }
+      ]}
+      overview={pm.overview}
+      buttonText={"Request Maintenance"}
+    />
   );
 }
 
-export default withLayout(PeriodicMaintenance);
+export default PeriodicMaintenance;

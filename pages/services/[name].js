@@ -1,13 +1,12 @@
 import React from "react";
 import { useRouter } from "next/router";
-import withLayout from "../../containers/Layout";
 import Service from "../../containers/Service";
 
 import PDF from "../../components/PDF";
 
 function getChildren(title) {
   switch (title) {
-    case "Boilers":
+    case "Boilers & Boiler Certification":
       return (
         <PDF
           title={"Hilton San Francisco Airport Bayfront"}
@@ -59,4 +58,4 @@ function ServicePage() {
   }
 }
 
-export default withLayout(ServicePage);
+export default ServicePage;
