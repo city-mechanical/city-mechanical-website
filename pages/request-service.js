@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../containers/Layout";
 
-function StaffDirectory() {
+function RequestService() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function StaffDirectory() {
 
   return (
     <div style={divStyle}>
-      <h1>GivingBack CONTENT</h1>
+      <h1>RequestService CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function StaffDirectory() {
   );
 }
 
-export default StaffDirectory;
+export default withLayout(RequestService);

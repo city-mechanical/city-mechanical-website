@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../../containers/Layout";
 
-function PeriodicMaintenance() {
+function StaffDirectory() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function PeriodicMaintenance() {
 
   return (
     <div style={divStyle}>
-      <h1>PeriodicMaintenance CONTENT</h1>
+      <h1>GivingBack CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function PeriodicMaintenance() {
   );
 }
 
-export default PeriodicMaintenance;
+export default withLayout(StaffDirectory);

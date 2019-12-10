@@ -1,5 +1,5 @@
 import React from "react";
-import ContactLink from "../components/ContactLink";
+import ContactLink from "./ContactLink";
 
 const cmi = require("../data/data.json").data.cmi;
 

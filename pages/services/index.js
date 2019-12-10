@@ -1,6 +1,7 @@
 import React from "react";
+import withLayout from "../../containers/Layout";
 
-function Testimonials() {
+function ServicesHub() {
   var divStyle = {
     background: "black"
   };
@@ -11,7 +12,7 @@ function Testimonials() {
 
   return (
     <div style={divStyle}>
-      <h1>Testimonials CONTENT</h1>
+      <h1>Services CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
       <h1>FILLER CONTENT</h1>
@@ -69,4 +70,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default withLayout(ServicesHub);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Container from "react-bootstrap/Container";
 
 const propTypes = {};
@@ -21,11 +21,12 @@ function Banner(props) {
               return (
                 <React.Fragment key={index}>
                   <Link
-                    to={breadcrumb[1]}
-                    className="breadcrumb"
-                    children={breadcrumb[0]}
+                    href={breadcrumb.href ? breadcrumb.href : breadcrumb.link}
+                    as={breadcrumb.as ? breadcrumb.as : breadcrumb.link}
                     key={index}
-                  />
+                  >
+                    <a className="breadcrumb">{breadcrumb.title}</a>
+                  </Link>
                   {breadcrumbLength === index + 1 ? null : "/"}
                 </React.Fragment>
               );

@@ -1,24 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Banner from "../components/Banner";
-
-const propTypes = {};
-
-const defaultProps = {};
 
 function Service(props) {
   const { title, banner, overview, breadcrumbs, children } = props;
 
   return (
     <div id="service">
-      <Banner
-        img={process.env.PUBLIC_URL + banner}
-        title={title}
-        breadcrumbs={breadcrumbs}
-      />
+      <Banner img={banner} title={title} breadcrumbs={breadcrumbs} />
       <Container>
         <Row>
           <Col md={12} lg={6} className="service-overview">
@@ -26,11 +18,10 @@ function Service(props) {
             {overview.map((p, index) => {
               return <p key={index}>{p}</p>;
             })}
-            <Link
-              to={"/request-service"}
-              className={"service-button request-service"}
-            >
-              Request Service
+            <Link href={"/request-service"}>
+              <a className={"service-button request-service"}>
+                Request Service
+              </a>
             </Link>
           </Col>
           {children ? (
@@ -45,8 +36,5 @@ function Service(props) {
     </div>
   );
 }
-
-Service.propTypes = propTypes;
-Service.defaultProps = defaultProps;
 
 export default Service;
