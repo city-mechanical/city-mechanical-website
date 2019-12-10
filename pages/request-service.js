@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../containers/Layout";
 
 function RequestService() {
   var divStyle = {
@@ -70,4 +69,4 @@ function RequestService() {
   );
 }
 
-export default withLayout(RequestService);
+export default RequestService;

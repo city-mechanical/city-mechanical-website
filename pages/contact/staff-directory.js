@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../../containers/Layout";
 
 function StaffDirectory() {
   var divStyle = {
@@ -70,4 +69,4 @@ function StaffDirectory() {
   );
 }
 
-export default withLayout(StaffDirectory);
+export default StaffDirectory;

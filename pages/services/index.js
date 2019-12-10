@@ -4,7 +4,6 @@ import Tab from "react-bootstrap/Tab";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-import withLayout from "../../containers/Layout";
 import Banner from "../../components/Banner";
 
 function ServicesHub() {
@@ -68,4 +67,4 @@ function ServicesHub() {
   );
 }
 
-export default withLayout(ServicesHub);
+export default ServicesHub;

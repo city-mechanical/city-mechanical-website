@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../containers/Layout";
 import Service from "../containers/Service";
 
 function PeriodicMaintenance() {
@@ -20,4 +19,4 @@ function PeriodicMaintenance() {
   );
 }
 
-export default withLayout(PeriodicMaintenance);
+export default PeriodicMaintenance;

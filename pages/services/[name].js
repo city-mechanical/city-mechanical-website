@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-import withLayout from "../../containers/Layout";
 import Service from "../../containers/Service";
 
 import PDF from "../../components/PDF";
@@ -59,4 +58,4 @@ function ServicePage() {
   }
 }
 
-export default withLayout(ServicePage);
+export default ServicePage;

@@ -1,5 +1,4 @@
 import React from "react";
-import withLayout from "../../containers/Layout";
 
 function GivingBack() {
   var divStyle = {
@@ -70,4 +69,4 @@ function GivingBack() {
   );
 }
 
-export default withLayout(GivingBack);
+export default GivingBack;
