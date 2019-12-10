@@ -7,11 +7,15 @@ const propTypes = {};
 const defaultProps = {};
 
 function Banner(props) {
-  const { title, img, breadcrumbs } = props;
-  const breadcrumbLength = breadcrumbs.length;
+  const { title, img, breadcrumbs, size } = props;
+  const breadcrumbLength = breadcrumbs ? breadcrumbs.length : 0;
 
   return (
-    <Container id="banner" style={{ backgroundImage: "url(" + img + ")" }}>
+    <Container
+      id="banner"
+      className={size ? "size-" + size : "size-lg"}
+      style={{ backgroundImage: "url(" + img + ")" }}
+    >
       <div className="overlay" />
       <div className="content">
         {title ? <h1 className="banner-title">{title}</h1> : null}
