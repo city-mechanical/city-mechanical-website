@@ -30,14 +30,14 @@ function getChildren(title) {
   }
 }
 
-function ServicePage(props) {
+function ServicePage() {
   const router = useRouter();
   const pages = require("../../data/data.json").data.pages;
   const service = pages["services"].children[router.query.name];
 
   if (service) {
     const children = getChildren(service.title);
-
+    console.log(pages["services"].link + service.link);
     return (
       <Service
         title={service.title}
@@ -47,7 +47,8 @@ function ServicePage(props) {
           { title: pages["services"].title, link: pages["services"].link },
           {
             title: service.title,
-            link: pages["services"].link + service.link
+            href: pages["services"].link + "/[name]",
+            as: pages["services"].link + service.link
           }
         ]}
         overview={service.overview}
