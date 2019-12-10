@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Banner from "../components/Banner";
 
 function Service(props) {
-  const { title, banner, overview, breadcrumbs, children } = props;
+  const { title, banner, overview, breadcrumbs, buttonText, children } = props;
 
   return (
     <div id="service">
@@ -20,7 +20,7 @@ function Service(props) {
             })}
             <Link href={"/request-service"}>
               <a className={"service-button request-service"}>
-                Request Service
+                {buttonText ? buttonText : "Request Service"}
               </a>
             </Link>
           </Col>

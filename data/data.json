@@ -211,7 +211,13 @@
       },
       "PeriodicMaintenance": {
         "title": "Periodic Maintenance",
-        "link": "/periodic-maintenance"
+        "link": "/periodic-maintenance",
+        "banner": "",
+        "overview": [
+          "The thing that makes City Mechanical recognizable is our exceptional maintenance services.  We will keep your equipment correctly maintained so that it may achieve its maximum potential.  At City Mechanical, we’re proud to offer our periodic maintenance services.  We’re here to ensure your equipment is doing all the heavy-lifting, so you don’t have to.",
+          "Our periodic maintenance services have always been a core foundation here at City Mechanical. We believe going above and beyond is something we should strive for. Our maintenance services are just one way we try to accomplish this goal. Always aiming to bring you superior HVAC services and more. We are here to serve, and to help ensure, that all of your equipment is working correctly.",
+          "With our periodic maintenance service, you get our signature maintenance services on a schedule that works for you.  With scheduled service visits, we can help guarantee your system will always stay up and running at peak performance.  Regular maintenance allows us to solve any problems that arise in your equipment before they become expensive emergencies.  Hence, we are pleased to provide our maintenance services for any systems we offer service visits on. Whether you want us to service your HVAC, Refrigeration, Plumbing, or more, we do it all. We’re here to help, no matter how big or small the job, commercial or residential."
+        ]
       },
       "About": {
         "title": "About",
