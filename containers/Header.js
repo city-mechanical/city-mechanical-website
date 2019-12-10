@@ -50,12 +50,12 @@ function Header() {
                     children={
                       <a
                         className={
-                          page.name === "RequestService"
+                          page.title === "Request Service/Estimate"
                             ? "service-nav-link nav-link"
                             : "nav-link"
                         }
                       >
-                        {page.name === "RequestService" ? (
+                        {page.title === "Request Service/Estimate" ? (
                           <React.Fragment>
                             <FaTools style={{ marginBottom: "3px" }} />{" "}
                             {page.title}
