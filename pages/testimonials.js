@@ -1,70 +1,9 @@
 import React from "react";
 
 function Testimonials() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
-  };
-
   return (
-    <div style={divStyle}>
-      <h1>Testimonials CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1 style={h1Style}>FILLER CONTENT</h1>
+    <div>
+      <h1>TESTIMONIALS CONTENT</h1>
     </div>
   );
 }

@@ -1,70 +1,9 @@
 import React from "react";
 
 function RequestService() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
-  };
-
   return (
-    <div style={divStyle}>
-      <h1>RequestService CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1 style={h1Style}>FILLER CONTENT</h1>
+    <div>
+      <h1>REQUEST SERVICE CONTENT</h1>
     </div>
   );
 }

@@ -1,70 +1,9 @@
 import React from "react";
 
 function StaffDirectory() {
-  var divStyle = {
-    background: "black"
-  };
-
-  var h1Style = {
-    margin: 0
-  };
-
   return (
-    <div style={divStyle}>
-      <h1>GivingBack CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1>FILLER CONTENT</h1>
-      <h1 style={h1Style}>FILLER CONTENT</h1>
+    <div>
+      <h1>STAFF DIRECTORY CONTENT</h1>
     </div>
   );
 }
