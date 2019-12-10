@@ -7,7 +7,7 @@ import PDF from "../../components/PDF";
 
 function getChildren(title) {
   switch (title) {
-    case "Boilers":
+    case "Boilers & Boiler Certification":
       return (
         <PDF
           title={"Hilton San Francisco Airport Bayfront"}
