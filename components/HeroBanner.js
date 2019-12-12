@@ -7,7 +7,7 @@ function HeroBanner(props) {
   const { titles, images, size } = props;
 
   return (
-    <React.Fragment>
+    <div className={`hero-banner`}>
       <Carousel className={`hero-banner ${size ? "size-" + size : "size-lg"}`}>
         {Object.entries(images).map(([index, image]) => {
           return (
@@ -19,15 +19,15 @@ function HeroBanner(props) {
             </Carousel.Item>
           );
         })}
-        <div className="overlay" />
-        <div className="content">
-          <h1 className="banner-title">City Mechanical, Inc.</h1>
-          <div className="banner-subtitle">
-            Serving San Francisco and the Bay Area since 1989
-          </div>
-        </div>
       </Carousel>
-    </React.Fragment>
+      <div className="overlay" />
+      <div className="content">
+        <h1 className="banner-title">City Mechanical, Inc.</h1>
+        <div className="banner-subtitle">
+          Serving San Francisco and the Bay Area since 1989
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -33,6 +33,13 @@
     }
   }
 
+  .carousel-control-prev,
+  .carousel-control-next {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
   .overlay {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
