@@ -63,11 +63,7 @@
   .service-content {
     @include font-size(($font-size-base / 7) * 8);
 
-    @include media-breakpoint-up(md) {
-      padding-left: 2em;
-    }
     @include media-breakpoint-down(md) {
-      padding-left: 15px;
       margin-top: map-get($container-space, "md") +
         map-get($container-space, "md") / 4;
     }
