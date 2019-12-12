@@ -1,19 +1,6 @@
 #service {
   background-color: $bgprimary;
 
-  .container {
-    padding-top: map-get($container-space, "lg");
-    padding-bottom: map-get($container-space, "lg");
-    @include media-breakpoint-down(md) {
-      padding-top: map-get($container-space, "md");
-      padding-bottom: map-get($container-space, "md");
-    }
-    @include media-breakpoint-down(sm) {
-      padding-top: map-get($container-space, "sm");
-      padding-bottom: map-get($container-space, "sm");
-    }
-  }
-
   .title {
     margin-bottom: 1.25em;
   }
