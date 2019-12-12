@@ -220,7 +220,7 @@
           }
         }
       },
-      "PeriodicMaintenance": {
+      "periodic-maintenance": {
         "title": "Periodic Maintenance",
         "link": "/periodic-maintenance",
         "banner": "",
@@ -230,7 +230,7 @@
           "With our periodic maintenance service, you get our signature maintenance services on a schedule that works for you.  With scheduled service visits, we can help guarantee your system will always stay up and running at peak performance.  Regular maintenance allows us to solve any problems that arise in your equipment before they become expensive emergencies.  Hence, we are pleased to provide our maintenance services for any systems we offer service visits on. Whether you want us to service your HVAC, Refrigeration, Plumbing, or more, we do it all. We’re here to help, no matter how big or small the job, commercial or residential."
         ]
       },
-      "About": {
+      "about": {
         "title": "About",
         "link": "/about",
         "children": {
@@ -240,11 +240,176 @@
           }
         }
       },
-      "Testimonials": {
+      "testimonials-page": {
         "title": "Testimonials",
-        "link": "/testimonials"
+        "link": "/testimonials",
+        "banner": "",
+        "testimonials": [
+          {
+            "title": "624 Taylor Street",
+            "image": "/images/testimonials/624TaylorStreet.jpg",
+            "authour": "Steve M. GC/CGBP",
+            "content": [
+              { "accented": false, "text": "\"Greetings Russ," },
+              {
+                "accented": false,
+                "text": "I have had the pleasure of meeting a number of your accomplished staff over the past four months. As the new Engineer, and from a General Contracting background, I feel it necessary to understand the operational as well as problematic features of the systems I have been charged with maintaining. May I be the first to compliment you on some staff by name. Kevin, Rolf, Frank, and especially Mike have been instrumental in mentoring me and allowing some hands-on practical applications with the mechanicals that can rear their head from time to time. I am old school and prefer to use tools over a pen and sometimes irritatingly so….your visiting staff have all commented on how refreshing this is to see. Please convey my compliments to these men as they deserve the praise."
+              },
+              {
+                "accented": false,
+                "text": "That said, I will bring this proposal to the attention of my AGM. I am fighting to get your company in the position to be our “go to” resource in all facets of our mechanical needs and not just emergency service from HVAC and refrigeration to plumbing and boiler systems. “One call handles it all” kind of thinking. I am fairly new and still don’t hold the clout to insist and I do not want to make waves until I am more settled. The comments I made to Michael about the advice from your direct competitor were all accurate and fairly critical, but mostly confidential. Their price for two trips performing semi-annual inspections, services, and permits was more than your quote as I am sure you know. Let us see if I can persuade those who make the financial decisions to see the wisdom of our efforts."
+              },
+              {
+                "accented": false,
+                "text": "Again, thank you and thanks for the quick response."
+              },
+              {
+                "accented": false,
+                "text": "Regards,\""
+              }
+            ]
+          },
+          {
+            "title": "Temple Emanu-El",
+            "image": "/images/testimonials/TempleEmanu-El.jpg",
+            "authour": "Judi L.",
+            "content": [
+              {
+                "accented": true,
+                "text": "1. What prompted you to seek our services, and how did we contribute to the outcome you desired?"
+              },
+              {
+                "accented": false,
+                "text": "\"When I discovered that our previous vendor had not been doing annuals on the boilers and that we were out of compliance with the low NOx emissions, I started to look around for another vendor. I found one, but when they opened the boilers to do the annuals they FREAKED OUT and said they could not handle it. I was told that you need to hire boiler people to take care of boilers and was given the name of Western. They referred me to you guys. Russ came in, surveyed the situation, told us it would be no problem to service all our needs, and it has been great ever since.\""
+              },
+              {
+                "accented": true,
+                "text": "2. In what ways have we made it easy for you to do business with us?"
+              },
+              {
+                "accented": false,
+                "text": "\"City Mechanical is pro-active in figuring out what is best for HVAC systems and boilers. They don’t expect the client to know what to worry about, they worry about it for you. And then they come up with options for fixing problems or staying on top of servicing equipment so problems are avoided. Also, Russ figured out a lower-cost answer to our low NOx test failures and saved us hundreds of thousands of dollars when all was said and done. He took it on as a personal challenge to figure it out when EVERYBODY else said it couldn’t be done. That level of dedication and perseverance is worth its weight in diamonds.\""
+              },
+              {
+                "accented": true,
+                "text": "3. If a potential client was on the fence about working with us, what would you say to them?"
+              },
+              {
+                "accented": false,
+                "text": "\"Do not hesitate to hire this company – I have tried many other HVAC and Mechanical companies and none comes close to the level of service and responsibility that I have encountered with City Mechanical. Not only can they do the work, they can help to strategize and help you make short and long term decisions about your systems.\""
+              },
+              {
+                "accented": true,
+                "text": "4. What’s the most important thing people should know about working with us?"
+              },
+              {
+                "accented": false,
+                "text": "\"The job will get done with intelligence and skill.\""
+              },
+              {
+                "accented": true,
+                "text": "5. Would you recommend our services to others, and why? "
+              },
+              {
+                "accented": false,
+                "text": "\"Of all my vendors, you guys are my most reliable and easy to get along with. ABSOLUTELY! Thanks!\""
+              }
+            ]
+          },
+          {
+            "title": "720 2nd Ave",
+            "image": "/images/testimonials/7202ndAve.jpg",
+            "authour": "Jessie",
+            "content": [
+              {
+                "accented": false,
+                "text": "\"Vince did a great job today, discovered that there was a safety device preventing ignition and was able to clean and reinstall it.  The thermostat and heater were working fine when he left and the tenant is happy.  I’m always quite pleased when a safety device works the way it’s supposed to!  Thanks for the fast and efficient service, everyone."
+              },
+              {
+                "accented": false,
+                "text": "City Mechanical is a winner — they’ve gone two for two this week.  Lacy was right on the job and let me know what was going on for both these projects.  Jonathan also did a fine job on the heater in #206 on Monday.  These two technicians were timely, courteous, good communicators, and most capable.  They are a credit to the company.  Much appreciated!"
+              },
+              {
+                "accented": false,
+                "text": "Thanks for helping keep our tenants warm.  Have a happy holiday.\""
+              }
+            ]
+          },
+          {
+            "title": "Pacific BioLabs",
+            "image": "/images/testimonials/PacificBioLabs.jpg",
+            "authour": "Mario S.",
+            "content": [
+              {
+                "accented": false,
+                "text": "\"Hello,"
+              },
+              {
+                "accented": false,
+                "text": "On Sunday 8/16/15 we had an emergency on our HVAC system: the chiller stopped operating causing the temperature in our controlled areas to rise beyond the allowed limits, but because of the fast response of your service department to our call, we were able to avoid a lot of deviations. Thanks to the Dispatcher for taking care of the call in a very professional way, asking all the questions to get a clear picture of the problem to the technician on call, and thanks to Mike, the technician, who showed up quickly, managed to bring the chiller back in service and waited to make sure all the functions of the equipment were ok before leaving."
+              },
+              {
+                "accented": false,
+                "text": "Thanks again."
+              },
+              {
+                "accented": false,
+                "text": "Sincerely,\""
+              }
+            ]
+          },
+          {
+            "title": "McMillan Electric",
+            "image": "/images/testimonials/McMillanElectric.jpg",
+            "authour": "Chris T.",
+            "content": [
+              {
+                "accented": false,
+                "text": "\"You couldn’t have found a better contractor to do this work….Chris from City Mechanical was A+++\""
+              }
+            ]
+          },
+          {
+            "title": "Lemon Tree Mobile Home Park",
+            "image": "/images/testimonials/LemonTreeMobileHomePark.jpg",
+            "authour": "Bridget C.",
+            "content": [
+              {
+                "accented": false,
+                "text": "\"Good Morning Francie,"
+              },
+              {
+                "accented": false,
+                "text": "I wanted to say thank you for going out of your way to go get the part in SF and delivering it to Jim here."
+              },
+              {
+                "accented": false,
+                "text": "I just wanted to compliment Jim on his work yesterday. He was so positive and friendly despite working in a very hot environment. The AC does not reach out there and the electrical outlet was not working to allow him use of a fan. It was only about 2 hrs before he finished that a resident recommended an extension cord to run the fan from the men’s so he could have use of the fan. I had not even thought of it, poor guy."
+              },
+              {
+                "accented": false,
+                "text": "Thank you again for all your effort and assistance.\""
+              }
+            ]
+          },
+          {
+            "title": "Skylark Heights Apartments",
+            "image": "/images/testimonials/SkylarkHeightsApartments.jpg",
+            "authour": "Felicia F.",
+            "content": [
+              {
+                "accented": false,
+                "text": "\"I live in Larkspur at Skylark Apt and your company sent 2 wonderful repair men to fix our hot water heater just before the thanksgiving holiday.  It was cold and windy and they worked for over 4 hrs. and hurray we have HOT water and I want them to know how much we all appreciated them today and please send this thank you to them when you get it."
+              },
+              {
+                "accented": false,
+                "text": "Thank you\""
+              }
+            ]
+          }
+        ]
       },
-      "Contact": {
+      "contact": {
         "title": "Contact",
         "link": "/contact",
         "children": {
@@ -254,7 +419,7 @@
           }
         }
       },
-      "RequestService": {
+      "request-service": {
         "title": "Request Service/Estimate",
         "link": "/request-service"
       }

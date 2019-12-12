@@ -21,7 +21,9 @@ class MyApp extends App {
         </Head>
         <div className="App">
           <Header />
-          <Component {...pageProps} />
+          <div className="app-content">
+            <Component {...pageProps} />
+          </div>
           <Footer />
         </div>
       </React.Fragment>
