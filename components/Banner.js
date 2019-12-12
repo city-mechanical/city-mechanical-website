@@ -12,8 +12,7 @@ function Banner(props) {
 
   return (
     <Container
-      id="banner"
-      className={size ? "size-" + size : "size-lg"}
+      className={`banner + ${size ? "size-" + size : "size-lg"}`}
       style={{ backgroundImage: "url(" + img + ")" }}
     >
       <div className="overlay" />

@@ -14,13 +14,14 @@
 @import "abstracts/mixins";
 
 // Componenets
-@import "components/utilityNav";
+@import "components/banner";
+@import "components/carousel";
 @import "components/contactLink";
 @import "components/navbar";
 @import "components/navdropdown";
-@import "components/socialIcon";
 @import "components/sitemap";
-@import "components/banner";
+@import "components/socialIcon";
+@import "components/utilityNav";
 
 // Containers
 @import "containers/app";
