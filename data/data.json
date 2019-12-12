@@ -243,7 +243,7 @@
       "testimonials-page": {
         "title": "Testimonials",
         "link": "/testimonials",
-        "banner": "",
+        "banner": "/images/banners/testimonials-banner.jpg",
         "testimonials": [
           {
             "title": "624 Taylor Street",
