@@ -3,7 +3,7 @@ import Service from "../containers/Service";
 
 function PeriodicMaintenance() {
   const pages = require("../data/data.json").data.pages;
-  const pm = pages["PeriodicMaintenance"];
+  const pm = pages["periodic-maintenance"];
 
   return (
     <Service
