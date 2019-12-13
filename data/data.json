@@ -52,7 +52,7 @@
       "services": {
         "title": "Services",
         "link": "/services",
-        "banner": "",
+        "banner": "/images/banners/services-banner.jpg",
         "children": {
           "airmaid": {
             "title": "Air Maid",
