@@ -8,14 +8,27 @@
       margin-bottom: 1.5em;
     }
 
-    .featured-item {
-      margin-bottom: map-get($container-space, "lg");
+    .group-row + .group-row {
+      margin-top: 3em;
+    }
+
+    .group-row .group-card + .group-card {
       @include media-breakpoint-down(md) {
-        margin-bottom: map-get($container-space, "md");
+        margin-top: 3em;
       }
-      @include media-breakpoint-down(sm) {
-        margin-bottom: map-get($container-space, "sm");
-      }
+    }
+
+    .item {
+      margin-bottom: 3em;
+    }
+
+    .featured-item {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+      border-radius: 10px;
+      padding: 1.5rem;
+      height: 100%;
+      margin-bottom: 60px;
 
       .title {
         text-align: left;
@@ -30,6 +43,8 @@
         border-radius: 5px;
         padding: 0.5rem 1rem;
         display: inline-block;
+        position: absolute;
+        bottom: 1.5em;
 
         &:hover {
           background-color: $primary;

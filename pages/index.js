@@ -21,12 +21,12 @@ function Home() {
           <h2 className="title">Our Services</h2>
           {Object.entries(featuredServices).map(([index, serviceGroup]) => {
             return (
-              <Row className="group" key={index}>
+              <Row className="group-row" key={index}>
                 {Object.entries(serviceGroup).map(([index, service]) => {
                   const services = pages["services"].children;
 
                   return (
-                    <Col md={6} key={index}>
+                    <Col className="group-card" md={6} key={index}>
                       <div className="featured-item">
                         <h3 className="title">{services[service].title}</h3>
                         <p className="overview">
