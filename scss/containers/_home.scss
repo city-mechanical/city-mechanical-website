@@ -1,0 +1,42 @@
+#home {
+  p {
+    @include font-size(($font-size-base / 7) * 8);
+  }
+  .featured {
+    .title {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .featured-item {
+      margin-bottom: map-get($container-space, "lg");
+      @include media-breakpoint-down(md) {
+        margin-bottom: map-get($container-space, "md");
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: map-get($container-space, "sm");
+      }
+
+      .title {
+        text-align: left;
+        margin-bottom: 0.75em;
+      }
+
+      .read-more-btn {
+        @include font-size(($font-size-base / 7) * 8);
+        color: $fprimary;
+        background-color: $secondary;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+
+        &:hover {
+          background-color: $primary;
+          box-shadow: $elevation;
+          color: $alert;
+        }
+      }
+    }
+  }
+}
