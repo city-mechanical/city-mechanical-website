@@ -83,6 +83,7 @@ Some pages require more specific implementations. These definitions are listed b
         {
             "team": "",                 // employee team name
             "team-name": "",            // rendered team name
+            "teamEmail": "",            // team email
             "members": [                // team members
                 {
                     "img": "",          // employee image link, points to which image should render
