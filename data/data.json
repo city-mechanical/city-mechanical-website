@@ -413,9 +413,27 @@
         "title": "Contact",
         "link": "/contact",
         "children": {
-          "StaffDirectory": {
+          "staff-directory": {
             "title": "Staff Directory",
-            "link": "/staff-directory"
+            "link": "/staff-directory",
+            "banner": "/images/banners/staff-directory-banner.jpg",
+            "directory": [
+              {
+                "team": "management",
+                "team-name": "Management Team",
+                "members": [
+                  {
+                    "img": "",
+                    "name": "",
+                    "title": "",
+                    "email": "",
+                    "work": "",
+                    "cell": ""
+                  },
+                  {}
+                ]
+              }
+            ]
           }
         }
       },
