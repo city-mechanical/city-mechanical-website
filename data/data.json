@@ -413,9 +413,230 @@
         "title": "Contact",
         "link": "/contact",
         "children": {
-          "StaffDirectory": {
+          "staff-directory": {
             "title": "Staff Directory",
-            "link": "/staff-directory"
+            "link": "/staff-directory",
+            "banner": "/images/banners/sf-shop-truck-banner.jpg",
+            "directory": [
+              {
+                "team": "management",
+                "title": "Management Team",
+                "teamEmail": "",
+                "members": [
+                  {
+                    "img": "/images/employees/ron-tinkey.jpg",
+                    "name": "Ron Tinkey",
+                    "title": "Owner",
+                    "email": "rtinkey@citymechanical.com",
+                    "work": "5107249096",
+                    "cell": "4157163912"
+                  },
+                  {
+                    "img": "/images/employees/russell-will.jpg",
+                    "name": "Russell L. Will, Jr.",
+                    "title": "Owner",
+                    "email": "rwill@citymechanical.com",
+                    "work": "5107249097",
+                    "cell": "4157163911"
+                  },
+                  {
+                    "img": "/images/employees/helene-banares.jpg",
+                    "name": "Helene Banares",
+                    "title": "Office Manager",
+                    "email": "hbanares@citymechanical.com",
+                    "work": "5107249098",
+                    "cell": "5104550025"
+                  }
+                ]
+              },
+              {
+                "team": "service",
+                "title": " Service Department",
+                "teamEmail": "service@citymechanical.com",
+                "members": [
+                  {
+                    "img": "/images/employees/steve-ritchie.jpg",
+                    "name": "Steve Ritchie",
+                    "title": "Service Manager",
+                    "email": "sritchie@citymechanical.com",
+                    "work": "5107249089",
+                    "cell": "5106913742"
+                  },
+                  {
+                    "img": "/images/employees/marilou-asuelo.jpg",
+                    "name": "Marilou Asuelo",
+                    "title": "Service Assistant",
+                    "email": "masuelo@citymechanical.com",
+                    "work": "4156475028",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/alan-aliga.jpg",
+                    "name": "Alan Aliga",
+                    "title": "Dispatcher",
+                    "email": "aaliga@citymechanical.com",
+                    "work": "5107249091",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/brittany-will.jpg",
+                    "name": "Brittany Will",
+                    "title": "Dispatcher",
+                    "email": "bwill@citymechanical.com",
+                    "work": "5107249092",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/greg-rodich.jpg",
+                    "name": "Greg Rodich",
+                    "title": "Dispatcher / Service Coordinator",
+                    "email": "grodich@citymechanical.com",
+                    "work": "4156477240",
+                    "cell": "5109496375"
+                  }
+                ]
+              },
+              {
+                "team": "accounting",
+                "title": "Accounting Department",
+                "teamEmail": "accounting@citymechanical.com",
+                "members": [
+                  {
+                    "img": "/images/employees/rosanna-indalecio.jpg",
+                    "name": "Rosanna Indalecio",
+                    "title": "Accounts Receivable",
+                    "email": "rindalecio@citymechanical.com",
+                    "work": "4156479025",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/angelita-weeks.jpg",
+                    "name": "Angelita Weeks",
+                    "title": "Accounts Payable",
+                    "email": "aweeks@citymechanical.com",
+                    "work": "4156479026",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/merlynne-lucero.jpg",
+                    "name": "Merlynne Lucero",
+                    "title": "Accounts Payable",
+                    "email": "mlucero@citymechanical.com",
+                    "work": "4158016073",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/kala-lee.jpg",
+                    "name": "Kala Lee",
+                    "title": "Accounts Payable",
+                    "email": "klee@citymechanical.com",
+                    "work": "5107249093",
+                    "cell": ""
+                  }
+                ]
+              },
+              {
+                "team": "project-assistance",
+                "title": "Sales & Project Assistance",
+                "teamEmail": "",
+                "members": [
+                  {
+                    "img": "/images/employees/carla-bonilla.jpg",
+                    "name": "Carla Bonilla",
+                    "title": "Administrative Assistant",
+                    "email": "cbonilla@citymechanical.com",
+                    "work": "4156470232",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/francie-keane.jpg",
+                    "name": "Francie Keane",
+                    "title": "Sales & Service",
+                    "email": "fkeane@citymechanical.com",
+                    "work": "5104550031",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/lisa-lafuente.jpg",
+                    "name": "Lisa Lafuente",
+                    "title": "Administrative Assistant",
+                    "email": "llafuente@citymechanical.com",
+                    "work": "5102967914",
+                    "cell": ""
+                  }
+                ]
+              },
+              {
+                "team": "sales",
+                "title": "HVAC / Sheet Metal Sales Department",
+                "teamEmail": "",
+                "members": [
+                  {
+                    "img": "/images/employees/vic-fernandez.jpg",
+                    "name": "Vic Fernandez",
+                    "title": "Sales & Service",
+                    "email": "vfernandez@citymechanical.com",
+                    "work": "5107249094",
+                    "cell": "5104551722"
+                  },
+                  {
+                    "img": "/images/employees/dave-hahlbeck.jpg",
+                    "name": "Dave Hahlbeck",
+                    "title": "Sales & Service",
+                    "email": "dhahlbeck@citymechanical.com",
+                    "work": "",
+                    "cell": "5104556809"
+                  },
+                  {
+                    "img": "/images/employees/josh-will.jpg",
+                    "name": "Josh Will",
+                    "title": "Sales & Service",
+                    "email": "jwill@citymechanical.com",
+                    "work": "5107246249",
+                    "cell": "7077767676"
+                  }
+                ]
+              },
+              {
+                "team": "plumbing",
+                "title": "Plumbing Department",
+                "teamEmail": "",
+                "members": [
+                  {
+                    "img": "/images/employees/kevin-mirkovich.jpg",
+                    "name": "Kevin Mirkovich",
+                    "title": "Plumbing Sales Manager",
+                    "email": "kmirkovich@citymechanical.com",
+                    "work": "4156470231",
+                    "cell": "5108039123"
+                  },
+                  {
+                    "img": "/images/employees/rebecca-son.jpg",
+                    "name": "Rebecca Son",
+                    "title": "Plumbing Service Assistant",
+                    "email": "rson@citymechanical.com",
+                    "work": "4156470230",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/rob-harrigan.jpg",
+                    "name": "Rob Harrigan",
+                    "title": "Plumbing Sales",
+                    "email": "rharrigan@citymechanical.com",
+                    "work": "5109496157",
+                    "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/frank-evansco.jpg",
+                    "name": "Frank Evansco",
+                    "title": "Plumbing Assistance",
+                    "email": "fevansco@citymechanical.com",
+                    "work": "",
+                    "cell": "5106918072"
+                  }
+                ]
+              }
+            ]
           }
         }
       },

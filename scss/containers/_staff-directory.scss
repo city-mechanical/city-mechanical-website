@@ -1,0 +1,88 @@
+#staff-directory {
+  p,
+  a,
+  div {
+    @include font-size(($font-size-base / 7) * 8);
+  }
+
+  .staff-team {
+    .team-header {
+      margin-bottom: 2.5rem;
+
+      a {
+        color: $black;
+
+        &:hover {
+          color: $danger;
+        }
+      }
+    }
+
+    .employee {
+      @include media-breakpoint-down(md) {
+        padding-bottom: map-get($container-space, "md") / 3;
+      }
+      @include media-breakpoint-up(md) {
+        padding-bottom: map-get($container-space, "lg") / 2;
+      }
+    }
+
+    .employee-image {
+      height: 100%;
+      min-height: 375px;
+      // min-width: 325px;
+      max-width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: $primary;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .employee-info {
+      color: $fprimary;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      min-height: 0px;
+      transition: height ease-out 0.3s, min-height ease-out 0.3s,
+        background-color ease-out 0.3s;
+
+      svg {
+        margin-bottom: 3px;
+        margin-right: 5px;
+      }
+
+      &.expanded {
+        background-color: rgba(0, 0, 0, 0.7);
+        min-height: inherit;
+        height: inherit;
+      }
+
+      .employee-more-info {
+        transition: opacity ease-out 0.4s;
+        opacity: 0;
+        position: absolute;
+
+        &.expanded {
+          opacity: 1;
+        }
+      }
+
+      .employee-name {
+        color: $fprimary;
+        float: left;
+        margin: 0;
+      }
+
+      .employee-toggle-info {
+        float: right;
+      }
+
+      .title {
+        @include font-size(($font-size-base / 7) * 9);
+        margin-bottom: (($font-size-base / 7) * 11);
+      }
+    }
+  }
+}
