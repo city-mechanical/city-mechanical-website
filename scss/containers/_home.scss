@@ -1,0 +1,97 @@
+#home {
+  p {
+    @include font-size(($font-size-base / 7) * 8);
+  }
+  .featured {
+    .title {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .group-row + .group-row {
+      margin-top: 3em;
+    }
+
+    .group-row .group-card + .group-card {
+      @include media-breakpoint-down(sm) {
+        margin-top: 3em;
+      }
+      @include media-breakpoint-down(xs) {
+        margin-top: 2em;
+      }
+    }
+
+    .item {
+      margin-bottom: 3em;
+    }
+
+    .featured-item {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+      border-radius: 10px;
+      padding: 1.5rem;
+      height: 100%;
+      margin-bottom: 60px;
+
+      .title {
+        text-align: left;
+        margin-bottom: 0.75em;
+      }
+
+      .read-more-btn {
+        position: absolute;
+      }
+    }
+
+    .read-more-btn {
+      @include font-size(($font-size-base / 7) * 8);
+      color: $fprimary;
+      background-color: $secondary;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      bottom: 1.5em;
+
+      &:hover {
+        background-color: $primary;
+        box-shadow: $elevation;
+        color: $alert;
+      }
+    }
+  }
+
+  .testimonials {
+    .overview {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .featured-item {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: $primary;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .overlay {
+      .title {
+        color: $fprimary;
+      }
+
+      padding: 1.5em;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .authour {
+      color: $fprimary;
+      font-weight: bold;
+    }
+  }
+
+  .about {
+    padding-bottom: 0;
+  }
+}

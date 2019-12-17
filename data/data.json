@@ -246,9 +246,11 @@
         "banner": "/images/banners/testimonials-banner.jpg",
         "testimonials": [
           {
+            "id": "624-taylor-street",
             "title": "624 Taylor Street",
             "image": "/images/testimonials/624TaylorStreet.jpg",
             "authour": "Steve M. GC/CGBP",
+            "featured": "\"I am fighting to get your company in the position to be our \"go to\" resource in all facets of our mechanical needs…“One call handles it all!\"",
             "content": [
               { "accented": false, "text": "\"Greetings Russ," },
               {
@@ -270,9 +272,11 @@
             ]
           },
           {
+            "id": "temple-emanu-el",
             "title": "Temple Emanu-El",
             "image": "/images/testimonials/TempleEmanu-El.jpg",
             "authour": "Judi L.",
+            "featured": "\"Of all my vendors, you guys are my most reliable and easy to get along with. ABSOLUTELY! Thanks!\"",
             "content": [
               {
                 "accented": true,
@@ -317,9 +321,11 @@
             ]
           },
           {
+            "id": "720-2nd-ave",
             "title": "720 2nd Ave",
             "image": "/images/testimonials/7202ndAve.jpg",
             "authour": "Jessie",
+            "featured": "\"City Mechanical is a winner — they’ve gone two for two!\"",
             "content": [
               {
                 "accented": false,
@@ -336,9 +342,11 @@
             ]
           },
           {
+            "id": "pacific-biolabs",
             "title": "Pacific BioLabs",
             "image": "/images/testimonials/PacificBioLabs.jpg",
             "authour": "Mario S.",
+            "featured": "\"…But, because of the fast response of your service department to our call, we were able to avoid a lot of deviations.\"",
             "content": [
               {
                 "accented": false,
@@ -359,9 +367,11 @@
             ]
           },
           {
+            "id": "mcmillan-electric",
             "title": "McMillan Electric",
             "image": "/images/testimonials/McMillanElectric.jpg",
             "authour": "Chris T.",
+            "featured": "",
             "content": [
               {
                 "accented": false,
@@ -370,9 +380,11 @@
             ]
           },
           {
+            "id": "lemon-tree-mobile-home-park",
             "title": "Lemon Tree Mobile Home Park",
             "image": "/images/testimonials/LemonTreeMobileHomePark.jpg",
             "authour": "Bridget C.",
+            "featured": "",
             "content": [
               {
                 "accented": false,
@@ -393,9 +405,11 @@
             ]
           },
           {
+            "id": "skylark-heights-apartments",
             "title": "Skylark Heights Apartments",
             "image": "/images/testimonials/SkylarkHeightsApartments.jpg",
             "authour": "Felicia F.",
+            "featured": "",
             "content": [
               {
                 "accented": false,
