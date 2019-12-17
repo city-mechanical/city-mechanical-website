@@ -21,6 +21,21 @@ function Home() {
   return (
     <div id="home">
       <HeroBanner images={pages["home"].banner} />
+      <Container className="about">
+        <div className="featured">
+          <h2 className="title">Climate Control for Bay Area Environments</h2>
+          <p className="overview">
+            We’ve delivered the highest level of specialized commercial HVAC
+            services to San Francisco and the Greater Bay Area since 1989. Our
+            specialists never stop training because your needs never stop
+            growing. We’ll optimize existing equipment or assist you in an
+            upgrade or retrofit, and teach you how to maintain a clean,
+            efficient environment. Our specialty is speed and outstanding
+            service always delivered with our evergreen brand of honesty and
+            integrity.
+          </p>
+        </div>
+      </Container>
       <Container className="services">
         <div className="featured">
           <h2 className="title">Our Services</h2>

@@ -39,21 +39,24 @@
       }
 
       .read-more-btn {
-        @include font-size(($font-size-base / 7) * 8);
-        color: $fprimary;
-        background-color: $secondary;
-        text-decoration: none;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        display: inline-block;
         position: absolute;
-        bottom: 1.5em;
+      }
+    }
 
-        &:hover {
-          background-color: $primary;
-          box-shadow: $elevation;
-          color: $alert;
-        }
+    .read-more-btn {
+      @include font-size(($font-size-base / 7) * 8);
+      color: $fprimary;
+      background-color: $secondary;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      bottom: 1.5em;
+
+      &:hover {
+        background-color: $primary;
+        box-shadow: $elevation;
+        color: $alert;
       }
     }
   }
@@ -86,5 +89,9 @@
       color: $fprimary;
       font-weight: bold;
     }
+  }
+
+  .about {
+    padding-bottom: 0;
   }
 }
