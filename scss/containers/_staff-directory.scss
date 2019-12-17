@@ -27,10 +27,9 @@
       }
     }
 
-    .employee-image {
+    .employee-container {
       height: 100%;
       min-height: 375px;
-      // min-width: 325px;
       max-width: 100%;
       background-position: center;
       background-size: cover;
@@ -40,7 +39,20 @@
       border-radius: 10px;
     }
 
+    .employee-image {
+      position: relative;
+      height: 100%;
+      min-height: 375px;
+      max-width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
     .employee-info {
+      position: relative;
+      margin-top: -375px;
       color: $fprimary;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 1rem;

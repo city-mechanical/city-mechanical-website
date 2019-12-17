@@ -46,10 +46,13 @@ function Employee(props) {
 
   return (
     <div id={name} className="employee">
-      <div
-        className="employee-image"
-        style={{ backgroundImage: "url(" + img + ") " }}
-      >
+      <div className="employee-container">
+        <div
+          className="employee-image"
+          style={{
+            backgroundImage: "url(" + img + ")"
+          }}
+        ></div>
         <div className={expanded ? "employee-info" : "employee-info expanded"}>
           <Row noGutters>
             <Col xs={8}>
