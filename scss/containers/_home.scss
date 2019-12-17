@@ -13,8 +13,11 @@
     }
 
     .group-row .group-card + .group-card {
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         margin-top: 3em;
+      }
+      @include media-breakpoint-down(xs) {
+        margin-top: 2em;
       }
     }
 
@@ -52,6 +55,36 @@
           color: $alert;
         }
       }
+    }
+  }
+
+  .testimonials {
+    .overview {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .featured-item {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: $primary;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .overlay {
+      .title {
+        color: $fprimary;
+      }
+
+      padding: 1.5em;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .authour {
+      color: $fprimary;
+      font-weight: bold;
     }
   }
 }

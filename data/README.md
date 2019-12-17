@@ -58,9 +58,11 @@ Some pages require more specific implementations. These definitions are listed b
     "banner": "",                       // banner image link, points to which image should render
     "testimonials": [
         {
+            "id": "",                   // testimonial id (for linking)
             "title": "",                // testimonial title (usually just a location name)
             "image": "",                // testimonial image
             "authour": "",              // person who gave testimonial
+            "featured": "",             // Featured blurb of testimonial. (1-2 sentences)
             "content": [                // testimonial content (each entry is a paragraph)
                 {
                     "accented": false,  // wheter text is accented (usually for non-authour content)

@@ -63,7 +63,18 @@
     }
   }
 
-  .testimonial + .testimonial {
-    padding-top: 0;
+  .testimonial + .testimonial,
+  .testimonial:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .testimonial:last-child {
+    padding-bottom: map-get($container-space, "lg");
+    @include media-breakpoint-down(md) {
+      padding-bottom: map-get($container-space, "md");
+    }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: map-get($container-space, "sm");
+    }
   }
 }

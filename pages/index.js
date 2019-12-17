@@ -13,10 +13,15 @@ function Home() {
     ["plumbing", "building-controls-energy-management"]
   ];
 
+  const featuredTestimonials = [
+    [0, 1],
+    [2, 3]
+  ];
+
   return (
     <div id="home">
       <HeroBanner images={pages["home"].banner} />
-      <Container>
+      <Container className="services">
         <div className="featured">
           <h2 className="title">Our Services</h2>
           {Object.entries(featuredServices).map(([index, serviceGroup]) => {
@@ -45,6 +50,57 @@ function Home() {
               </Row>
             );
           })}
+        </div>
+      </Container>
+      <Container className="testimonials pt-0">
+        <div className="featured">
+          <h2 className="title">What Our Customers Say About Us</h2>
+          {Object.entries(featuredTestimonials).map(
+            ([index, testimonialGroup]) => {
+              return (
+                <Row className="group-row" key={index}>
+                  {Object.entries(testimonialGroup).map(
+                    ([index, testimonial]) => {
+                      const testimonials =
+                        pages["testimonials-page"].testimonials;
+
+                      return (
+                        <Col className="group-card" md={6} key={index}>
+                          <div
+                            className="featured-item"
+                            style={{
+                              backgroundImage:
+                                "url(" + testimonials[testimonial].image + ") "
+                            }}
+                          >
+                            <div className="overlay">
+                              <h3 className="title">
+                                {testimonials[testimonial].title}
+                              </h3>
+                              <p className="overview">
+                                {testimonials[testimonial].featured}
+                              </p>
+                              <p className="authour">
+                                - {testimonials[testimonial].authour}
+                              </p>
+                              <Link
+                                href={
+                                  "/testimonials#" +
+                                  testimonials[testimonial].id
+                                }
+                              >
+                                <a className="read-more-btn mt-4">Read More</a>
+                              </Link>
+                            </div>
+                          </div>
+                        </Col>
+                      );
+                    }
+                  )}
+                </Row>
+              );
+            }
+          )}
         </div>
       </Container>
     </div>
