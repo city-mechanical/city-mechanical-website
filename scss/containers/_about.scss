@@ -1,0 +1,47 @@
+#about {
+  @include font-size(($font-size-base / 7) * 8);
+
+  .title {
+    margin-bottom: 0.625em;
+  }
+
+  .subtitle {
+    @include font-size(($font-size-base / 7) * 10);
+    color: rgba(33, 37, 41, 0.7);
+    margin-bottom: 1.25em;
+  }
+
+  .our-story {
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-right: 2em !important;
+    }
+    @include media-breakpoint-up(md) {
+      padding-right: 15px;
+    }
+  }
+
+  .service-button {
+    @include font-size(($font-size-base / 7) * 8);
+    color: $fprimary;
+    background-color: $secondary;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 2.5em;
+
+    &:hover {
+      background-color: $primary;
+      box-shadow: $elevation;
+      color: $alert;
+
+      &.request-service {
+        color: $danger;
+      }
+    }
+  }
+}
