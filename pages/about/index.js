@@ -26,7 +26,9 @@ function About() {
         <Row>
           <Col md={12} lg={6} className="our-story">
             <h2 className="title">Our Story</h2>
-            <p className="subtitle">Serving the Greater Bay Area since 1989</p>
+            <h3 className="subtitle">
+              Serving the Greater Bay Area since 1989
+            </h3>
             {Object.entries(about.overview).map(([index, p]) => {
               return <p key={index}>{p}</p>;
             })}

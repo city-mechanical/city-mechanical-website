@@ -249,9 +249,79 @@
           ]
         ],
         "children": {
-          "GivingBack": {
+          "giving-back": {
             "title": "Giving Back",
-            "link": "/giving-back"
+            "link": "/giving-back",
+            "banner": "/images/banners/giving-back-banner.jpg",
+            "content": [
+              {
+                "id": "community",
+                "title": "Community",
+                "content": [
+                  {
+                    "title": "Our Calling and Commitment",
+                    "list": false,
+                    "content": [
+                      "A greener, cleaner Bay Area community is not only about better heating, ventilation and air conditioning service. It’s about commitment, contribution and caring.  At City Mechanical we have a motto: If we have the ability to support or assist in any manner that fits our training and capabilities, we must answer the call. Giving is a privilege, it seeds our future. Join us and become a City Mechanical Green Ambassador."
+                    ]
+                  },
+                  {
+                    "title": "Proudly Supporting These Community Organizations",
+                    "list": true,
+                    "content": [
+                      "Bay Area Rescue Mission",
+                      "City Mechanical Baseball Team",
+                      "Rocky Robinson Fund Raiser",
+                      "Salem Lutheran Home",
+                      "San Francisco General Hospital",
+                      "Cathedral Hill Boys School",
+                      "Mission Neighborhood Health Center",
+                      "Boy Scout Troop 8, Petaluma",
+                      "Boys & Girls Club Petaluma",
+                      "Waugh School District",
+                      "Larkin Street Youth Services",
+                      "Coalition of Concerned Medical Professionals (CCMP)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "think-green",
+                "title": "Think Green",
+                "content": [
+                  {
+                    "title": "We Believe In Green",
+                    "list": false,
+                    "content": [
+                      "The way we see it, we’ve always been green. Caring for the environment was a personal conviction before it became a professional standard. Being green means seeking creative solutions to ageless problems and keeping up with changing technologies. Green also means supporting initiatives like the U.S. Green Building Council’s LEED rating system, and providing leadership when adopting higher health standards. At City Mechanical, we face each day with the same goal: clear the air of environmental concerns and climate control for both the outdoors and indoors."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "projects": [
+              {
+                "title": "CCMP HVAC Replacement Project",
+                "image": {
+                  "description": "Coalition of Concerned Medical Professionals awards City Mechanical, Inc. with a Certificate of Appreciation \"For community service in aid to Coalition of Concerned Medical Professionals efforts to ensure comprehensive health care and advance the interests of the lowest income workers in our Community.\" March 11th, 2018",
+                  "file": "/images/giving-back/ccmp-hvac-replacement.jpg"
+                },
+                "overview": [
+                  "At City Mechanical, giving back to the community is one of our core values. We believe that it is a privilege to be able to support our community wherever we can. Recently, we were able to assist the Coalition of Concerned Medical Professionals (CCMP) by providing much-needed replacements for their HVAC equipment. With all that CCMP does for the Bay Area community, it was the least we could do.",
+                  "Coalition of Concerned Medical Professionals (CCMP) is an organization that dedicates to ensuring comprehensive health care is available for lower-income workers within the Bay Area community. CCMP is an all-volunteer effort and is working for a great cause that City Mechanical similarly stands behind."
+                ]
+              },
+              {
+                "title": "The 971 Spartan Robotics Team – 2018",
+                "image": {
+                  "description": "The 971 Spartan Robotics Team thanks City Mechanical for our contributions as a 2018 sponsor.",
+                  "file": "/images/giving-back/971-spartan-robotics-team.jpg"
+                },
+                "overview": [
+                  "In 2018, we proudly sponsored the 971 Spartan Robotics Team, located in Mountain View, California.  With our sponsorship, they were able to ensure that they had parts to build new and exciting robots that inspire students to learn robotics."
+                ]
+              }
+            ]
           }
         }
       },
