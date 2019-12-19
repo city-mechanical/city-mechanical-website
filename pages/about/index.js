@@ -34,8 +34,30 @@ function About() {
               <a className={"service-button"}>{"Our Services"}</a>
             </Link>
           </Col>
-          <Col md={12} lg={6} className={"service-content"}>
-            Gallery HERE
+          <Col md={12} lg={6} className={"about-content"}>
+            {Object.entries(about.gallery).map(([index, galleryRow]) => {
+              return (
+                <Row key={index} noGutters>
+                  {Object.entries(galleryRow).map(([index, image]) => {
+                    return (
+                      <Col
+                        xs={12}
+                        sm={6}
+                        key={index}
+                        className={"col-index-" + index}
+                      >
+                        <div
+                          className="about-image"
+                          style={{
+                            backgroundImage: "url(" + image + ") "
+                          }}
+                        />
+                      </Col>
+                    );
+                  })}
+                </Row>
+              );
+            })}
           </Col>
         </Row>
       </Container>
