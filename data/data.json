@@ -233,6 +233,21 @@
       "about": {
         "title": "About",
         "link": "/about",
+        "banner": "/images/banners/about-banner.jpg",
+        "overview": [
+          "City Mechanical is the brainstorm of Russell L. Will Jr., president, who in the 1980s was a plumbing apprentice. His teacher was journeyman Ronald A. Tinkey, who now serves as the firm’s secretary/ treasurer. Russ was impressed with his mentor’s vast knowledge and compassionate way of guiding young men and women. Thus, he made Ron an offer: Let’s start a “little” service company.",
+          "Today, all our technicians are union trained. Training remains the hallmark of our growing company’s vision. Not just for our employees, but for our clients as well. Delivering the highest level of specialized HVAC services means helping our customers understand the complex procedures their systems need. Our goal is to help our customers not only fix problems when they arise. But, to maintain their equipment so that it is more efficient, and working more for them.  These are the ideals our company was founded on, and what we continue to pursue to this day."
+        ],
+        "gallery": [
+          [
+            "/images/galleries/about-bigge.jpg",
+            "/images/galleries/about-pipe.jpg"
+          ],
+          [
+            "/images/galleries/about-crane.jpg",
+            "/images/galleries/about-trucks.jpg"
+          ]
+        ],
         "children": {
           "GivingBack": {
             "title": "Giving Back",
