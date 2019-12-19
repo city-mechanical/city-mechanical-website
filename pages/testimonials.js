@@ -7,7 +7,7 @@ import TestimonialImage from "../components/TestimonialImage";
 
 function getImage(index, testimonial, className) {
   return (
-    <Col md={12} lg={6} className={"testimonial-image-col " + className}>
+    <Col key={index} md={12} lg={6} className={"testimonial-image-col " + className}>
       <TestimonialImage img={testimonial.image} title={testimonial.title} />
     </Col>
   );
