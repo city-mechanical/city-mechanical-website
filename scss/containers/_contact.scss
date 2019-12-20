@@ -1,0 +1,55 @@
+#contact {
+  @include font-size(($font-size-base / 7) * 8);
+
+  .title {
+    margin-bottom: 0.625em;
+  }
+
+  .contactLink a {
+    color: $fprimary;
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  .address-map {
+    min-height: 500px;
+    @include media-breakpoint-down(md) {
+      margin-top: 1rem;
+    }
+  }
+
+  .address-map > :first-child,
+  .address-map > div > div,
+  .address-map button.gm-control-active.gm-fullscreen-control,
+  .address-map div.gmnoprint div,
+  .address-map div.gm-style div.gm-style-cc div div {
+    border-radius: 10px !important;
+  }
+
+  .address-map > :first-child {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+  }
+
+  .row + .row {
+    margin-top: 3rem;
+  }
+
+  .address {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    color: $fprimary;
+    top: 0;
+    left: 24px;
+    right: 24px;
+    position: absolute;
+  }
+
+  .marker {
+    position: absolute;
+    top: -43px;
+    left: -13.5px;
+  }
+}
