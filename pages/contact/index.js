@@ -39,7 +39,7 @@ function Contact() {
                   <Col className="address-map">
                     <GoogleMapReact
                       bootstrapURLKeys={{
-                        key: "AIzaSyARAO2PYT0bk8-AYj9utoe1MLLAaWI3hMU"
+                        key: process.env.GOOGLE_MAPS_API_KEY
                       }}
                       defaultCenter={{
                         lat: location.lat + 0.00325,
