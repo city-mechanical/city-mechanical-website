@@ -31,8 +31,6 @@ function Contact() {
       <Container>
         <Row>
           <Col>
-            <h2 className="title">Locations</h2>
-
             {Object.entries(locations).map(([index, location]) => {
               return (
                 <Row key={index}>
@@ -47,9 +45,9 @@ function Contact() {
                       }}
                       defaultZoom={15}
                       options={{
-                        draggable: false,
+                        draggable: true,
                         fullscreenControl: false,
-                        zoomControl: false
+                        zoomControl: true
                       }}
                     >
                       <MapMarker lat={location.lat} lng={location.lng} />
