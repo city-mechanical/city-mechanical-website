@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Banner from "../../components/Banner";
 import Address from "../../components/Address";
+import Form from "../../components/Form";
 import GoogleMapReact from "google-map-react";
 
 function Contact() {
@@ -29,6 +30,19 @@ function Contact() {
         ]}
       />
       <Container>
+        <Form
+          title="Thank You For Visiting City Mechanical"
+          desc="We hope that you like what we, City Mechanical, are all about! To the
+          right is the form to contact us. So, if you would like an estimate for
+          one of our services, please head over to the Request Service page.
+          Likewise, to schedule an appointment, the Request Service page is for
+          you. Otherwise, if you would like to ask us any general questions, be
+          sure to fill out the form to the right. Likewise, if you have any
+          comments related to the website or our services, you should fill out
+          this form. Thank you for considering City Mechanical for your HVAC
+          needs. We hope to serve you in the future!"
+          formURL="https://form.jotform.com/200517384689060"
+        />
         <Row>
           <Col>
             {Object.entries(locations).map(([index, location]) => {
