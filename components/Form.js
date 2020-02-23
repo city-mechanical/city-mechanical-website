@@ -9,6 +9,7 @@ const defaultProps = {};
 
 function Form(props) {
   const { title, desc, formURL } = props;
+  const [loading, setLoading] = useState(true);
 
   return (
     <Row>
@@ -18,7 +19,11 @@ function Form(props) {
       </Col>
       <Col md={12} lg={6}>
         <div className="formContainer">
-          <JotformEmbed src={formURL} />
+          <JotformEmbed
+            class={loading ? "form-loading" : ""}
+            src={formURL}
+            onLoad={() => setLoading(false)}
+          />
         </div>
       </Col>
     </Row>

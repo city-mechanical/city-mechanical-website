@@ -16,4 +16,10 @@
   iframe {
     border-radius: 10px;
   }
+
+  .form-loading {
+    visibility: hidden;
+    opacity: 0;
+    display: none !important;
+  }
 }
