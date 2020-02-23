@@ -1,0 +1,19 @@
+.formContainer {
+  @include font-size(($font-size-base / 7) * 8);
+
+  @include media-breakpoint-down(md) {
+    margin-top: map-get($container-space, "md") +
+      map-get($container-space, "md") / 4;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: map-get($container-space, "sm") +
+      map-get($container-space, "sm") / 4;
+  }
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 5px 0px, rgba(0, 0, 0, 0.04) 0px -5px 20px 10px;
+  border-radius: 10px;
+
+  iframe {
+    border-radius: 10px;
+  }
+}
