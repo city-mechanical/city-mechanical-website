@@ -39,8 +39,8 @@
         "address": "1130 Industrial Street, Suite #11\nPetaluma, CA 94952",
         "tel": "1-510-724-9088",
         "fax": "1-707-763-3014",
-        "lat": 38.265270,
-        "lng": -122.664530
+        "lat": 38.26527,
+        "lng": -122.66453
       }
     ],
     "pages": {
@@ -748,7 +748,8 @@
       },
       "request-service": {
         "title": "Request Service/Estimate",
-        "link": "/request-service"
+        "link": "/request-service",
+        "banner": "/images/banners/request-service-banner.jpg"
       }
     }
   }
