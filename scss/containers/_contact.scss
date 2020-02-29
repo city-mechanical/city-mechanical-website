@@ -1,0 +1,70 @@
+#contact {
+  @include font-size(($font-size-base / 7) * 8);
+
+  background-color: $bgprimary;
+
+  .title {
+    margin-bottom: 1.25em;
+  }
+
+  .contactLink a {
+    color: $fprimary;
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  .address-map {
+    min-height: 231px;
+    @include media-breakpoint-down(md) {
+      margin-top: 1rem;
+    }
+    @include media-breakpoint-down(sm) {
+      min-height: 262px;
+    }
+
+    &:hover {
+      > .address {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    > .address {
+      pointer-events: none;
+      padding: 1rem;
+      color: $fprimary;
+      top: 0;
+      left: 24px;
+      right: 24px;
+      bottom: 0;
+      position: absolute;
+      transition: background-color ease-out 0.3s;
+      background-color: rgba(0, 0, 0, 0.7);
+
+      .title {
+        margin-bottom: 0.625em;
+      }
+
+      .content,
+      .title {
+        pointer-events: all;
+        width: fit-content;
+      }
+    }
+
+    .address-map > :first-child {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+    }
+  }
+
+  .row + .row {
+    margin-top: 3rem;
+  }
+
+  .marker {
+    position: absolute;
+    top: -43px;
+    left: -13.5px;
+  }
+}

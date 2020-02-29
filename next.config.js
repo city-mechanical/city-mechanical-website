@@ -1,5 +1,7 @@
+require("dotenv").config();
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
+
 module.exports = withCSS(
   withSass({
     target: "serverless",
@@ -15,6 +17,7 @@ module.exports = withCSS(
       });
 
       return config;
-    }
+    },
+    env: { GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY }
   })
 );

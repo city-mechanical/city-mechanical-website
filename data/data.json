@@ -20,21 +20,27 @@
         "title": "Hercules Office - Corporate Headquarters",
         "address": "724 Alfred Nobel Drive\nHercules, CA 94547",
         "tel": "1-510-724-9088",
-        "fax": "1-510-724-8240"
+        "fax": "1-510-724-8240",
+        "lat": 38.01998,
+        "lng": -122.27333
       },
       {
         "name": "SF",
         "title": "San Francisco Office",
         "address": "1925 Ingalls Street\nSan Francisco, CA 94124",
         "tel": "1-510-724-9088",
-        "fax": "1-415-647-6249"
+        "fax": "1-415-647-6249",
+        "lat": 37.72692,
+        "lng": -122.38566
       },
       {
         "name": "Petaluma",
         "title": "Petaluma Office",
         "address": "1130 Industrial Street, Suite #11\nPetaluma, CA 94952",
         "tel": "1-510-724-9088",
-        "fax": "1-707-763-3014"
+        "fax": "1-707-763-3014",
+        "lat": 38.26527,
+        "lng": -122.66453
       }
     ],
     "pages": {
@@ -511,6 +517,7 @@
       "contact": {
         "title": "Contact",
         "link": "/contact",
+        "banner": "/images/banners/contact-banner.jpg",
         "children": {
           "staff-directory": {
             "title": "Staff Directory",
@@ -741,7 +748,8 @@
       },
       "request-service": {
         "title": "Request Service/Estimate",
-        "link": "/request-service"
+        "link": "/request-service",
+        "banner": "/images/banners/request-service-banner.jpg"
       }
     }
   }

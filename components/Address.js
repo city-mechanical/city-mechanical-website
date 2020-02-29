@@ -15,8 +15,11 @@ function Address(props) {
   return (
     <div className="address">
       <h3 className="title">{title}</h3>
-      <div className="content">{adr[0]}</div>
-      <div className="content">{adr[1]}</div>
+      <address className="content">
+        {adr[0]}
+        <br />
+        {adr[1]}
+      </address>
       <div className="content">
         Tel: <ContactLink data={tel} />
       </div>
