@@ -43,18 +43,20 @@ function Home() {
             return (
               <Row className="group-row" key={index}>
                 {Object.entries(serviceGroup).map(([index, service]) => {
-                  const services = pages["services"].children;
+                  const services = pages["services"];
 
                   return (
                     <Col className="group-card" md={6} key={index}>
                       <div className="featured-item">
-                        <h3 className="title">{services[service].title}</h3>
+                        <h3 className="title">
+                          {services.children[service].title}
+                        </h3>
                         <p className="overview">
-                          {services[service].overview[1]}
+                          {services.children[service].overview[1]}
                         </p>
                         <Link
                           href={services.link + "/[name]"}
-                          as={services.link + services[service].link}
+                          as={services.link + services.children[service].link}
                         >
                           <a className="read-more-btn mt-4">Read More</a>
                         </Link>
