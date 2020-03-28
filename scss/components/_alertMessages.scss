@@ -1,0 +1,86 @@
+.alert-messages {
+  .group-row + .group-row {
+    margin-top: 3em;
+  }
+
+  .group-row .group-card + .group-card {
+    @include media-breakpoint-down(sm) {
+      margin-top: 3em;
+    }
+    @include media-breakpoint-down(xs) {
+      margin-top: 2em;
+    }
+  }
+
+  .emergency-service {
+    background-color: #122646;
+    padding: 3em;
+    border-radius: 10px;
+    color: #ffffff;
+    position: relative;
+
+    &:hover {
+      background-color: #1a3765;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 5px 0px;
+
+      .highlight {
+        color: #ff1d00;
+      }
+    }
+
+    .alert {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 0.25em 0.75em;
+      margin: 0;
+      border-radius: 10px 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 1em;
+      color: #ffb300;
+      border: none;
+
+      .alert-icon {
+        padding-bottom: 3px;
+        margin-right: 0px;
+        margin-left: -3px;
+        font-size: 1.5em;
+      }
+    }
+
+    /*Important:*/
+    .link-spanner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border-radius: 10px;
+
+      /* edit: fixes overlap error in IE7/8, 
+      make sure you have an empty gif */
+      background-image: url("/images/empty.gif");
+    }
+
+    .title {
+      text-align: center;
+      margin: 0;
+    }
+
+    .message {
+      margin: 0.75em 0 0 0;
+    }
+
+    .message-large {
+      margin: 0;
+      text-align: center;
+      font-size: 1.7rem !important;
+      font-weight: 500;
+    }
+  }
+
+  padding-bottom: 0 !important;
+}
