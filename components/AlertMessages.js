@@ -46,7 +46,7 @@ function AlertMessages(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span class="link-spanner"></span>
+              <span className="link-spanner"></span>
             </a>
           </div>
         </Col>

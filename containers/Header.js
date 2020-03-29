@@ -9,6 +9,7 @@ import ContactLink from "../components/ContactLink";
 import UtilityNav from "../components/UtilityNav";
 import NavDropdown from "../components/NavDropdown";
 import NavDropdownItem from "../components/NavDropdownItem";
+import TextLoop from "react-text-loop";
 
 const cmi = require("../data/data.json").data.cmi;
 const pages = require("../data/data.json").data.pages;
@@ -50,15 +51,21 @@ function Header() {
                     children={
                       <a
                         className={
-                          page.title === "Request Service/Estimate"
+                          page.title === "Request Service"
                             ? "service-nav-link nav-link"
                             : "nav-link"
                         }
                       >
-                        {page.title === "Request Service/Estimate" ? (
+                        {page.title === "Request Service" ? (
                           <React.Fragment>
-                            <FaTools style={{ marginBottom: "3px" }} />{" "}
-                            {page.title}
+                            <FaTools style={{ marginBottom: "3px" }} />
+                            {" Request "}
+                            <TextLoop interval={[10000, 1500, 1500, 1500]}>
+                              <span>Service</span>
+                              <span>Estimate</span>
+                              <span>Repair</span>
+                              <span>Maintenance</span>
+                            </TextLoop>
                           </React.Fragment>
                         ) : (
                           page.title
