@@ -71,7 +71,7 @@ function Header() {
                           <React.Fragment>
                             <FaTools style={{ marginBottom: "3px" }} />
                             {" Request "}
-                            <TextLoop interval={[10000, 1500, 1500, 1500]}>
+                            <TextLoop interval={[10000, 3000, 3000, 3000]}>
                               <span>Service</span>
                               <span>Estimate</span>
                               <span>Repair</span>

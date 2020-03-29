@@ -89,3 +89,12 @@
     }
   }
 }
+
+.hero-banner {
+  .banner-subtitle {
+    @include font-size(($font-size-base / 7) * 10);
+    @include media-breakpoint-down(sm) {
+      @include font-size(($font-size-base / 9) * 10);
+    }
+  }
+}

@@ -10,11 +10,11 @@
 
 @mixin font-size($size) {
   @if unit($size) == "rem" {
-    font-size: calculatePx($size); // font-size in px
-    font-size: $size; // font-size in rem
+    font-size: calculatePx($size) !important; // font-size in px
+    font-size: $size !important; // font-size in rem
   }
   @if unit($size) == "px" {
-    font-size: $size; // font-size in px
-    font-size: calculateRem($size); // font-size in rem
+    font-size: $size !important; // font-size in px
+    font-size: calculateRem($size) !important; // font-size in rem
   }
 }
