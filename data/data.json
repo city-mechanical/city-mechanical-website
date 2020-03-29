@@ -747,7 +747,7 @@
         }
       },
       "request-service": {
-        "title": "Request Service/Estimate",
+        "title": "Request Service",
         "link": "/request-service",
         "banner": "/images/banners/request-service-banner.jpg"
       }
