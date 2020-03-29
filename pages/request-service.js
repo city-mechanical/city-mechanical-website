@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Banner from "../components/Banner";
 import Form from "../components/Form";
+import AlertMessages from "../components/AlertMessages";
 
 function RequestService() {
   const pages = require("../data/data.json").data.pages;
@@ -17,6 +18,7 @@ function RequestService() {
           { title: requestService.title, link: requestService.link }
         ]}
       />
+      <AlertMessages />
       <Container>
         <Form
           title="Thank You For Visiting City Mechanical"
