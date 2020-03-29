@@ -3,12 +3,12 @@ import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 
 function NavDropdown(props) {
-  const { title, link, css, children } = props;
+  const { title, link, css, children, onClick } = props;
 
   return (
     <div className="navdropdown">
       <Link href={link} as={link}>
-        <a className="nav-link ndd">
+        <a className="nav-link ndd" onClick={onClick}>
           <IoMdArrowDropright className="ndd-icon" />
           {title}
         </a>
