@@ -8,14 +8,14 @@
   @include font-size(($font-size-base / 7) * 8);
 
   .continue-reading {
-    background: -webkit-linear-gradient(
-      270deg,
-      #212529 50%,
-      rgba(250, 250, 250, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: -webkit-linear-gradient(
+    //   270deg,
+    //   #212529 50%,
+    //   rgba(250, 250, 250, 0) 100%
+    // );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   .hub-content {
