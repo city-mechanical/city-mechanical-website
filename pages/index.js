@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import HeroBanner from "../components/HeroBanner";
+import AlertMessages from "../components/AlertMessages";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -21,6 +22,7 @@ function Home() {
   return (
     <div id="home">
       <HeroBanner images={pages["home"].banner} />
+      <AlertMessages />
       <Container className="about">
         <div className="featured">
           <h2 className="title">Climate Control for Bay Area Environments</h2>
