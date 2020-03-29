@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -15,6 +15,8 @@ const cmi = require("../data/data.json").data.cmi;
 const pages = require("../data/data.json").data.pages;
 
 function Header() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div id="header">
       <UtilityNav
@@ -27,7 +29,12 @@ function Header() {
         }
         social
       />
-      <Navbar collapseOnSelect expand="xxl" className="container" sticky="top">
+      <Navbar
+        expanded={expanded}
+        expand="xxl"
+        className="container"
+        sticky="top"
+      >
         <Link href="/" as={"/"}>
           <a className="nav-link brand">
             <Navbar.Brand>
@@ -39,7 +46,10 @@ function Header() {
             </Navbar.Brand>
           </a>
         </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+        />
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             {Object.entries(pages).map(([index, page]) => {
@@ -55,6 +65,7 @@ function Header() {
                             ? "service-nav-link nav-link"
                             : "nav-link"
                         }
+                        onClick={() => setExpanded(false)}
                       >
                         {page.title === "Request Service" ? (
                           <React.Fragment>
@@ -81,6 +92,7 @@ function Header() {
                     link={page.link}
                     key={index}
                     css={page.title === "Services" ? "col2" : ""}
+                    onClick={() => setExpanded(false)}
                     children={Object.entries(page.children).map(
                       ([index, child]) => {
                         return (
@@ -93,6 +105,7 @@ function Header() {
                             }
                             as={page.link + child.link}
                             key={index}
+                            onClick={() => setExpanded(false)}
                           />
                         );
                       }

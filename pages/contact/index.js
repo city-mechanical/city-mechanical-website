@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Banner from "../../components/Banner";
 import Address from "../../components/Address";
 import Form from "../../components/Form";
+import AlertMessages from "../../components/AlertMessages";
 import GoogleMapReact from "google-map-react";
 
 function Contact() {
@@ -29,6 +30,7 @@ function Contact() {
           { title: contact.title, link: contact.link }
         ]}
       />
+      <AlertMessages />
       <Container>
         <Form
           title="Thank You For Visiting City Mechanical"
