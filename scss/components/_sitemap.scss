@@ -4,6 +4,7 @@
     cursor: pointer;
     margin-left: -0.5em;
     a {
+      width: 100%;
       color: $fprimary;
       @include font-size($font-size-base);
       text-decoration: none;
