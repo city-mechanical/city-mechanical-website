@@ -53,21 +53,17 @@ function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             {Object.entries(pages).map(([index, page]) => {
-              if (page.children === undefined || page.children.length === 0) {
+              if (page.title === "Request Service") {
                 return (
-                  <Link
-                    href={page.link}
-                    key={index}
-                    children={
-                      <a
-                        className={
-                          page.title === "Request Service"
-                            ? "service-nav-link nav-link"
-                            : "nav-link"
-                        }
-                        onClick={() => setExpanded(false)}
-                      >
-                        {page.title === "Request Service" ? (
+                  <div className="nav-container service-nav-container">
+                    <Link
+                      href={page.link}
+                      key={index}
+                      children={
+                        <a
+                          className={"service-nav-link nav-link"}
+                          onClick={() => setExpanded(false)}
+                        >
                           <React.Fragment>
                             <FaTools style={{ marginBottom: "3px" }} />
                             {" Request "}
@@ -78,9 +74,25 @@ function Header() {
                               <span>Maintenance</span>
                             </TextLoop>
                           </React.Fragment>
-                        ) : (
-                          page.title
-                        )}
+                        </a>
+                      }
+                    />
+                  </div>
+                );
+              } else if (
+                page.children === undefined ||
+                page.children.length === 0
+              ) {
+                return (
+                  <Link
+                    href={page.link}
+                    key={index}
+                    children={
+                      <a
+                        className={"nav-link"}
+                        onClick={() => setExpanded(false)}
+                      >
+                        {page.title}
                       </a>
                     }
                   />
