@@ -3,10 +3,39 @@ import App from "next/app";
 import Head from "next/head";
 import Header from "../containers/Header";
 import Footer from "../containers/Footer";
+import Router from "next/router";
 
 import "../index.scss";
 
 class MyApp extends App {
+  componentDidMount() {
+    const { asPath } = Router;
+    console.log(asPath);
+    switch (asPath) {
+      case "/airmaid":
+      case "/backflow-prevention-device-certification":
+      case "/boilers":
+      case "/building-controls-energy-management":
+      case "/duct-cleaning":
+      case "/jetting-services":
+      case "/plumbing":
+      case "/refrigeration":
+      case "/sauna":
+      case "/steam-baths-showers":
+      case "/steam-generators":
+      case "/sump-pump-systems":
+      case "/water-heaters":
+      case "/water-softeners":
+      case "/water-treatment": {
+        Router.replace("/services" + asPath, "/services" + asPath, {
+          shallow: true,
+        });
+      }
+      default:
+        break;
+    }
+  }
+
   render() {
     const { Component, pageProps } = this.props;
     return (
