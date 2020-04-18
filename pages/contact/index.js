@@ -23,10 +23,7 @@ function Contact() {
 
   return (
     <div id="contact">
-      <NextSeo
-        title="City Mechanical, Inc. | HVAC, Refrigeration, Plumbing & More"
-        description="City Mechanical has been delivering the highest level of specialized commercial HVAC services to San Francisco and the Greater Bay Area for over 26 years."
-      />
+      <NextSeo title={contact.metaTitle} description={contact.metaDesc} />
       <Banner
         img={contact.banner}
         title={contact.title}

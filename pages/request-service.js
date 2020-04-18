@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Banner from "../components/Banner";
 import Form from "../components/Form";
 import AlertMessages from "../components/AlertMessages";
+import { NextSeo } from "next-seo";
 
 function RequestService() {
   const pages = require("../data/data.json").data.pages;
@@ -10,12 +11,16 @@ function RequestService() {
 
   return (
     <div id="request-service">
+      <NextSeo
+        title={requestService.metaTitle}
+        description={requestService.metaDesc}
+      />
       <Banner
         img={requestService.banner}
         title={requestService.title}
         breadcrumbs={[
           { title: pages["home"].title, link: pages["home"].link },
-          { title: requestService.title, link: requestService.link }
+          { title: requestService.title, link: requestService.link },
         ]}
       />
       <AlertMessages />

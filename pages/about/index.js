@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Banner from "../../components/Banner";
+import { NextSeo } from "next-seo";
 
 function About() {
   const pages = require("../../data/data.json").data.pages;
@@ -11,6 +12,7 @@ function About() {
 
   return (
     <div id="about">
+      <NextSeo title={about.metaTitle} description={about.metaDesc} />
       <Banner
         img={about.banner}
         title={about.title}
@@ -18,8 +20,8 @@ function About() {
           { title: pages["home"].title, link: pages["home"].link },
           {
             title: about.title,
-            link: about.link
-          }
+            link: about.link,
+          },
         ]}
       />
       <Container>
@@ -51,7 +53,7 @@ function About() {
                         <div
                           className="about-image"
                           style={{
-                            backgroundImage: "url(" + image + ") "
+                            backgroundImage: "url(" + image + ") ",
                           }}
                         />
                       </Col>

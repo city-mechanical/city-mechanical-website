@@ -23,8 +23,8 @@ function Home() {
   return (
     <div id="home">
       <NextSeo
-        title="City Mechanical, Inc. - HVAC, Refrigeration, Plumbing & More"
-        description="City Mechanical has been delivering the highest level of specialized commercial HVAC services to San Francisco and the Greater Bay Area for over 26 years."
+        title={pages["home"].metaTitle}
+        description={pages["home"].metaDesc}
       />
       <HeroBanner images={pages["home"].banner} />
       <AlertMessages />

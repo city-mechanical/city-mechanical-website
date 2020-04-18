@@ -11,9 +11,11 @@ function PeriodicMaintenance() {
       banner={pm.banner}
       breadcrumbs={[
         { title: pages["home"].title, link: pages["home"].link },
-        { title: pm.title, link: pm.link }
+        { title: pm.title, link: pm.link },
       ]}
       overview={pm.overview}
+      metaTitle={pm.metaTitle}
+      metaDesc={pm.metaDesc}
       buttonText={"Request Maintenance"}
     />
   );
