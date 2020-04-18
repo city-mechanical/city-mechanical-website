@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Banner from "../../components/Banner";
 import ContactLink from "../../components/ContactLink";
 import Employee from "../../components/Employee";
+import { NextSeo } from "next-seo";
 
 function StaffDirectory() {
   const pages = require("../../data/data.json").data.pages;
@@ -13,6 +14,10 @@ function StaffDirectory() {
 
   return (
     <div id="staff-directory">
+      <NextSeo
+        title={staffDirectoryPage.metaTitle}
+        description={staffDirectoryPage.metaDesc}
+      />
       <Banner
         img={staffDirectoryPage.banner}
         title={staffDirectoryPage.title}
@@ -21,8 +26,8 @@ function StaffDirectory() {
           { title: pages["contact"].title, link: pages["contact"].link },
           {
             title: staffDirectoryPage.title,
-            link: pages["contact"].link + staffDirectoryPage.link
-          }
+            link: pages["contact"].link + staffDirectoryPage.link,
+          },
         ]}
       />
 

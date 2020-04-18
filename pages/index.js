@@ -5,22 +5,27 @@ import AlertMessages from "../components/AlertMessages";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { NextSeo } from "next-seo";
 
 const pages = require("../data/data.json").data.pages;
 
 function Home() {
   const featuredServices = [
     ["hvac", "refrigeration"],
-    ["plumbing", "building-controls-energy-management"]
+    ["plumbing", "building-controls-energy-management"],
   ];
 
   const featuredTestimonials = [
     [0, 1],
-    [2, 3]
+    [2, 3],
   ];
 
   return (
     <div id="home">
+      <NextSeo
+        title={pages["home"].metaTitle}
+        description={pages["home"].metaDesc}
+      />
       <HeroBanner images={pages["home"].banner} />
       <AlertMessages />
       <Container className="about">
@@ -89,7 +94,7 @@ function Home() {
                             className="featured-item"
                             style={{
                               backgroundImage:
-                                "url(" + testimonials[testimonial].image + ") "
+                                "url(" + testimonials[testimonial].image + ") ",
                             }}
                           >
                             <div className="overlay">

@@ -7,6 +7,7 @@ import Address from "../../components/Address";
 import Form from "../../components/Form";
 import AlertMessages from "../../components/AlertMessages";
 import GoogleMapReact from "google-map-react";
+import { NextSeo } from "next-seo";
 
 function Contact() {
   const pages = require("../../data/data.json").data.pages;
@@ -22,12 +23,13 @@ function Contact() {
 
   return (
     <div id="contact">
+      <NextSeo title={contact.metaTitle} description={contact.metaDesc} />
       <Banner
         img={contact.banner}
         title={contact.title}
         breadcrumbs={[
           { title: pages["home"].title, link: pages["home"].link },
-          { title: contact.title, link: contact.link }
+          { title: contact.title, link: contact.link },
         ]}
       />
       <AlertMessages />
@@ -53,17 +55,17 @@ function Contact() {
                   <Col className="address-map">
                     <GoogleMapReact
                       bootstrapURLKeys={{
-                        key: process.env.GOOGLE_MAPS_API_KEY
+                        key: process.env.GOOGLE_MAPS_API_KEY,
                       }}
                       defaultCenter={{
                         lat: location.lat,
-                        lng: location.lng
+                        lng: location.lng,
                       }}
                       defaultZoom={15}
                       options={{
                         draggable: true,
                         fullscreenControl: false,
-                        zoomControl: true
+                        zoomControl: true,
                       }}
                     >
                       <MapMarker lat={location.lat} lng={location.lng} />

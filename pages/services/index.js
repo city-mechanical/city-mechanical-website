@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Banner from "../../components/Banner";
+import { NextSeo } from "next-seo";
 
 function ServicesHub() {
   const pages = require("../../data/data.json").data.pages;
@@ -13,12 +14,13 @@ function ServicesHub() {
 
   return (
     <div id="service">
+      <NextSeo title={hub.metaTitle} description={hub.metaDesc} />
       <Banner
         img={hub.banner}
         title={hub.title}
         breadcrumbs={[
           { title: pages["home"].title, link: pages["home"].link },
-          { title: hub.title, link: hub.link }
+          { title: hub.title, link: hub.link },
         ]}
       />
       <div className="container">

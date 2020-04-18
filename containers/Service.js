@@ -4,12 +4,23 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Banner from "../components/Banner";
+import { NextSeo } from "next-seo";
 
 function Service(props) {
-  const { title, banner, overview, breadcrumbs, buttonText, children } = props;
+  const {
+    title,
+    banner,
+    overview,
+    breadcrumbs,
+    buttonText,
+    metaTitle,
+    metaDesc,
+    children,
+  } = props;
 
   return (
     <div id="service">
+      <NextSeo title={metaTitle} description={metaDesc} />
       <Banner img={banner} title={title} breadcrumbs={breadcrumbs} />
       <Container>
         <Row>

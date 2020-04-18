@@ -46,10 +46,12 @@ function ServicePage() {
           {
             title: service.title,
             href: pages["services"].link + "/[name]",
-            as: pages["services"].link + service.link
-          }
+            as: pages["services"].link + service.link,
+          },
         ]}
         overview={service.overview}
+        metaTitle={service.metaTitle}
+        metaDesc={service.metaDesc}
         children={children}
       />
     );

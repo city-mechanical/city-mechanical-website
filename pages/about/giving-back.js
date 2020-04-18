@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Banner from "../../components/Banner";
+import { NextSeo } from "next-seo";
 
 function GivingBack() {
   const pages = require("../../data/data.json").data.pages;
@@ -10,6 +11,7 @@ function GivingBack() {
 
   return (
     <div id="giving-back">
+      <NextSeo title={givingBack.metaTitle} description={givingBack.metaDesc} />
       <Banner
         img={givingBack.banner}
         title={givingBack.title}
@@ -18,8 +20,8 @@ function GivingBack() {
           { title: pages["about"].title, link: pages["about"].link },
           {
             title: givingBack.title,
-            link: pages["about"].link + givingBack.link
-          }
+            link: pages["about"].link + givingBack.link,
+          },
         ]}
       />
       <Container>
@@ -72,7 +74,7 @@ function GivingBack() {
                 <div
                   className="giving-back-image"
                   style={{
-                    backgroundImage: "url(" + project.image.file + ") "
+                    backgroundImage: "url(" + project.image.file + ") ",
                   }}
                 />
               </Col>

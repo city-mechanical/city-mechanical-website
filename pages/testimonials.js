@@ -4,10 +4,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Banner from "../components/Banner";
 import TestimonialImage from "../components/TestimonialImage";
+import { NextSeo } from "next-seo";
 
 function getImage(index, testimonial, className) {
   return (
-    <Col key={index} md={12} lg={6} className={"testimonial-image-col " + className}>
+    <Col
+      key={index}
+      md={12}
+      lg={6}
+      className={"testimonial-image-col " + className}
+    >
       <TestimonialImage img={testimonial.image} title={testimonial.title} />
     </Col>
   );
@@ -20,6 +26,10 @@ function Testimonials() {
 
   return (
     <div id="testimonials">
+      <NextSeo
+        title={testimonialsPage.metaTitle}
+        description={testimonialsPage.metaDesc}
+      />
       <Banner
         img={testimonialsPage.banner}
         title={testimonialsPage.title}
@@ -27,8 +37,8 @@ function Testimonials() {
           { title: pages["home"].title, link: pages["home"].link },
           {
             title: testimonialsPage.title,
-            link: testimonialsPage.link
-          }
+            link: testimonialsPage.link,
+          },
         ]}
       />
 

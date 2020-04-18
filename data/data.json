@@ -53,12 +53,16 @@
           "/images/banners/hvac-classroom-banner.jpg",
           "/images/banners/chinatown-truck-banner.jpg",
           "/images/banners/copper-pipes-banner.jpg"
-        ]
+        ],
+        "metaTitle": "City Mechanical, Inc. | HVAC, Refrigeration, Plumbing & More",
+        "metaDesc": "City Mechanical has been delivering the highest level of specialized commercial HVAC services to San Francisco and the Greater Bay Area for over 26 years."
       },
       "services": {
         "title": "Services",
         "link": "/services",
         "banner": "/images/banners/services-banner.jpg",
+        "metaTitle": "Services, Repairs, Maintenance | City Mechanical, Inc.",
+        "metaDesc": "At City Mechanical, Inc. we offer a vast selection of services. Whether you want us to work on your HVAC, Plumbing, or anything else. We can handle it all!",
         "children": {
           "airmaid": {
             "title": "Air Maid",
@@ -67,7 +71,9 @@
             "overview": [
               "When our clients need new air treatment systems, we always recommend AirMaid by Interzon.  Interzon’s systems are the most innovative air treatment systems on the market. Due to their Ozone technology, we can effectively reduce grease buildup in ventilation channels, odor, and chemical vapors all at low maintenance costs.  Not to mention that cleaning the air with AirMaid also promotes fire safety, allows the possibility of a heat exchanger, and can effectively eliminate all types of bacteria.  Above all, if you need to improve the air quality in your facility, or home, AirMaid is the perfect solution.",
               "At City Mechanical, we want to ensure our customers are always getting the best products.  That’s why we proudly associate with AirMaid by Interzon.  We believe, to get better air quality, you first need to start with superior air systems.  All of our technicians are capable of working with, installing, and operating on Interzon’s products.  Striving to get you the best air quality possible, as well as the best service."
-            ]
+            ],
+            "metaTitle": "AirMaid | Installation, Service, Repair | City Mechanical, Inc.",
+            "metaDesc": "At City Mechanical, we always recommend AirMaid by Interzon. AirMaid systems are the most innovative air treatment systems on the market."
           },
           "backflow-prevention-device-certification": {
             "title": "Backflow Prevention & Device Certification",
@@ -76,7 +82,9 @@
             "overview": [
               "When it comes to your water supply system, the last thing that you want to have is unexpected backflow. We here at City Mechanical understand this importance of protecting your water system. Therefore, City Mechanical proudly offers backflow prevention and prevention device certification. We not only want your water system to run smoothly. We want it to last without fail.",
               "Here at City Mechanical, we believe correctly maintained equipment is the best way to avoid a disaster. Due to this belief, our technicians are also able to certify your prevention devices. What this means, is that we can install your prevention device, as well as verify that it is running up to code. This device certification means that your water system is as safe as can be in terms of your prevention devices. In conclusion, City Mechanical is here to go above an beyond to protect, and maintain your water system."
-            ]
+            ],
+            "metaTitle": "Backflow Prevention & Certification | City Mechanical, Inc.",
+            "metaDesc": "When it comes to your water supply system, the last thing that you want to have is unexpected backflow. At City Mechanical, Inc. we're here to help."
           },
           "boilers": {
             "title": "Boilers & Boiler Certification",
@@ -85,7 +93,9 @@
             "overview": [
               "When it comes to your boiler, hydronic heating, and steam fitting needs, we’re specialists. We’re here to keep your boilers up and running as efficiently as possible. As a State Licensed C-4 Boiler Contractor, we are more than capable of quickly fulfilling all of your boiler’s service needs. At City Mechanical, we proudly offer services, repairs, inspections, and certifications for your hydronic, hot water, and steam boiler needs. Most of all, we understand just how crucial it is that your equipment is always running properly, and we’re here to help.",
               "Not only is it important to keep your boiler running, but it’s also vital to guarantee it’s running up to standard. In San Francisco, there are strict regulations that are required to be followed when it comes to boilers. Due to these strict standards, our technicians here at City Mechanical are expertly trained and can help keep your boiler in safe operating condition. As a result, we are here to go above and beyond to meet your boiler, and water heating needs."
-            ]
+            ],
+            "metaTitle": "Boilers | Service, Repair, Inspection | City Mechanical, Inc.",
+            "metaDesc": "When it comes to your boiler, and hot water heating, we're specialists. We're here to keep your boilers and water heaters up and running!"
           },
           "booster-systems": {
             "title": "Booster Systems",
@@ -94,7 +104,9 @@
             "overview": [
               "It’s essential that the water, and gas, lines in your facility are properly pressurized. Without a proper configuration, your system may not be able to provide sufficient pressure throughout your facility. Depending on your setup, you may be in need of a booster system. With a booster system, we can help you deliver proper water, and gas, pressure to every floor in your building. We’re here to help, no matter how big or small the job, commercial or residential.",
               "At City Mechanical, we understand the importance of maintaining sufficient pressure throughout your facility. That’s why we are now proud to offer installations, repairs, and maintenance for all types of booster systems. With the help of our services, your booster system can help with your pressure problems, year round. We believe that the best way to protect your booster system is to have it regularly serviced. As a result, we are here to go above and beyond to meet your booster system needs."
-            ]
+            ],
+            "metaTitle": "Booster Systems | Installation, Service, Repair | City Mechanical, Inc.",
+            "metaDesc": "City Mechanical, Inc. is proud to now offer installations, repairs, and maintenance services for all types of booster systems."
           },
           "building-controls-energy-management": {
             "title": "Building Controls & Energy Management",
@@ -103,7 +115,9 @@
             "overview": [
               "When it comes to your HVAC system, it’s crucial to ensure your system is using resources efficiently.  Meaning, your HVAC system shouldn’t be costing you money that you could easily save. At City Mechanical, we offer services, repairs, and installations for all types of building controls and energy management systems. As a result, we help prevent unnecessary expenses and lower your costs.  We believe in the importance of saving our customers money while also improving your buildings efficiently.",
               "Building controls & energy management systems not only increase a building’s efficiency, but also improve individual room controls, and service time.  Allowing you to manage your facility easier, increase comfort, and safety.  It is actually believed that almost 20% of building energy use is due to the fact that an energy management system is not in place, or not properly configured.  At City Mechanical, we are here to save you time, money, and headaches, and we believe this is the easiest way to do so."
-            ]
+            ],
+            "metaTitle": "Building Controls & Energy Management | City Mechanical, Inc.",
+            "metaDesc": "At City Mechanical, we offer services, repairs, and installations for all types of building controls and energy management systems to improve your HVAC."
           },
           "duct-cleaning": {
             "title": "Duct Cleaning",
@@ -113,7 +127,9 @@
               "One of the simplest things you can do to maintain your HVAC is to have your air ducts professionally cleaned. In today’s air-tight homes, indoor air pollutants can quickly circulate throughout your HVAC system. Contaminants such as dust mites, mold, mildew, animal dander, pollen, dirt, and more! Many pollutants that can circulate throughout your home’s central air can easily aggravate asthma and other allergies. You could be breathing in the contaminated air without even knowing it! Over time, these contaminants can easily accumulate inside your air duct system. When these contaminants build up, it can significantly reduce the overall efficiency and shorten the lifespan of your costly equipment.",
               "It’s no surprise that indoor air quality is one of the EPA’s top five environmental risks to public health.  That’s why we believe it is essential to have your air ducts professionally cleaned on a regular basis. It can lead to a healthier household, as well as a more efficient HVAC system. Here at City Mechanical,  we’re proud to offer our professional duct cleaning service as a solution to your problem.",
               "Using Rotobrush’s air duct cleaning equipment, our specially trained technicians are capable of removing any debris they find in your ductwork. Our technicians can simultaneously clean, brush, and vacuum your air duct system, having it look like new. With the Rotobrush tools our technicians carry, it’s an easy solution, to what could become a big problem. Rotobrush allows us to clean out contaminants such as dust mites, mold, mildew, animal dander, pollen, dirt, and more! Allowing us to service your ductwork can considerably improve the efficiency and cost of your HVAC system, while simultaneously enhancing your home’s indoor air quality."
-            ]
+            ],
+            "metaTitle": "Professional Air Duct Cleaning | City Mechanical, Inc.",
+            "metaDesc": "At City Mechanical, we believe one of the simplest things you can do to maintain your HVAC is to have your air ducts professionally cleaned."
           },
           "hvac": {
             "title": "Heating, Ventilation & Air Conditioning",
@@ -123,7 +139,9 @@
               "When it comes to Heating, Ventilation, and Air Conditioning, we’re experts.  Whatever your needs are, we can take care of it.  We service, repair, and install all types of HVAC systems.  Using high-end technology, our technicians can quickly and accurately diagnose your HVAC system’s problems.  We even have portable AC units and chillers from 1 to 200 tons available for rental, just in case. Whether your needs are industrial, or commercial, we can handle it all.",
               "Due to the technology that we use, we are able to minimize the amount of, valuable, on-site time determining your system’s needs. As a result, we can efficiently pinpoint problems. This technology allows us to begin actual service on your system, faster. In fact, due to the technology that we use, our technicians can cut inspection time by as much as 85%! Allowing us to analyze, service, and improve your HVAC system, in a much more timely manner.",
               "At City Mechanical, we only use equipment that we believe is the best.  That’s why if portable air conditioning is what you need, we turn to MovinCool to help provide a solution.  Using MovinCool’s top-of-the-line portable air conditioners, we can direct cold air precisely where it’s needed most. Whether you need temperature control in areas your central AC doesn’t reach, or for when your primary system is down. MovinCool’s portable air conditioners are capable of a temperature drop of 20-30 degrees Fahrenheit in mere minutes! Not to mention, their portable units are simple to set up. Our technicians simply roll in the appropriately sized unit and plug it into any ordinary power outlet. Providing you with easy, affordable and flexible solutions to your heat-related problem."
-            ]
+            ],
+            "metaTitle": "HVAC | Heating, Ventilation, Air Conditioning | City Mechanical, Inc.",
+            "metaDesc": "When it comes to HVAC, we're experts. We service, repair, and install all types of HVAC systems. Industrial, or commercial, we can handle it all."
           },
           "jetting-services": {
             "title": "Jetting Services",
@@ -132,7 +150,9 @@
             "overview": [
               "One of the easiest ways to maintain your drainage lines is to have them professionally cleaned with our jetting services. With drainage systems, sludge and debris can naturally build up over time. This buildup can cause significant problems in your plumbing system down the road. Without regular hydro jetting, your drainage lines can become clogged, and lead to even more headaches! Not to mention, clogs can result in lower efficiency and lifespan in your plumbing system overall.",
               "We believe it is essential to have your drainage lines professionally cleaned on a regular basis. It can lead to healthier drainage lines, as well as a more efficient plumbing system overall. We at City Mechanical are here to go above and beyond to answer the call for your plumbing needs. As a result, we are proud to offer our professional services as a solution to your problem."
-            ]
+            ],
+            "metaTitle": "Professional Jetting Services | City Mechanical, Inc.",
+            "metaDesc": "One of the easiest ways to maintain your drainage lines is to have them professionally cleaned with our jetting services."
           },
           "plumbing": {
             "title": "Plumbing",
@@ -141,7 +161,9 @@
             "overview": [
               "Here at City Mechanical, we take pride in our exceptional plumbing services.  Whether you’ve got a minor leak in a pipe or need a complete replacement, we’ve got you covered.  Above all, we service, repair, and install all types of piping, storage tanks and more.  Our expertly trained technicians will be able to help you effectively diagnose, and solve your system’s problems.  No matter how big the job is, our technicians can handle it!",
               "We not only strive to keep your pipes working correctly but strive to ensure that they are running as effectively as possible.  City Mechanical is a State Licensed C-36 Plumbing Contractor, meaning that you can rest assured knowing that we will quickly fulfill all of your system’s service needs.  We are here to not only fix your water systems but to improve them as well. Therefore at City Mechanical, you can find comfort in the fact that we will get the job done correctly."
-            ]
+            ],
+            "metaTitle": "Plumbing | Service, Repair, Replacement | City Mechanical, Inc.",
+            "metaDesc": "Here at City Mechanical, we take pride in our exceptional plumbing services. Whether you've got a minor leak or need a replacement, we've got you covered."
           },
           "refrigeration": {
             "title": "Refrigeration",
@@ -150,7 +172,9 @@
             "overview": [
               "If your refrigeration unit isn’t operating at peak performance, City Mechanical is here to help!  We hold all of our cooling systems to a high standard of efficient chilling. Our technicians can install, service, and repair all types of cooling systems. Whether your system is commercial or industrial, we can help.  We are also proud to offer our preventative maintenance service for your cooling system, just in case. Most of all, our goal is to keep your system operating, as efficiently and effectively as possible.",
               "Here at City Mechanical, we believe that you shouldn’t have to worry about your cooling systems failing. Due to our preventative maintenance service, your mind can be at ease. With periodically scheduled service visits, you should see a much more reliable and dependable cooling system. We believe that your unit should work when you need it to, efficiently and reliably. That’s why it is our goal, here at City Mechanical, to go above and beyond to meet your refrigeration needs."
-            ]
+            ],
+            "metaTitle": "Refrigeration | Repairs & Installations | City Mechanical, Inc.",
+            "metaDesc": "Here at City Mechanical, we can install, service, and repair all types of refrigeration units, whether it's commercial or industrial."
           },
           "saunas": {
             "title": "Saunas",
@@ -159,7 +183,9 @@
             "overview": [
               "We understand how important it is for you to be able to enjoy your sauna in your home or facility.  When it comes to your equipment, we believe that it should always be operating at the highest of standards.  Regular maintenance is a must to uphold these high standards. We here at City Mechanical are here to deliver!  We now offer repairs and services for your sauna, to keep it running at its best.",
               "With our expertise in the field, you can rest assured knowing that we can handle the job.  To us, it’s important to keep your equipment properly maintained and running efficiently.  With our knowledge of steam generators, we should be able to handle any problem your sauna has.  Here at City Mechanical, we always strive to deliver service that will keep your equipment running smoothly."
-            ]
+            ],
+            "metaTitle": "Sauna | Service, Maintenance, Repair | City Mechanical, Inc.",
+            "metaDesc": "We now offer repairs and services for your sauna, to keep it running at its best. With our expertise in the field, you can rest assured knowing that we can handle the job."
           },
           "sheet-metal": {
             "title": "Sheet Metal",
@@ -168,7 +194,9 @@
             "overview": [
               "We understand how important it is for your ductwork to be functioning correctly and efficiently.  We also believe that a single contractor should be able to handle all of your HVAC needs.  As a result, that’s where City Mechanical comes into the picture!  We are fully capable of fabricating and installing all types of sheet metal products found in HVAC systems.  Whether your system only has a small problem or is in need of a complete overhaul, we’re here to get the job done.",
               "It’s not only vital to ensure your ductwork is operable but also guarantee that it is doing so in an effective manner. With our vast experience in the HVAC industry, you can rest assured knowing that City Mechanical can handle all of your system’s needs. Servicing HVAC systems no matter the size, whether your needs are commercial or industrial."
-            ]
+            ],
+            "metaTitle": "Sheet Metal | Fabrication, Installation | City Mechanical, Inc.",
+            "metaDesc": "With our vast experience in the HVAC industry, you can rest assured knowing that City Mechanical can and will handle all of your sheet metal needs."
           },
           "steam-baths-showers": {
             "title": "Steam Baths & Showers",
@@ -177,7 +205,9 @@
             "overview": [
               "At City Mechanical, we’re always looking for new ways to improve the lives of our customers.  Therefore, we are now proud to offer maintenance and services for your steam baths and steam showers.  But most of all, with our periodic maintenance services, we’re here to keep your equipment running at its best, all the time.  Whether it’s your steam equipped bath or steam equipped shower, we are here to help!",
               "Due to our expert knowledge of steam generators, you can rest assured knowing that we can handle the job.  To us, it’s essential to keep your equipment properly maintained and running efficiently.  Furthermore, our periodic maintenance plan is the smartest way for you to keep your system running at its best.  In conclusion, here at City Mechanical, we always strive to deliver service that will keep your equipment running smoothly."
-            ]
+            ],
+            "metaTitle": "Steam Baths & Showers | Service, Maintenance | City Mechanical, Inc.",
+            "metaDesc": "Whether it's your steam equipped bath or steam equipped shower, City Mechanical is here to help!"
           },
           "steam-generators": {
             "title": "Steam Generators",
@@ -186,7 +216,9 @@
             "overview": [
               "Whether it’s in your home or facility, we are here to handle any job when it comes to your steam generators.  We can do it all!  From installations to repairs, we are here to help your steam generators run at its best.  We understand how crucial it is to ensure your steam generators are always running correctly.  With our many years of experience, you can rest easy knowing City Mechanical can handle the job.",
               "To us, it’s vital to keep your equipment properly maintained and running efficiently.  Our periodic maintenance plan is the smartest way for you to keep your system running at its best.  With routine checkups and maintenance, we can help guarantee your steam generator will always stay up and running at peak performance.  Here at City Mechanical, we always strive to deliver service that will keep your equipment running smoothly."
-            ]
+            ],
+            "metaTitle": "Steam Generators | Installation, Service, Repair | City Mechanical, Inc.",
+            "metaDesc": "Whether it's in your home or facility, we are here to handle any job when it comes to your steam generators. From installations to repairs, we can do it all!"
           },
           "sump-pump-systems": {
             "title": "Sump Pump Systems",
@@ -195,7 +227,9 @@
             "overview": [
               "When it comes to your home or facility, the last thing that anyone wants is water damage. A sump pump is a device that helps protect the underground levels of your home, or facility, from flooding. By utilizing a sump pump, your property can avoid unnecessary damage from an excessive inflow of water.",
               "At City Mechanical, we understand the importance of protecting your facility from this type of water damage. As a result, we are proud to offer installations, repairs, and maintenance to keep your sump pump systems in working order. With the assistance of our services, your sump pump can help protect your property year round. A properly maintained sump pump can reduce your risk for water damage considerably. We at City Mechanical believe that the best way to protect your sump pump system is to have it regularly serviced."
-            ]
+            ],
+            "metaTitle": "Sump Pump Systems | Installation, Service, Repair | City Mechanical, Inc.",
+            "metaDesc": "Properly maintained sump pump systems can greatly reduce your risk for water damage. We believe the best way to protect your sump pump is regular service."
           },
           "water-heaters": {
             "title": "Water Heaters",
@@ -213,7 +247,9 @@
             "overview": [
               "When it comes to your home or facility, we understand just how crucial it is to have high-quality water.  An easy way to improve your water system’s quality, and lifespan, is by implementing a water softener.  With a water softener, minerals that can wear down your water system will be filtered out.  As a result, you can end up with a healthier water system, and cleaner water overall.  We understand the importance of this, and we now offer installations, maintenance, and repairs on water softening systems.",
               "Not only does a water softener enhance your system’s health, but it can also improve your own.  Reducing the number of minerals in your water can especially diminish many of the adverse effects of hard water.  Hard water can result in increased soap scum and has the potential to irritate skin.  With our expertise in the field, we not only strive to get you higher quality water.  Consequently, we strive to get you a more efficient, and longer-lasting, water system and water softener."
-            ]
+            ],
+            "metaTitle": "Water Softeners | Services, Repairs, Installations | City Mechanical, Inc.",
+            "metaDesc": "Water softeners can allow you to end up with a healthier water system, and cleaner water overall. Here at City Mechanical we understand the importance of this!"
           },
           "water-treatment": {
             "title": "Water Treatment",
@@ -222,7 +258,9 @@
             "overview": [
               "At City Mechanical, we understand how important it is for your water treatment system to be in top-notch condition.  As a result, we are proud to offer repairs, services, and installations for all types of water systems.  Whether the needs of your system are industrial, or commercial, here at City Mechanical, we can handle it all.  Furthermore, our goal is to ensure that your water system is always delivering you high-quality, great-tasting water.",
               "We won’t only keep your water systems working correctly, but we will also keep them running effectively and efficiently.  Your water treatment system should be delivering you long-lasting, high-performance filtration, and we’re here to help ensure that stays true.  We can keep your water system running at its maximum potential no matter how big or small the task may be.  At City Mechanical, we believe that your water system should be held to the highest of standards and deliver as so."
-            ]
+            ],
+            "metaTitle": "Water Treatment | Services, Repairs, Installations | City Mechanical, Inc.",
+            "metaDesc": "Your water treatment system should be delivering you long-lasting, high-performance filtration, and we're here to help ensure that stays true."
           }
         }
       },
@@ -234,7 +272,9 @@
           "The thing that makes City Mechanical recognizable is our exceptional maintenance services.  We will keep your equipment correctly maintained so that it may achieve its maximum potential.  At City Mechanical, we’re proud to offer our periodic maintenance services.  We’re here to ensure your equipment is doing all the heavy-lifting, so you don’t have to.",
           "Our periodic maintenance services have always been a core foundation here at City Mechanical. We believe going above and beyond is something we should strive for. Our maintenance services are just one way we try to accomplish this goal. Always aiming to bring you superior HVAC services and more. We are here to serve, and to help ensure, that all of your equipment is working correctly.",
           "With our periodic maintenance service, you get our signature maintenance services on a schedule that works for you.  With scheduled service visits, we can help guarantee your system will always stay up and running at peak performance.  Regular maintenance allows us to solve any problems that arise in your equipment before they become expensive emergencies.  Hence, we are pleased to provide our maintenance services for any systems we offer service visits on. Whether you want us to service your HVAC, Refrigeration, Plumbing, or more, we do it all. We’re here to help, no matter how big or small the job, commercial or residential."
-        ]
+        ],
+        "metaTitle": "Periodic Maintenance | Service & Repairs | City Mechanic, Inc.",
+        "metaDesc": "At City Mechanical, we believe that in order for your equipment to achieve its maximum potential, it needs to be properly maintained with periodic maintenance."
       },
       "about": {
         "title": "About",
@@ -244,6 +284,8 @@
           "City Mechanical is the brainstorm of Russell L. Will Jr., president, who in the 1980s was a plumbing apprentice. His teacher was journeyman Ronald A. Tinkey, who now serves as the firm’s secretary/ treasurer. Russ was impressed with his mentor’s vast knowledge and compassionate way of guiding young men and women. Thus, he made Ron an offer: Let’s start a “little” service company.",
           "Today, all our technicians are union trained. Training remains the hallmark of our growing company’s vision. Not just for our employees, but for our clients as well. Delivering the highest level of specialized HVAC services means helping our customers understand the complex procedures their systems need. Our goal is to help our customers not only fix problems when they arise. But, to maintain their equipment so that it is more efficient, and working more for them.  These are the ideals our company was founded on, and what we continue to pursue to this day."
         ],
+        "metaTitle": "About Us | Bay Area Union Contractor | City Mechanical, Inc.",
+        "metaDesc": "Serving the Greater Bay Area since 1989, City Mechanical is the brainstorm of Russell L. Will Jr. and Ronald A. Tinkey.",
         "gallery": [
           [
             "/images/galleries/about-bigge.jpg",
@@ -259,6 +301,8 @@
             "title": "Giving Back",
             "link": "/giving-back",
             "banner": "/images/banners/giving-back-banner.jpg",
+            "metaTitle": "Giving Back | Our Calling And Commitment | City Mechanical, Inc.",
+            "metaDesc": "A greener, cleaner Bay Area community is not only about better heating, ventilation and air conditioning service. It's about commitment, contribution and caring.",
             "content": [
               {
                 "id": "community",
@@ -335,6 +379,8 @@
         "title": "Testimonials",
         "link": "/testimonials",
         "banner": "/images/banners/testimonials-banner.jpg",
+        "metaTitle": "Testimonials | What Customers Say About Us | City Mechanical, Inc.",
+        "metaDesc": "City Mechanical offers top quality HVAC services. But, don't take our word for it! Here is what a few of our customers have had to say about our work.",
         "testimonials": [
           {
             "id": "624-taylor-street",
@@ -518,11 +564,15 @@
         "title": "Contact",
         "link": "/contact",
         "banner": "/images/banners/contact-banner.jpg",
+        "metaTitle": "Contact Us | City Mechanical, Inc.",
+        "metaDesc": "Need to get in contact?  City Mechanical, Inc. is here for any questions you may have about your HVAC needs.",
         "children": {
           "staff-directory": {
             "title": "Staff Directory",
             "link": "/staff-directory",
             "banner": "/images/banners/sf-shop-truck-banner.jpg",
+            "metaTitle": "Staff Directory & Management | City Mechanical, Inc.",
+            "metaDesc": "Get to know our staff! A directory of all of our employees, along with emails, and office phone numbers, so you can get in touch.",
             "directory": [
               {
                 "team": "management",
@@ -749,7 +799,9 @@
       "request-service": {
         "title": "Request Service",
         "link": "/request-service",
-        "banner": "/images/banners/request-service-banner.jpg"
+        "banner": "/images/banners/request-service-banner.jpg",
+        "metaTitle": "Request Service, Estimate, Maintenance & More | City Mechanical, Inc.",
+        "metaDesc": "Need a service or repair?  Want an estimate or maintenance plan? City Mechanical, Inc. is here to help!"
       }
     }
   }
