@@ -12,7 +12,7 @@ class MyApp extends App {
     const { asPath } = Router;
     console.log(asPath);
     switch (asPath) {
-      case "/airmaid":
+      //case "/airmaid":
       case "/backflow-prevention-device-certification":
       case "/boilers":
       case "/building-controls-energy-management":
