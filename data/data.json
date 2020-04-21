@@ -649,6 +649,14 @@
                     "email": "grodich@citymechanical.com",
                     "work": "4156477240",
                     "cell": "5109496375"
+                  },
+                  {
+                    "img": "",
+                    "name": "Christina Chandler",
+                    "title": "Dispatcher",
+                    "email": "cchandler@citymechanical.com",
+                    "work": "5107249090",
+                    "cell": "5106179371"
                   }
                 ]
               },
@@ -688,6 +696,14 @@
                     "email": "klee@citymechanical.com",
                     "work": "5107249093",
                     "cell": ""
+                  },
+                  {
+                    "img": "/images/employees/lisa-lafuente.jpg",
+                    "name": "Lisa Lafuente",
+                    "title": "Accounts Payable",
+                    "email": "llafuente@citymechanical.com",
+                    "work": "5102967914",
+                    "cell": ""
                   }
                 ]
               },
@@ -713,12 +729,12 @@
                     "cell": ""
                   },
                   {
-                    "img": "/images/employees/lisa-lafuente.jpg",
-                    "name": "Lisa Lafuente",
+                    "img": "",
+                    "name": "Athena Marquez",
                     "title": "Administrative Assistant",
-                    "email": "llafuente@citymechanical.com",
-                    "work": "5102967914",
-                    "cell": ""
+                    "email": "amarquez@citymechanical.com",
+                    "work": "5106620909",
+                    "cell": "5104556810"
                   }
                 ]
               },
@@ -750,6 +766,14 @@
                     "email": "jwill@citymechanical.com",
                     "work": "5107246249",
                     "cell": "7077767676"
+                  },
+                  {
+                    "img": "",
+                    "name": "Melody Czekalewski",
+                    "title": "Sales & Service",
+                    "email": "mczekalewski@citymechanical.com",
+                    "work": "5102967917",
+                    "cell": "7078150257"
                   }
                 ]
               },
