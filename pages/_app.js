@@ -38,7 +38,11 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff"></meta>
         <title>City Mechanical, Inc.</title>
       </Head>
-      {asPath == "/covid-19" || asPath == "/Oxine" ? (
+      {asPath == "/covid-19" ||
+      asPath == "/BioCideOxine" ||
+      asPath == "/RevCareSurfaceDisinfectant" ||
+      asPath == "/NuCalgonEvapFresh" ||
+      asPath == "/COVID-19_AirFiltration" ? (
         <Component {...pageProps} />
       ) : (
         <div className="App">
