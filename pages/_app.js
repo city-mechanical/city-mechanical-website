@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 import "../index.scss";
 
 function MyApp({ Component, pageProps }) {
+  const asPath = useRouter().asPath;
+
   return (
     <React.Fragment>
       <Head>
@@ -36,7 +38,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff"></meta>
         <title>City Mechanical, Inc.</title>
       </Head>
-      {useRouter().asPath == "/covid-19" ? (
+      {asPath == "/covid-19" || asPath == "/Oxine" ? (
         <Component {...pageProps} />
       ) : (
         <div className="App">
