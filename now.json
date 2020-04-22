@@ -3,5 +3,133 @@
     "env": {
       "GOOGLE_MAPS_API_KEY": "@google-maps-api-key"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/airmaid",
+      "status": 301,
+      "headers": {
+        "Location": "/services/airmaid"
+      }
+    },
+    {
+      "src": "/backflow-prevention-device-certification",
+      "status": 301,
+      "headers": {
+        "Location": "/services/backflow-prevention-device-certification"
+      }
+    },
+    {
+      "src": "/boilers",
+      "status": 301,
+      "headers": {
+        "Location": "/services/boilers"
+      }
+    },
+    {
+      "src": "/booster-systems",
+      "status": 301,
+      "headers": {
+        "Location": "/services/booster-systems"
+      }
+    },
+    {
+      "src": "/building-controls-energy-management",
+      "status": 301,
+      "headers": {
+        "Location": "/services/building-controls-energy-management"
+      }
+    },
+    {
+      "src": "/duct-cleaning",
+      "status": 301,
+      "headers": {
+        "Location": "/services/duct-cleaning"
+      }
+    },
+    {
+      "src": "/hvac",
+      "status": 301,
+      "headers": {
+        "Location": "/services/hvac"
+      }
+    },
+    {
+      "src": "/jetting-services",
+      "status": 301,
+      "headers": {
+        "Location": "/services/jetting-services"
+      }
+    },
+    {
+      "src": "/plumbing",
+      "status": 301,
+      "headers": {
+        "Location": "/services/plumbing"
+      }
+    },
+    {
+      "src": "/refrigeration",
+      "status": 301,
+      "headers": {
+        "Location": "/services/refrigeration"
+      }
+    },
+    {
+      "src": "/sauna",
+      "status": 301,
+      "headers": {
+        "Location": "/services/sauna"
+      }
+    },
+    {
+      "src": "/sheet-metal",
+      "status": 301,
+      "headers": {
+        "Location": "/services/sheet-metal"
+      }
+    },
+    {
+      "src": "/steam-baths-showers",
+      "status": 301,
+      "headers": {
+        "Location": "/services/steam-baths-showers"
+      }
+    },
+    {
+      "src": "/steam-generators",
+      "status": 301,
+      "headers": {
+        "Location": "/services/steam-generators"
+      }
+    },
+    {
+      "src": "/sump-pump-systems",
+      "status": 301,
+      "headers": {
+        "Location": "/services/sump-pump-systems"
+      }
+    },
+    {
+      "src": "/water-heaters",
+      "status": 301,
+      "headers": {
+        "Location": "/services/water-heaters"
+      }
+    },
+    {
+      "src": "/water-softeners",
+      "status": 301,
+      "headers": {
+        "Location": "/services/water-softeners"
+      }
+    },
+    {
+      "src": "/water-treatment",
+      "status": 301,
+      "headers": {
+        "Location": "/services/water-treatment"
+      }
+    }
+  ]
 }
