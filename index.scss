@@ -1,8 +1,7 @@
 @import "./scss/citymechanical.scss";
-html,
-#__next {
+
+html {
   background-color: $primary;
-  height: 100%;
 
   body,
   #root,
