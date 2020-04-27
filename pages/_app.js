@@ -39,6 +39,8 @@ function MyApp({ Component, pageProps }) {
         <title>City Mechanical, Inc.</title>
       </Head>
       {asPath == "/covid-19" ||
+      asPath ==
+        "/wp-content/uploads/2020/04/CMI-COVID-19-Pandemic-Prevention-Program-003.pdf" ||
       asPath == "/BioCideOxine" ||
       asPath == "/RevCareSurfaceDisinfectant" ||
       asPath == "/NuCalgonEvapFresh" ||
