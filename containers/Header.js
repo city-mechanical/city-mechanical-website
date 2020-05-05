@@ -55,10 +55,9 @@ function Header() {
             {Object.entries(pages).map(([index, page]) => {
               if (page.title === "Request Service") {
                 return (
-                  <div className="nav-container service-nav-container">
+                  <div className="nav-container service-nav-container" key={index}>
                     <Link
                       href={page.link}
-                      key={index}
                       children={
                         <a
                           className={"service-nav-link nav-link"}
