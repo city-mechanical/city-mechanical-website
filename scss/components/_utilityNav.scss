@@ -51,6 +51,7 @@
     .info {
       @include media-breakpoint-down(sm) {
         width: 100%;
+        text-align: center;
       }
 
       .contactLink + .contactLink {
