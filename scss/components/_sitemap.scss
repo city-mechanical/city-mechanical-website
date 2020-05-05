@@ -9,8 +9,8 @@
       @include font-size($font-size-base);
       text-decoration: none;
       border-radius: 5px;
-      padding: 0.25em 0.5em;
-
+      padding: 0.75em 0.5em;
+      line-height: 2em;
       display: inline-block;
 
       &:hover {
