@@ -59,13 +59,14 @@
 
     .nav-container {
       &.service-nav-container {
-        width: 197px !important;
+        width: 201px !important;
       }
     }
 
     .nav-link {
       color: $fsecondary;
       border-radius: 5px;
+      line-height: 2em;
 
       &.service-nav-link {
         color: $primary;

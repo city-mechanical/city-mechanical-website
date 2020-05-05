@@ -11,7 +11,7 @@
     "jquery": "^3.5.0",
     "next": "^9.3.5",
     "next-seo": "^4.4.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
