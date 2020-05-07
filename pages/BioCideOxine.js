@@ -1,22 +1,15 @@
-import React from "react";
-import PDFViewer from "../components/PDFViewer";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 function BioCideOxine() {
-  return (
-    <React.Fragment>
-      <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div,
-        div#__next > div > div {
-          height: 100%;
-        }
-      `}</style>
-      <PDFViewer file="/pdfs/Oxine.pdf" />
-    </React.Fragment>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    // Always do navigations after the first render
+    router.push("/pdfs/Oxine.pdf");
+  }, []);
+
+  return <div />;
 }
 
 export default BioCideOxine;
