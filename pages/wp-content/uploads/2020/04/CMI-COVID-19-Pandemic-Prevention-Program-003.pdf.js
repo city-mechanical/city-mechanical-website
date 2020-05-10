@@ -6,7 +6,9 @@ function WPCovid19() {
 
   useEffect(() => {
     // Always do navigations after the first render
-    router.push("/covid-19");
+    router.push(
+      "/pdfs/CMI%20-%20COVID%2019%20Pandemic%20Prevention%20Program.pdf"
+    );
   }, []);
 
   return <div />;
