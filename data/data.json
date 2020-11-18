@@ -766,14 +766,6 @@
                     "email": "jwill@citymechanical.com",
                     "work": "5107246249",
                     "cell": "7077767676"
-                  },
-                  {
-                    "img": "",
-                    "name": "Melody Czekalewski",
-                    "title": "Sales & Service",
-                    "email": "mczekalewski@citymechanical.com",
-                    "work": "5102967917",
-                    "cell": "7078150257"
                   }
                 ]
               },
@@ -813,6 +805,14 @@
                     "email": "fevansco@citymechanical.com",
                     "work": "",
                     "cell": "5106918072"
+                  },
+                  {
+                    "img": "",
+                    "name": "Ron Harrigan",
+                    "title": "Plumbing Assistance",
+                    "email": "ronharrigan@citymechanical.com",
+                    "work": "",
+                    "cell": "510949-7556"
                   }
                 ]
               }
